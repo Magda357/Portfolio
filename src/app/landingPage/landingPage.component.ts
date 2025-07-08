@@ -2,7 +2,6 @@ import { Component } from "@angular/core";
 
 @Component({
        selector: 'app-landinPage',
-       standalone: true,
        imports: [],
        template: `
        <section id="hero">
@@ -14,10 +13,20 @@ import { Component } from "@angular/core";
        </div>
        </div>
        
-
        <div id="name"> 
+
+
+<div id="socbuttons"><img id= "linkedin" src="/img/Linkedin button.png"  alt=""> 
+       <img id="github" src="/img/Github button.png" alt="">
+       <img  id="email" src="/img/Email button.png" alt="">
+ </div>
+        <img id="logo" src="img/Logo_M.png" alt="Logo" >
+       
         <h1>Magda Danielyan </h1>
     <h2>FRONTEND DEVELOPER  </h2> 
+
+    <img id="arrow" src="img/Arrow down.png" alt="">
+    
 </div>
        
        </section>`,
@@ -26,9 +35,9 @@ import { Component } from "@angular/core";
         display:flex;
         height:705px;
         margin-top:41px; 
-       margin-left: 114px;
-       margin-right: 114px;
-       border: 2px solid blue;
+        margin-left: 114px;
+        margin-right: 114px;
+        border: 2px solid blue;
        
        }
 
@@ -48,7 +57,7 @@ import { Component } from "@angular/core";
          height:700px; 
            position: relative;
 
-        }
+        } 
         #pic-bgr img {
 
 
@@ -78,14 +87,42 @@ import { Component } from "@angular/core";
             width:700px;
             border: 2px solid yellow;
 
+        }
+        #linkedin{
+            width: 30px;
+            height:30px;
+        }
+        #github {
+            width: 30px;
+            height:30px;
+        }
+          #email{
+            width: 30px;
+            height:30px;
+        }
+        #socbuttons{
+            display:flex;
+            flex-direction:column;
+            margin-left:670px;
+            padding-bottom: 80px;
+            margin-top: -220px;
+            gap:10px;
+        }
+
+        #logo{
+            width:100px;
+            height:100px;
+            margin-left: 300px;
 
         }
-        h1{
-    color:#F8F5EC;
- font-weight:400;
-    font-size: 88px;
-    font-family:'Anta';
-}
+        #arrow{
+            display:flex;
+            margin-left:330px;
+            margin-top:50px;
+            width:38px;
+            height:89px;
+        }
+    
         `]
 
 })
