@@ -1,9 +1,51 @@
-/* You can add global styles to this file, and also import other style files */
+$primary-color: #262E34; 
+$primary-blue: #89BCD9;
+$creme-white:#F8F5EC;
+$light-grey: rgba(38, 46, 52, 0.12);
+$error: #E44C36;
+
+/* another combination2
+$primary-color2:#042639;
+ $orang: #F28A62;
+ $cremig:#F8F5EC; 
+ */
+
+/* another combination3
+$primary-color3:#042639;
+ $hellorang: #F9CB71;
+ $white:#FFFFFF;  */
 *{
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
     width: 100%;
     height: auto;
-    background-color: rgba(38, 46, 52, 1);
+}
+body{
+        background-color: $primary-color;
+
+}
+
+h1{
+    color:#F8F5EC;
+ font-weight:400;
+    font-size: 88px;
+    font-family:'Anta';
+}
+
+@font-face {
+  font-family: 'Anta';
+  src: url('/fonts/anta/Anta-Regular.ttf') format('truetype');
+ 
+}
+
+@font-face {
+  font-family: 'Josefin Sans';
+  src: url('/public/fonts/josefinSans/JosefinSans-Italic-VariableFont_wght.ttf') format('truetype');
+ 
+}
+h2{
+    font-family: 'Josefin Sans';
+    font-size: 40px;
+    color: #F8F5EC;
 }
