@@ -14,21 +14,21 @@ $primary-color2:#042639;
 $primary-color3:#042639;
  $hellorang: #F9CB71;
  $white:#FFFFFF;  */
-*{
+
+ *{
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
-    width: 100%;
     height: auto;
 }
 body{
         background-color: $primary-color;
-
+        width: 100%;
 }
 
 h1{
     color:#F8F5EC;
- font-weight:400;
+    font-weight:400;
     font-size: 88px;
     font-family:'Anta';
 }
@@ -41,17 +41,19 @@ h1{
 
 @font-face {
   font-family: 'Josefin Sans';
-  src: url('/public/fonts/josefinSans/JosefinSans-Italic-VariableFont_wght.ttf') format('truetype');
+  src: url('/fonts/josefinSans/JosefinSans-Italic-VariableFont_wght.ttf') format('truetype');
  
 }
 h2{
-    font-family: 'Josefin Sans';
+    font-family: 'Josefin Sans regular';
     font-size: 40px;
     color: #F8F5EC;
+    font-weight: 400;
 }
     h1{
     color:#F8F5EC;
  font-weight:400;
     font-size: 88px;
     font-family:'Anta';
+    
 }

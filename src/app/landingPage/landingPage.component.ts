@@ -5,122 +5,130 @@ import { Component } from "@angular/core";
        imports: [],
        template: `
        <section id="hero">
-       <div id="pic-bgr-div">  
-       <div id= "pic-bgr" ><img src="img/Property 1=Default.png" class="default" alt="background default" > 
+       <div id="left-container">  
+       <div id= "bg-shape" ><img src="img/Property 1=Default.png" class="default" alt="background default" > 
       </div>
        <div id="prof_pic">
         <img src="img/subject 3.png" alt="Me" width="" height="">
        </div>
        </div>
-       
-       <div id="name"> 
 
+       <div id="right-conainer"> 
 
-<div id="socbuttons"><img id= "linkedin" src="/img/Linkedin button.png"  alt=""> 
-       <img id="github" src="/img/Github button.png" alt="">
-       <img  id="email" src="/img/Email button.png" alt="">
- </div>
-        <img id="logo" src="img/Logo_M.png" alt="Logo" >
-       
-        <h1>Magda Danielyan </h1>
-    <h2>FRONTEND DEVELOPER  </h2> 
+<div id="socmedia"><img id= "linkedin" src="/img/Linkedin button.png"  alt=""> 
+       <img id="github" src="img/Github button.png" alt="">
+       <img  id="email" src="img/Email button.png" alt="">  </div>
+ 
 
+     <img id="logo" src="img/logoMD.png" alt="Logo" >
+     <h1>Magda Danielyan </h1>
+     <h2>FRONTEND DEVELOPER  </h2>  
     <img id="arrow" src="img/Arrow down.png" alt="">
     
 </div>
-       
        </section>`,
        styles: [`
        #hero{
         display:flex;
         height:705px;
-        margin-top:41px; 
-        margin-left: 114px;
-        margin-right: 114px;
+        width:1214px;
+        margin-top:82px; 
+        margin-left: 62px;
         border: 2px solid blue;
-       
        }
 
         #prof_pic {
            position:absolute;
             width:535px;
             height: 683px;
-            top: 41px;
-            left:114px;
-            z-index: 999;
-
+            top: 25px;
+            left: 114px;
+        
         }
 
-        #pic-bgr-div{
-         border:2px solid red; 
-         width:650px;
+        #left-container{
+         width:50%;
          height:700px; 
-           position: relative;
+        position: relative;
 
         } 
-        #pic-bgr img {
-
-
-        }
-        
-        #pic-bgr{
-             width:580px;
-            height: 616px;
-       margin-left:62.23px;
-       top:66.3px;
+       
+    
+        #bg-shape{
+       width:580px;
+       height: 616px;
+       margin-left:62px;
+       top:66px;
        transform: rotate(45deg);
         border:2px solid green; 
                 
 
         }
 
-        #pic-bgr:hover{
+        #bg-shape:hover{
             background-image: url('/img/Property 1=hover.png');
 
-        }
-        #name{
-            display:flex;
-            justify-content:center;
-            flex-direction: column;
-            margin-left: 220px;
-            margin-top:-30px;
-            width:700px;
-            border: 2px solid yellow;
 
         }
+
+#right-conainer{
+    width:100%;
+    margin-left:110px;
+    border:2px solid red;
+}
+       
+          #socmedia{
+            display:flex;
+            flex-direction:column;
+            margin-left:670px;
+            margin-top:10px;
+            gap:15px;
+        }
+
+       
         #linkedin{
             width: 30px;
             height:30px;
         }
+        #linkedin:hover{
+        background-image: url("/img/Property 1=hover blue.png");
+        }
+
         #github {
             width: 30px;
             height:30px;
+        }
+
+        #github:hover{
+          background-image: url("/img/Element 6 2 (1).png"); 
         }
           #email{
             width: 30px;
             height:30px;
         }
-        #socbuttons{
-            display:flex;
-            flex-direction:column;
-            margin-left:670px;
-            padding-bottom: 80px;
-            margin-top: -220px;
-            gap:10px;
+        #email:hover{
+        background-image:url("/img/mail blue (1).svg");
         }
-
+      
         #logo{
-            width:100px;
-            height:100px;
-            margin-left: 300px;
+            width:150px;
+            height:150px;
+            margin-left: 250px;
 
         }
         #arrow{
             display:flex;
             margin-left:330px;
-            margin-top:50px;
+            margin-top:100px;
             width:38px;
             height:89px;
+        }
+
+
+        #arrow:hover{
+            background-image:url("/img/Property 1=Hover (2).png");
+
+
         }
     
         `]
