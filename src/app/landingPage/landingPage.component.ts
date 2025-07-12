@@ -63,6 +63,7 @@ import { Component } from "@angular/core";
 #bg-shape:hover{
   background-image: url('/img/Property 1=hover.png'); 
   transform: rotate(0deg) scale(1.05);
+  duration: 17ms;
  
 }
 

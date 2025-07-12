@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import{LandingPageComponent} from './landingPage/landingPage.component';
-import{NavComponent} from './main-page/nav/nav.component';
-import{WhyMeComponent} from './main-page/why-me/why-me.component';
+import{MainPageComponent} from './main-page/main-page.component';
+
 
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, LandingPageComponent,NavComponent,WhyMeComponent ],
+  imports: [RouterOutlet, LandingPageComponent,MainPageComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

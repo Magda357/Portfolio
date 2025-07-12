@@ -1,0 +1,34 @@
+#my_skills {
+width: 869px;
+height: 556px;
+border:2px solid blue;
+margin-top:500px;
+margin-left: 400px;
+
+
+#my_Skills_content{
+display: flex;
+    gap: 79px;
+
+
+}
+#left_mySkills{ 
+    margin-top: 40px;
+    justify-content: start;
+    border:2px solid red;
+    flex: 0 0 40%;
+
+}
+#right_mySkills {
+ width: 50%;
+ margin-top: 40px;
+     border:2px solid orange;
+     display: flex;
+
+}
+#right_mySkills img{ 
+width:380px;
+height:380px;
+position: absolute;
+}
+}

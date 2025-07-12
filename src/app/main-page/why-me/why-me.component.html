@@ -1,13 +1,13 @@
 <section id="why_me">
+    <h3>Why me</h3>
     <div id="why_me_container">
-        <h3>Why me</h3>
 
         <div id="left">
-            <div id="location">
-                <img id="above" src="/img/icon.png" alt="">
-                <img id="under" src="/img/Ellipse 20.png" alt="">
+            <div id="location"> <img [src]="currentIcon" alt="icon" class="icon-img" />
             </div>
-            <p><span id="I_am">I am </span> Located in Steinheim.. | </p>
+            <span id="move_text">
+                <p> {{ displayText }}</p>
+            </span>
         </div>
 
         <div id="right">
@@ -15,10 +15,10 @@
                 As a junior developer, I bring fresh energy and a strong work ethic to every project.
                 I don’t just code — I care about the result.
             </p>
+            <div id="button_wrapper"><img src="/img/Button Secondary Web.png" alt=""></div>
 
         </div>
-        <img src="/img/Button Secondary Web.png" alt="">
-
     </div>
+
 
 </section>

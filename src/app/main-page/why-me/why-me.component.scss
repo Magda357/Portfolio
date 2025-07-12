@@ -1,68 +1,78 @@
 #why_me{
-display:flex;
-margin-left:15%;
+position: absolute;
+margin-left:400px;
+margin-top: 80px;
 width:860px;
 height:307px;
-border: 2px solid red;}
+
+
+}
 
 #why_me_container {
+    display:flex;
+
 gap:50px;
 flex-direction:row;
 }
 
-#why_me_container h3{
-font-family:'Anta regular';
-display:flex;
-justify-content: center;
-font-size:60px;
-weight:400;
-color: #89BCD9;
 
-}
 
 #left{
 display:flex;
 justify-content: center;
 align-items:center;
-width:50%;
+width:60%;
 flex-direction:row;
-border: 2px solid green;
 }
 
-#above{
-width:74.43px;
-height:63.28px;
-border: 2px solid blue;
-
-}
-
-#under{
-width: 19px;
-height:7px;
-margin-left:25px;
-margin-top:-350px;
-border: 2px solid red;
-
-}
+#I_am{ padding: 0 5px; 
+ }
 
 #left p{
+    font-family: 'Josefin Sans';
 font-size: 30px;
 color:#F8F5EC;
+display: flex;
+align-items: center;
 }
+
 #I_am{
 color: #89BCD9;
 }
 
+#location{
+    position: absolute;
+    margin-right: 480px;
+}
+
+
+
+#move_text{ 
+    max-width: 458px;
+}
 
 #right{
 display:flex;
-flex-direction:row;
-justify-content: center;
+flex-direction:column;
 font-size:18px;
+width: 40%;
 font-family:'Josefin Sans Regular';
-weight: 400;
-border:2px solid yellow;
+font-weight: 400;
 }
+
+#right p{
+    color:#F8F5EC;
+    padding-top: 50px;
+
+    font-family:'Josefin Sans' ;
+}
+
 #right img:hover{
 background-image:url('/img/Property 1=hover (3).png');
+}
+
+#button_wrapper{
+    display: flex;
+    justify-content: end;
+    margin-top: 20px;
 }
