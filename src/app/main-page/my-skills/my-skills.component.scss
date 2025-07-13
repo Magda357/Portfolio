@@ -1,7 +1,6 @@
 #my_skills {
 width: 869px;
 height: 556px;
-border:2px solid blue;
 margin-top:500px;
 margin-left: 400px;
 
@@ -9,20 +8,26 @@ margin-left: 400px;
 #my_Skills_content{
 display: flex;
     gap: 79px;
-
-
 }
 #left_mySkills{ 
-    margin-top: 40px;
+    
+    margin-top: 50px;
     justify-content: start;
-    border:2px solid red;
-    flex: 0 0 40%;
-
+    flex: 0 0 50%;
 }
+#left_mySkills img{
+  margin-left: 20px;
+   transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+#left_mySkills img:hover{
+    box-shadow: 0 8px 15px rgba(93, 190, 207, 0.2);
+  transform: scale(1.1);
+    cursor: pointer;
+}
+
 #right_mySkills {
  width: 50%;
  margin-top: 40px;
-     border:2px solid orange;
      display: flex;
 
 }
@@ -30,5 +35,32 @@ display: flex;
 width:380px;
 height:380px;
 position: absolute;
+
+}
+#right_mySkills p{
+
+    font-family: 'Josefin Sans';
+    font-size: 18px;
+    color:#FFFDFD;
+} 
+
+
+#right_mySkills img:hover{
+ background-image: url('/img/Ellipse 02.png'); 
+  width:400px;
+  height:400px ;
+  cursor: pointer;
+
+}
+
+#text_skills{
+  text-align: justify;
+  margin-top: 100px;
+  margin-left: 30px;
+  width: 310px;
+  height:200px;
+ 
+
+
 }
 }

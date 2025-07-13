@@ -54,8 +54,8 @@ import { Component } from "@angular/core";
        width:580px;
        height: 616px;
        margin-left:62px;
-       margin-top:66px;
-       transform: rotate(45deg);
+       margin-top:36px;
+       transform: rotate(65deg);
        background-image: url('/img/Property 1=Default.png');
        background-size: cover;
       
