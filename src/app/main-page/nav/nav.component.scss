@@ -1,10 +1,13 @@
 #menu_bar {
+position: sticky;
+top: 0;
  display: flex;
+ width:100%;
  justify-content: start;
  align-items: center;
  height: 104px;  
  background-color:#89BCD9; 
- z-index: 99999;
+ z-index: 999;
 
  >#logo_menu img{
     width:100px;
@@ -39,5 +42,8 @@ p:hover{
     color:#F8F5EC;
     cursor: pointer;
     transition: 75ms ease-out;
+}
+a{
+    text-decoration: none;
 }
 }

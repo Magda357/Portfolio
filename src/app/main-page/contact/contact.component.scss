@@ -1,13 +1,14 @@
 #contakt_me{
-    display: flex;
+   display: flex;
    flex-direction: column;
     width: 100%;
     max-width: 1200px;
-    margin-bottom: 30px;
-    margin-left:200px;
-    
-   
+    margin-bottom:150px;
+    top: 100px;
+    margin-left:100px;
+     flex-wrap: wrap;
 }
+
 #contakt_me h3{
 margin-left: 0px;
 }
@@ -84,13 +85,15 @@ margin-right: 10px;
  #name_email {
         display: flex;
         flex-direction: row;
+        box-sizing: border-box;
         justify-content: space-between;
         margin-bottom: 30px;
     }
 
     #your_name input{
-        width: 200%;
+        width: 500px;
         height: 50px;
+        box-sizing: border-box;
         border-radius: 50px;
         background-color:  rgba(38, 46, 52, 0.12);
         border:2px solid #89BCD9;
@@ -106,7 +109,8 @@ margin-right: 10px;
     }
 
 #message input{
-    width:100%;
+    width:95%;
+    max-width: 1200px;
     height: 300px;
     border-radius: 50px;
     border:2px solid #89BCD9;

@@ -1,13 +1,16 @@
 #my_skills {
+  display: flex;
+  flex-direction: column;
 width: 869px;
 height: 556px;
 margin-top:500px;
 margin-left: 400px;
+margin-right: auto;
 
 
 #my_Skills_content{
 display: flex;
-    gap: 79px;
+    gap: 80px;
 }
 #left_mySkills{ 
     
@@ -42,6 +45,8 @@ position: absolute;
 #right_mySkills img:hover{
  background-image: url('/img/Ellipse 02.png'); 
          background-repeat: no-repeat;
+             transition:all 0.5s ease-in;
+
 
 rotate: (45deg);
 

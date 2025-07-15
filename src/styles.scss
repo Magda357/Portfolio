@@ -18,8 +18,12 @@ $primary-color3:#042639;
  *{
     padding: 0;
     margin: 0;
-    scroll-behavior: smooth;
+    scroll-behavior:smooth;
     height: auto;
+}
+
+html{
+  scroll-padding-top: 110px; 
 }
 body{
         background-color: $primary-color;
@@ -69,3 +73,7 @@ color: #89BCD9;
 
 }
 
+
+a{
+  text-decoration: none;
+}

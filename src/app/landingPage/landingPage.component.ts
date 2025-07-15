@@ -15,9 +15,11 @@ import { Component } from "@angular/core";
 
        <div id="right-conainer"> 
 
-<div id="socmedia"><img id= "linkedin" src="/img/Linkedin button.png"  alt="linkedin"> 
+<div id="socmedia">
+       <img  id="email" src="img/Email button.png" alt="Email">  
        <img id="github" src="img/Github button.png" alt="Github">
-       <img  id="email" src="img/Email button.png" alt="Email">  </div>
+       <img id= "linkedin" src="/img/Linkedin button.png"  alt="linkedin"> 
+    </div>
  <div>  
      <img id="logo" src="img/logoMD.png" alt="Logo" >
      <h1>Magda Danielyan </h1>
@@ -32,7 +34,7 @@ import { Component } from "@angular/core";
         height:705px;
         max-width:1500px;
         margin-top:82px; 
-        margin-left: 2%;
+        margin-left:0 auto;
        }
 
         #prof_pic {
@@ -58,12 +60,15 @@ import { Component } from "@angular/core";
        transform: rotate(65deg);
        background-image: url('/img/Property 1=Default.png');
        background-size: cover;
+
       
         }
 #bg-shape:hover{
   background-image: url('/img/Property 1=hover.png'); 
   transform: rotate(0deg) scale(1.05);
-  duration: 17ms;
+          transition:all 0.5s ease-in;
+
+
  
 }
 
