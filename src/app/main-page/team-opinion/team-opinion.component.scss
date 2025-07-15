@@ -1,3 +1,5 @@
+@use './../../../styles.scss' as *;
+
 #team_opinion{
     display:flex;
     justify-content: center;
@@ -5,14 +7,13 @@
     max-width: 2400px;
     margin-left: 50px;
     margin-top: 30px;
-    font-family: 'Josefin Sans SemiBold';
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 
 
 h4{
 font-size:32px ;
-color: #89bcd9;
-font-family: 'Josefin Sans Regular';
+color: $primary-blue;
+font-family: 'Josefin Sans';
 font-weight: 400;
 justify-content: center;
 margin-left: 300px;
@@ -32,10 +33,20 @@ margin-left: 300px;
 
     
 }
-#opinion_container img { 
+#text_container img { 
     width: 400px;
     height: 400px;
+    background-repeat: no-repeat;
+
 }
+
+ #img:hover {
+    background-image:url('/img/Ellipse 02.png') ;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    rotate: (45deg);
+    
+} 
 
 .text_container p{
 display: flex;

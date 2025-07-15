@@ -22,7 +22,7 @@ import { Component } from "@angular/core";
      <img id="logo" src="img/logoMD.png" alt="Logo" >
      <h1>Magda Danielyan </h1>
      <h2>FRONTEND DEVELOPER  </h2>  
-    <img id="arrow" src="img/Arrow down.png" alt=""> </div>
+    <a href="#app-why-me"><img id="arrow" src="img/Arrow down.png" alt=""> </a></div>
     
 </div>
        </section>`,

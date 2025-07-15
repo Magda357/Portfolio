@@ -32,11 +32,24 @@ display: flex;
 
 }
 #right_mySkills img{ 
-width:380px;
-height:380px;
+
 position: absolute;
+         background-repeat: no-repeat;
+         overflow: hidden;
 
 }
+
+#right_mySkills img:hover{
+ background-image: url('/img/Ellipse 02.png'); 
+         background-repeat: no-repeat;
+
+rotate: (45deg);
+
+  cursor: pointer;
+  
+
+}
+
 #right_mySkills p{
 
     font-family: 'Josefin Sans';
@@ -45,13 +58,7 @@ position: absolute;
 } 
 
 
-#right_mySkills img:hover{
- background-image: url('/img/Ellipse 02.png'); 
-  width:400px;
-  height:400px ;
-  cursor: pointer;
 
-}
 
 #text_skills{
   text-align: justify;
