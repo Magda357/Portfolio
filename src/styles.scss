@@ -24,10 +24,12 @@ $primary-color3:#042639;
 
 html{
   scroll-padding-top: 110px; 
+  width: 100%;
 }
 body{
         background-color: $primary-color;
         width: 100%;
+        box-sizing: border-box;
 }
 
 h1{
@@ -46,11 +48,22 @@ h1{
 @font-face {
   font-family: 'Josefin Sans';
   src: url('/fonts/josefinSans/static/JosefinSans-Bold.ttf') format('truetype');
-
- 
 }
+
+@font-face {
+  font-family: 'Josefin Sans';
+  src: url('/fonts/josefinSans/static/JosefinSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Josefin Sans';
+  src: url('/fonts/josefinSans/static/JosefinSans-Medium.ttf') format('truetype');
+}
+
+
 h2{
     font-family: 'Josefin Sans';
+    font-style:Regular;
     font-size: 40px;
     color: #F8F5EC;
     font-weight: 400;

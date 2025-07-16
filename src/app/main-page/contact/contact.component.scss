@@ -1,175 +1,178 @@
-#contakt_me{
-   display: flex;
-   flex-direction: column;
+#contakt_me {
     width: 100%;
-    max-width: 1200px;
-    margin-bottom:150px;
+    max-width: 1400px;
     top: 100px;
-    margin-left:100px;
-     flex-wrap: wrap;
+    margin: 0 auto;
+    margin-bottom: 150px;
+    border: 2px solid red;
+    margin-top: 100px;
 }
 
-#contakt_me h3{
-margin-left: 0px;
-}
-
-
-#above_cont{
-   display: flex;
-   flex-direction: row;
-   margin-top: 50px;
-   margin-bottom: 50px;
-   gap:100px;
-
-}
-
-#contact_info{
+#contakt_me_container {
     display: flex;
-    width:50%;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
-#contact_info p{
-font-size: 18px;
-font-family: 'Josefin Sans';
-color:#F8F5EC;
-font-weight: 400;
-text-align:justify;
-
-}
-#email{
+#above_cont {
     display: flex;
     flex-direction: row;
-    margin-bottom: 10px;
-    
-}
-
-#email img {
-    margin-top:-5px;
-    margin-right: 10px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    gap: 100px;
 
 }
-#phone{
+
+#contact_info {
     display: flex;
-    flex-direction: row;  
-}
- 
-#phone img{
-margin-top:-5px;
-margin-right: 10px;
+    width: 50%;
+    margin-left: 20px;
 
 }
 
-#info{
+#contact_info p {
+    font-size: 18px;
+    font-family: 'Josefin Sans';
+    color: #F8F5EC;
+    font-weight: 400;
+    text-align: justify;
+
+}
+
+#info {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
 }
 
-#info p{
+#info p {
     font-family: 'Josefin Sans';
     font-size: 20px;
     font-weight: 400;
-    color:#F8F5EC;
-    font-style: regular;}
+    color: #F8F5EC;
+    font-style: Regular;
+}
 
-    #info a{
-        text-decoration: none;
 
-    }
-    #info  a:hover{
-        cursor: pointer;
-        color: #89BCD9;
-    }
+#email a:hover {
+    cursor: pointer;
+    color: #89BCD9;
+}
 
- #name_email {
-        display: flex;
-        flex-direction: row;
-        box-sizing: border-box;
-        justify-content: space-between;
-        margin-bottom: 30px;
-    }
 
-    #your_name input{
-        width: 500px;
-        height: 50px;
-        box-sizing: border-box;
-        border-radius: 50px;
-        background-color:  rgba(38, 46, 52, 0.12);
-        border:2px solid #89BCD9;
+#email {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
 
-    }
+}
 
-     #your_email input{
-        width: 500px;
-        height: 50px;
-        border-radius: 50px;
-        background-color:  rgba(38, 46, 52, 0.12);
-        border:2px solid #89BCD9;
-    }
+#email img {
+    margin-top: -5px;
+    margin-right: 10px;
+}
 
-#message input{
-    width:95%;
-    max-width: 1200px;
+#phone {
+    display: flex;
+    flex-direction: row;
+}
+
+#phone img {
+    margin-top: -5px;
+    margin-right: 10px;
+}
+
+#name_email {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+#your_name input,
+#your_email input {
+    width: 500px;
+    height: 50px;
+    box-sizing: border-box;
+    border-radius: 50px;
+    background-color: rgba(38, 46, 52, 0.12);
+    border: 2px solid #89BCD9;
+}
+
+
+#message textarea {
+    width: 95%;
     height: 300px;
     border-radius: 50px;
-    border:2px solid #89BCD9;
-    background-color:  rgba(38, 46, 52, 0.12);
+    border: 2px solid #89BCD9;
+    background-color: rgba(38, 46, 52, 0.12);
 }
 
 label {
     font-size: 14px;
-    color:#89BCD9;
+    color: #89BCD9;
     font-family: 'Josefin Sans';
     margin-left: 50px;
     margin-bottom: 50px;
 }
 
-#checkbox{
+#checkbox {
     margin-top: 30px;
-     width: 25px;
+    width: 25px;
     height: 25px;
     background-image: url('/img/Check box.png');
     background-repeat: no-repeat;
     appearance: none;
     outline: none;
     cursor: pointer;
-   
+
 }
 
 #checkbox:checked {
     background-image: url('/img/Check box (1).png');
-    outline: none; 
-}
-   
-#input-felds input:focus {
-  background-color: #323F48;
-  border-radius: 50px ;
+    outline: none;
 }
 
-#send_datas{
-background-color:  #262E34; 
+#input-felds {
+    border: 2px solid red;
+}
+
+
+#input-felds input:focus {
+    background-color: #323F48;
+    border-radius: 50px;
+}
+
+textarea:focus {
+    background-color: #323F48;
+
+}
+
+#send_datas {
+    background-color: #262E34;
 
 }
 
 input {
-  font-size: 16px; 
-  padding: 0 30px;
-  outline: none; 
-  color: #F8F5EC;
-  font-family: 'Josefin Sans';
+    font-size: 16px;
+    padding: 0 30px;
+    outline: none;
+    color: #F8F5EC;
+    font-family: 'Josefin Sans';
 
 }
 
-#send_button{
-display: flex;
-justify-content: end;
+#send_button {
+    display: flex;
+    justify-content: end;
 
 }
 
-#arrow_up{
-   display: flex;
-   margin-left: 100%;
-   margin-top: -750px;
+#arrow_up {
+    display: flex;
+    margin-left: 90%;
+    margin-top: -750px;
 
 }

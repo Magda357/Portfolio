@@ -1,76 +1,67 @@
 @use './../../../styles.scss' as *;
 
-#team_opinion{
-    display:flex;
+#team_opinion {
+    display: flex;
     justify-content: center;
     flex-direction: column;
-    max-width: 2400px;
-    margin-left: 50px;
-    margin-top: 30px;
-    margin-bottom: 120px;
-
-
-h4{
-font-size:32px ;
-color: $primary-blue;
-font-family: 'Josefin Sans';
-font-weight: 400;
-justify-content: center;
-margin-left: 300px;
-
-
-}
-
-#opinion_container{
-    display: flex;
+    max-width: 1400px;
     width: 100%;
-    justify-content: start;
-    margin-top: 50px;
-    max-width:  1500px;
-    margin-left: 30px;
-    gap: 50px;
+    margin: 0 auto;
+    margin-top: 100px;
 
 
-    
-}
-#text_container img { 
-    width: 400px;
-    height: 400px;
-    background-repeat: no-repeat;
+    h4 {
+        font-size: 32px;
+        color: $primary-blue;
+        font-family: 'Josefin Sans';
+        font-weight: 400;
+        justify-content: center;
+        margin-left: 300px;
+    }
 
-}
+    #opinion_container {
+        display: flex;
+        justify-content: start;
+        margin: 0 auto;
+        margin-top: 50px;
+        gap: 30px;
 
- #img:hover {
-    background-image:url('/img/Ellipse 02.png') ;
-    background-repeat: no-repeat;
-    cursor: pointer;
-    rotate: (45deg);
-    transition:all 0.5s ease-in;
-    
-} 
+    }
 
-.text_container p{
-display: flex;
-justify-content: center;
-text-align: center;
-margin-top: -320px;
-width: 300px;
-margin-left: 50px;
-font-size: 26px;
-color: #F8F5EC;
-}
-.text_container +p {
-    margin-bottom: 10px;
+    #text_container img {
+        width: 400px;
+        height: 400px;
+        background-repeat: no-repeat;
+        transition: all 0.5s ease-in;
+    }
 
+    #img:hover {
+        background-image: url('/img/Ellipse 02.png');
+        background-repeat: no-repeat;
+        cursor: pointer;
+        rotate: (45deg);
+    }
 
-}
-.text_container a{
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-    font-size: 16px;
-    color: #89bcd9;
-}
+    .text_container p {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-top: -320px;
+        width: 300px;
+        margin-left: 50px;
+        font-size: 26px;
+        color: #F8F5EC;
+    }
 
+    .text_container+p {
+        margin-bottom: 10px;
+    }
 
+    .text_container a {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        font-size: 16px;
+        color: #89bcd9;
+    }
 }
