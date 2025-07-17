@@ -8,6 +8,14 @@
 
 }
 
+h1 {
+    color: #F8F5EC;
+    font-weight: 400;
+    font-size: 88px;
+    font-family: 'Anta';
+}
+
+
 #prof_pic img {
     position: absolute;
     width: 535px;
@@ -26,7 +34,7 @@
 #bg-shape {
     width: 580px;
     height: 616px;
-    margin-left: 82px;
+    margin-left: 62px;
     margin-top: 55px;
     background-image: url('/img/Property 1=Default.png');
     background-size: cover;
@@ -45,16 +53,24 @@
 }
 
 #right-conainer {
+    display: flex;
+    flex-direction: column;
     width: 50%;
-    margin-left: 110px;
+    margin-left: 90px;
 }
 
 #socmedia {
+    flex-direction: column;
+    margin-left: 670px;
+    margin-top: 25px;
+    gap: 15px;
+}
+
+#name {
     display: flex;
     flex-direction: column;
-    margin-left: 660px;
-    margin-top: 30px;
-    gap: 15px;
+
+
 }
 
 
@@ -94,6 +110,8 @@
     width: 150px;
     height: 150px;
     margin-left: 250px;
+    transition: all 0.3s ease-in;
+
 
 }
 
@@ -105,7 +123,7 @@
 
 #arrow {
     display: flex;
-    margin-left: 330px;
+    margin-left: 310px;
     margin-top: 100px;
     width: 38px;
     height: 89px;
