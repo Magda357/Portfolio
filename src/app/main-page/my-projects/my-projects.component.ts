@@ -21,7 +21,7 @@ description2: "How do you keep your code clean and maintainable? Have you broken
 par3: "My group work experience",
 description3:"How many people were in the team and what was your role? Describe your tasks in 1-2 sentences, for example: login form, dashboard or chat functionality. What technologies did you use? It is nice to mention good teamwork and cooperation.",
 right_paar:"Technologies",
-right_project_pic:"/img/pokedex.png",
+right_project_pic:"/img/pokedex1.png",
 live_test:"/img/skills_img/Button Primary Web.svg" ,
 gitHub:"/img/skills_img/Button Secondary Web (1).svg",
 },

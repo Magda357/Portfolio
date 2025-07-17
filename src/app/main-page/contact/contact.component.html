@@ -27,22 +27,25 @@
 
 
     <div id="input-felds">
-        <form>
+        <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
             <div id="name_email">
                 <div id="your_name">
                     <label for="fname">Your Name</label><br>
-                    <input type="text" id="fname" name="fname" maxlength="30">
+                    <input #name="ngModel" [(ngModel)]="contactData.name" type="text" id="fname" name="fname"
+                        maxlength="30" required pattern="^[A-Za-zÄÖÜäöüß]{2,}$">
                 </div>
 
                 <div id="your_email">
                     <label for="email">Your Email</label><br>
-                    <input type="email" id="email" name="email" maxlength="30">
+                    <input #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email" name="email"
+                        required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
                 </div>
             </div>
 
             <div id="message">
                 <label for="message">Your Message</label><br>
-                <textarea name="message" id="message" placeholder="write something..."></textarea>
+                <textarea #message="ngModel" minlength="4" [(ngModel)]="contactData.message" name="message" id="message"
+                    placeholder="write something..." required></textarea>
 
             </div>
 
@@ -50,6 +53,22 @@
                 <input type="checkbox" id="checkbox">
                 I've read the privacy police and agree to the processing of my data as outlined.</label> <br>
             <div id="send_button">
+
+                @if(!message.valid && message.touched) {
+                <span>Please enter Your Name!</span>
+                }
+
+                @if(!email.valid && email.touched) {
+                <span>Please enter Your Email!</span>
+                }
+
+
+                @if(!email.valid && email.touched) {
+                <span>Please enter a message! </span>
+                }
+
+
+
                 <input type="image" src="/img/Button Secondary Web (1).png" id="send_datas">
             </div>
         </form>
