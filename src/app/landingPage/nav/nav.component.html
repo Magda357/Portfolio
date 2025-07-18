@@ -3,7 +3,7 @@
         <a href=""> <img src="img/logoMD.png" alt=""> </a>
     </div>
 
-    <div id="menu_system">
+    <div class="menu_system" id="menu_hide">
         <a href="#why-me">
             <p>Why me </p>
         </a>
@@ -14,11 +14,14 @@
             <p> Projects </p>
         </a>
         <a href="#contact">
-            <p>Contact </p>
+            <p>{{'TITLE' | translate}}</p>
         </a>
     </div>
 
-    <div id="change_language"> DE EN
+
+    <div id="change_language">
+        <button (click)="useLanguage('en')">EN</button>
+        <button (click)="useLanguage('de')">DE</button>
     </div>
 
 

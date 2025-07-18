@@ -2,27 +2,33 @@
 
 #my_skills {
   width: 100%;
-  max-width: 1400px;
+  max-width: 1920px;
   margin: 0 auto;
   margin-top: 100px;
+  border: 2px solid red;
+  padding-bottom: 60px;
 
 
   #my_Skills_content {
     display: flex;
+    justify-content: center;
     gap: 80px;
+    border: 2px solid blue;
 
   }
 
   #left_mySkills {
     display: flex;
-    width: 50%;
+    width: 45%;
     flex-wrap: wrap;
     flex-wrap: calc(25%);
     flex-direction: row;
     gap: 55px;
     margin: 0 auto;
-    justify-content: flex-start;
+    justify-content: center;
     margin-top: 30px;
+    border: 2px solid orange;
+
   }
 
 
@@ -50,6 +56,7 @@
     position: absolute;
     background-repeat: no-repeat;
     overflow: hidden;
+    margin-top: -40px;
     transition: all 0.5s ease-in;
   }
 
@@ -68,7 +75,7 @@
 
   #text_skills {
     text-align: justify;
-    margin-top: 100px;
+    margin-top: 50px;
     margin-left: 30px;
     width: 310px;
     height: 200px;

@@ -9,6 +9,37 @@
 
     <div id="right-conainer">
 
+        <button class="hamburger" id="hamburger_button" (click)="toggleBurgerMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+
+        <div *ngIf="burgerMenuVisible" class="burger_menu_system">
+            <div id="burger_nav">
+                <a href="#why-me">
+                    <p>Why me </p>
+                </a>
+                <a href="#my-skills">
+                    <p>Skills </p>
+                </a>
+                <a href="#my-projects">
+                    <p> Projects </p>
+                </a>
+                <a href="#contact">
+                    <p>Contact </p>
+                </a>
+                <div id="change_language">
+                    <a href="#">DE </a>
+                    <a href="#">EN </a>
+                </div>
+            </div>
+        </div>
+
+
+
+
         <div id="socmedia">
             <img id="email" src="img/Email button.png" alt="Email">
             <img id="github" src="img/Github button.png" alt="Github">

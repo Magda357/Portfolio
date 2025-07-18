@@ -2,10 +2,15 @@
 
 #my_projects {
     display: flex;
-    width: 100%;
+    justify-content: center;
     flex-direction: column;
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
     margin-top: 100px;
+    border: 2px solid red;
 }
+
 
 
 
