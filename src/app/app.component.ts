@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-
 import { RouterOutlet } from '@angular/router';
 import{LandingPageComponent} from './landingPage/landingPage.component';
 import{FooterComponent} from './shared/footer/footer.component';

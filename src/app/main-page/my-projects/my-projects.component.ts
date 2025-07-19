@@ -1,9 +1,11 @@
 import { Component} from '@angular/core';
-import {SingleComponent} from './single/single.component'
+import {SingleComponent} from './single/single.component';
+import { TranslateModule } from "@ngx-translate/core";
+
 
 @Component({
   selector: 'app-my-projects',
-  imports: [SingleComponent],
+  imports: [SingleComponent,TranslateModule],
   templateUrl: './my-projects.component.html',
   styleUrl: './my-projects.component.scss'
 })

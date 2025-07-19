@@ -1,19 +1,17 @@
 <section id="why_me">
-    <h3>Why me</h3>
+    <h3>{{'WHY_ME.TITLE' | translate}}</h3>
     <div id="why_me_container">
 
         <div id="left">
             <div id="location"> <img [src]="currentIcon" alt="icon" class="icon-img" />
             </div>
             <span id="move_text">
-                <p> {{ displayText}}</p>
+                <p> {{displayText}}</p>
             </span>
         </div>
 
         <div id="right">
-            <p>Hardworking. Motivated. Always learning.
-                As a junior developer, I bring fresh energy and a strong work ethic to every project.
-                I don’t just code — I care about the result.
+            <p> {{'WHY_ME.ABOUT_ME1' | translate}}<br> {{'WHY_ME.ABOUT_ME2' | translate}}
             </p>
             <div id="button_wrapper"><a href="#app-contact"> <img src="/img/Button Secondary Web.png" alt=""> </a></div>
 

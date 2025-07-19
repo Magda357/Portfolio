@@ -19,24 +19,26 @@
         <div *ngIf="burgerMenuVisible" class="burger_menu_system">
             <div id="burger_nav">
                 <a href="#why-me">
-                    <p>Why me </p>
+                    <p>{{'NAV.NAV_WHY_ME' | translate}}</p>
                 </a>
                 <a href="#my-skills">
-                    <p>Skills </p>
+                    <p>{{'NAV.NAV_SKILLS' | translate}} </p>
                 </a>
                 <a href="#my-projects">
-                    <p> Projects </p>
+                    <p> {{'NAV.NAV_PROJECTS' | translate}} </p>
                 </a>
                 <a href="#contact">
-                    <p>Contact </p>
+                    <p>{{'NAV.NAV_CONTACT' | translate}}</p>
                 </a>
                 <div id="change_language">
-                    <a href="#">DE </a>
-                    <a href="#">EN </a>
+                    <button (click)="useLanguage('en')">EN</button>
+                    <button (click)="useLanguage('de')">DE</button>
                 </div>
-            </div>
-        </div>
 
+            </div>
+
+
+        </div>
 
 
 
@@ -48,7 +50,7 @@
         <div id="name">
             <img id="logo" src="img/logoMD.png" alt="Logo">
             <h1>Magda Danielyan </h1>
-            <h2>FRONTEND DEVELOPER </h2>
+            <h2>{{'HERO.TITLE'| translate}}</h2>
             <a href="#why-me"><img id="arrow" src="img/Arrow down.png" alt=""> </a>
         </div>
 

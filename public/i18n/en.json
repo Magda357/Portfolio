@@ -1,4 +1,115 @@
 {
-  "TITLE": "Welcome to my website!",
-  "DESCRIPTION": "This is a demo of ngx-translate."
+   "HERO": {  
+    "TITLE": "FRONTEND DEVELOPER"
+    },
+
+   "NAV": { 
+    "NAV_WHY_ME": "Why me",
+    "NAV_SKILLS": "Skills",
+    "NAV_PROJECTS": "Projects",
+    "NAV_CONTACT": "Contact"
+   },
+
+
+  "WHY_ME": {
+    "TITLE":"Why me",
+"ABOUT_ME1":"Committed. Eager to learn. Goal-oriented.",
+"ABOUT_ME2":"As a junior developer, I bring fresh perspectives, initiative, and a strong work ethic to every project. I don’t just write code — I think ahead and focus on finding effective solutions",
+"TEXT1": "I am located in Steinheim...| ",
+"TEXT2": "I am open to work remote...| ",
+"TEXT3" :"I am open to relocate ...| "
+
+   },
+
+   "MY_SKILLS": {
+  "TITLE": "My Skills",
+  "PARAG1" : "I am currently learning",
+  "PARAG2": "I strive to continuously develop as a professional by mastering new technologies and tools that enable me to create more efficient and modern solutions. I am passionate about implementing innovative approaches in my work, exploring unconventional solutions, and actively sharing knowledge with the team."
+
+   },
+
+   "MY_PROJECTS":{
+   "TITLE": "My Projects",
+
+    "POKEDEX": {
+              "PARAG1": "",
+              "DURATION": "",
+              "TEXT1": "", 
+              "PARAG2": "",
+              "TEXT2": "", 
+              "PARAG3": "",
+              "TEXT3": ""
+
+    },
+     "EL_POLLO_LOCO": {
+              "PARAG1": "",
+              "DURATION": "",
+              "TEXT1": "", 
+              "PARAG2": "",
+              "TEXT2": "", 
+              "PARAG3": "",
+              "TEXT3": ""
+
+    },
+
+
+  "DA_BUBBLE": {
+              "PARAG1": "",
+              "DURATION": "",
+              "TEXT1": "", 
+              "PARAG2": "",
+              "TEXT2": "", 
+              "PARAG3": "",
+              "TEXT3": ""
+
+    },
+
+      "JOIN": {
+              "PARAG1": "",
+              "DURATION": "",
+              "TEXT1": "", 
+              "PARAG2": "",
+              "TEXT2": "", 
+              "PARAG3": "",
+              "TEXT3": ""
+
+    }
+
+
+
+   },
+
+   "TEAMPLAYER":{
+"TITLE": "Need a teamplayer? Here what my colleagues said about me",
+   "PERSON1": "Sarah Müller",
+   "PROJECT1": "Join",
+   "OPINION_TEXT1":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur reprehenderit magni quis voluptatem, officia nemo consectetur ipsa exercitationem." ,
+
+   "PERSON2": "Hans Berg",
+    "PROJECT2": "Da Bubble",
+   "OPINION_TEXT2":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam sit cupiditate molestias, ex at quo iure eos commodi alias voluptates. Ex illo." ,
+
+   "PERSON3": "Kevin Benz",
+    "PROJECT3": "",
+   "OPINION_TEXT3":"Lorem ipsum dolor sit amet consectetur adipisicing elit. At est asperiores, qui, sunt praesentium nulla mollitia provident excepturi fugit culpa." 
+
+
+
+   },
+
+   "CONTACT_ME": {
+
+   },
+
+
+   "FOOTER":{
+
+   },
+
+   "IMPRINT":{
+
+   }
+
+
+
 }

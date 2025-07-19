@@ -1,4 +1,114 @@
 {
-  "TITLE": "Willkommen auf meiner Webseite!",
-  "DESCRIPTION": "Dies ist eine Demo von ngx-translate."
+   "HERO": {  
+    "TITLE": "FRONTEND ENTWICKLERIN"
+    },
+
+
+   "NAV": { 
+    "NAV_WHY_ME": "Warum ich",
+    "NAV_SKILLS": "Fähigkeiten",
+    "NAV_PROJECTS": "Projekte",
+    "NAV_CONTACT": "Kontakt"
+   },
+
+
+   "WHY_ME": {
+    "TITLE":"Warum ich",
+"ABOUT_ME1":" Engagiert. Lernbereit. Zielorientiert.",
+"ABOUT_ME2":"Als Junior-Entwickler bringe ich frische Perspektiven, Eigeninitiative und eine starke Arbeitsmoral in jedes Projekt ein. Ich programmiere nicht nur – ich denke mit und arbeite lösungsorientiert.",
+"TEXT1": "Ich befinde mich in Steinheim...| ",
+"TEXT2": "Ich bin offen für Remote-Arbeit...| ",
+"TEXT3" :"Ich bin offen für einen Umzug...|"
+
+   },
+
+   "MY_SKILLS": {
+      
+  "TITLE": "Meine Fähigkeiten",
+  "PARAG1" : "Ich lerne gerade",
+"PARAG2":"Ich strebe danach, mich kontinuierlich als Profi weiterzuentwickeln, indem ich neue Technologien und Werkzeuge meistere, die es mir ermöglichen, effizientere und moderne Lösungen zu schaffen. Ich bin daran interessiert, innovative Ansätze in meiner Arbeit umzusetzen, unkonventionelle Lösungen zu suchen und mein Wissen aktiv im Team zu teilen."
+
+   },
+
+   "MY_PROJECTS":{
+   "TITLE": "Meine Projekte",
+   "POKEDEX": {
+              "PARAG1": "",
+              "DURATION": "",
+              "TEXT1": "", 
+              "PARAG2": "",
+              "TEXT2": "", 
+              "PARAG3": "",
+              "TEXT3": ""
+
+    },
+     "EL_POLLO_LOCO": {
+              "PARAG1": "",
+              "DURATION": "",
+              "TEXT1": "", 
+              "PARAG2": "",
+              "TEXT2": "", 
+              "PARAG3": "",
+              "TEXT3": ""
+
+    },
+
+
+  "DA_BUBBLE": {
+              "PARAG1": "",
+              "DURATION": "",
+              "TEXT1": "", 
+              "PARAG2": "",
+              "TEXT2": "", 
+              "PARAG3": "",
+              "TEXT3": ""
+
+    },
+
+      "JOIN": {
+              "PARAG1": "",
+              "DURATION": "",
+              "TEXT1": "", 
+              "PARAG2": "",
+              "TEXT2": "", 
+              "PARAG3": "",
+              "TEXT3": ""
+
+    }
+
+
+
+   },
+
+     "TEAMPLAYER":{
+"TITLE": "Brauchen Sie einen Teamplayer? Hier ist, was meine Kollegen über mich sagen.",
+   "PERSON1": "",
+   "OPINION_TEXT1":"" ,
+
+   "PERSON2": "",
+   "OPINION_TEXT2":"" ,
+
+   "PERSON3": "",
+   "OPINION_TEXT3":"" 
+
+
+
+   },
+   
+
+   "CONTACT_ME": {
+
+   },
+
+
+   "FOOTER":{
+
+   },
+
+   "IMPRINT":{
+
+   }
+
+
+
 }
