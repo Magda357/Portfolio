@@ -33,12 +33,25 @@
         margin-right: 100px;
         font-size: 18px;
         align-items: center;
-        border: 2px solid red;
 
     }
 
-    #change_language a {
-        margin-left: 10px;
+    #change_language button {
+        margin-right: 10px;
+        font-size: 18px;
+        padding: 0 10px;
+        border: none;
+        background-color: $primary-blue;
+        cursor: pointer;
+    }
+
+    button:hover {
+        color: $creme-white;
+        background-image: url('/img/Ellipse 24 (1).png');
+        background-repeat: no-repeat;
+        transform: scale(1.1);
+
+
     }
 
     p,
@@ -48,6 +61,7 @@
         color: #262E34;
         font-family: 'Josefin Sans';
         font-style: medium;
+
 
     }
 

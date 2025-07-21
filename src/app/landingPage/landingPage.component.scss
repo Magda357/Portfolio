@@ -7,76 +7,76 @@
     width: 100%;
     margin: 0 auto;
     margin-top: 65px;
+    border: 1px solid blue;
 
 }
 
 h1 {
-    color: #F8F5EC;
+    color: $creme-white;
     font-weight: 400;
     font-size: 88px;
     font-family: 'Anta';
-}
-
-
-#prof_pic img {
-    position: absolute;
-    width: 535px;
-    height: 683px;
-    top: 25px;
-    left: 114px;
-    pointer-events: none
 }
 
 #left-container {
     width: 45%;
     height: 700px;
     position: relative;
+    border: 1px solid orange;
+
 }
 
+#prof_pic img {
+    position: absolute;
+    width: 600px;
+    height: auto;
+    top: -40px;
+    left: 14px;
+    pointer-events: none;
+}
+
+
+
 #bg-shape {
+    position: absolute;
     width: 580px;
     height: 616px;
-    margin-left: 62px;
-    margin-top: 55px;
+    margin-left: 80px;
+
+    margin-top: 150px;
     background-image: url('/img/Property 1=Default.png');
     background-size: cover;
-
 
 }
 
 #bg-shape:hover {
     background-image: url('/img/Property 1=hover.png');
-    transform: rotate(-45deg);
     transition: all 0.5s ease-in;
     cursor: pointer;
-
-
-
 }
 
-#right-conainer {
+#right-container {
     display: flex;
     flex-direction: column;
     width: 50%;
     margin-left: 90px;
+    border: 1px solid red;
 }
 
 #socmedia {
     position: absolute;
     display: flex;
     flex-direction: column;
-    margin-left: 650px;
-    margin-top: 25px;
+    margin-left: 30%;
+    margin-top: 60px;
     gap: 15px;
 }
 
 #name {
     display: flex;
     flex-direction: column;
-
-
+    margin-top: 150px;
 }
-
 
 #linkedin {
     width: 30px;
@@ -141,7 +141,11 @@ h1 {
 }
 
 .hamburger {
+    position: absolute;
     flex-direction: column;
+    top: 70px;
+    right: 50px;
+    display: none;
     justify-content: space-between;
     border: none;
     width: 30px;
@@ -163,15 +167,17 @@ span {
 
 .burger_menu_system {
     position: absolute;
-    top: 204px;
-    left: 300px;
-    width: 600px;
-    height: 600px;
+    display: flex;
+    top: 160px;
+    left: 310px;
+    width: 620px;
+    height: 670px;
+    border-radius: 40;
     background-repeat: no-repeat;
     background-image: url("/img/Property 1=Default.png");
-
+    background-size: contain;
     border: 2px solid red;
-    gap: 24px;
+    gap: 30px;
 
 }
 
@@ -179,7 +185,7 @@ span {
     position: relative;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 60px;
     top: 204px;
     left: 250px;
     width: 100%;
@@ -190,29 +196,126 @@ span {
 
 #burger_nav a {
     color: $primary-color;
-    font-size: 24px;
+    font-size: 28px;
     font-family: 'Josefin Sans';
 }
 
 #burger_nav a:hover {
     color: $creme-white;
+}
 
 
+
+
+#change_language {
+
+    margin-right: 100px;
+    font-size: 18px;
+    align-items: center;
+
+}
+
+#change_language button {
+    margin-left: 10px;
+    font-size: 18px;
+    border: none;
+    background-color: $primary-blue;
+    cursor: pointer;
+}
+
+#change_language button:hover {
+    background-image: url('/img/Ellipse 24 (1).png');
+    background-repeat: no-repeat;
+    transform: scale(1.3);
 
 }
 
 
-#burger_nav a:after {
-    color: $creme-white;
+@media (max-width:1430px) {
+    #right-container {
+        margin-left: 100px;
+
+    }
+
+    h1 {
+        font-size: 80px;
+    }
+
+    #arrow {
+        margin-top: 80px;
+    }
 }
 
+@media (max-width:1400px) {
+    #right-container {
+        flex-direction: column;
+    }
 
-@media (max-width:1250px) {
+    #left-container {
+
+        margin-right: 30px;
+    }
+
+}
+
+@media (max-width:1342px) {
+    #arrow {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width:1260px) {
+
+
     .hamburger {
         display: block;
     }
 
+    #name h1 {
+        margin-top: - 20px;
+
+    }
+
+    #name img {
+        position: absolute;
+        top: 30px;
+        left: -150px;
+    }
+
+    h1 {
+
+        font-size: 60px;
+
+    }
+
+    #hero {
+        flex-direction: column;
+    }
+
+    #socmedia {
+        display: none;
+    }
+
+    #left-container {
+        margin: 0 auto;
+        margin-left: 20%;
+    }
+
+    #app-nav {
+        display: none;
+    }
 
 
+    #arrow {
+        position: relative;
+        margin-top: 950px;
+        margin-left: 700px;
+        border: 1px solid blue;
+    }
 
+    #right-container {
+
+        margin-top: -50px;
+        margin-left: 320px;
+    }
 }

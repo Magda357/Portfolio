@@ -82,14 +82,17 @@
 
      "TEAMPLAYER":{
 "TITLE": "Brauchen Sie einen Teamplayer? Hier ist, was meine Kollegen über mich sagen.",
-   "PERSON1": "",
-   "OPINION_TEXT1":"" ,
+  "PERSON1": "Sarah Müller",
+   "PROJECT1": "Join",
+   "OPINION_TEXT1":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur reprehenderit magni quis voluptatem, officia nemo consectetur ipsa exercitationem." ,
 
-   "PERSON2": "",
-   "OPINION_TEXT2":"" ,
+   "PERSON2": "Hans Berg",
+    "PROJECT2": "Da Bubble",
+   "OPINION_TEXT2":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam sit cupiditate molestias, ex at quo iure eos commodi alias voluptates. Ex illo." ,
 
-   "PERSON3": "",
-   "OPINION_TEXT3":"" 
+   "PERSON3": "Kevin Benz",
+    "PROJECT3": "",
+   "OPINION_TEXT3":"Lorem ipsum dolor sit amet consectetur adipisicing elit. At est asperiores, qui, sunt praesentium nulla mollitia provident excepturi fugit culpa." 
 
 
 

@@ -5,16 +5,21 @@
     justify-content: center;
     flex-direction: column;
     margin: 0 auto;
+    width: 100%;
     margin-top: 100px;
     max-width: 1920px;
+    padding: 0 10%;
     height: auto;
     border: 2px solid red;
+
 }
 
 #why_me_container {
     display: flex;
     gap: 20px;
     flex-direction: row;
+    border: 2px solid red;
+
 
 }
 
@@ -35,6 +40,7 @@
     margin-left: 30px;
     color: #F8F5EC;
     display: flex;
+    padding-left: 30px;
     align-items: center;
 
 }
@@ -50,6 +56,7 @@
 
 #move_text {
     max-width: 520px;
+    width: 100%;
 }
 
 #right {
@@ -76,4 +83,26 @@
     display: flex;
     justify-content: end;
     margin-top: 20px;
+}
+
+@media (max-width:900px) {
+    #why_me_container {
+        margin-top: 20px;
+        flex-direction: column;
+        margin: 0 10%;
+        width: 80%;
+    }
+
+    #left {
+        width: 100%;
+        justify-content: center;
+        margin-top: 20px;
+        margin-left: 10%;
+    }
+
+    #right {
+        width: 100%;
+        justify-content: center;
+        margin-left: 10%;
+    }
 }

@@ -9,7 +9,7 @@ import{FooterComponent} from './shared/footer/footer.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, 
+  imports: [RouterOutlet , 
    LandingPageComponent,
     FooterComponent,
     

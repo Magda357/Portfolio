@@ -6,7 +6,7 @@ $error: #E44C36;
 
 /* another combination2
 $primary-color2:#042639;
- $orang: #F28A62;
+ $orange: #F28A62;
  $cremig:#F8F5EC; 
  */
 
@@ -30,7 +30,6 @@ html {
 
 body {
   background-color: $primary-color;
-  width: 100%;
   box-sizing: border-box;
   margin: 0 auto;
 }
@@ -58,6 +57,13 @@ body {
   src: url('/fonts/josefinSans/static/JosefinSans-Medium.ttf') format('truetype');
 }
 
+h1 {
+  color: #F8F5EC;
+  font-weight: 400;
+  font-size: 88px;
+  font-family: 'Anta';
+
+}
 
 h2 {
   font-family: 'Josefin Sans';
@@ -67,13 +73,7 @@ h2 {
   font-weight: 400;
 }
 
-h1 {
-  color: #F8F5EC;
-  font-weight: 400;
-  font-size: 88px;
-  font-family: 'Anta';
 
-}
 
 h3 {
   font-family: 'Anta';
@@ -84,7 +84,6 @@ h3 {
   color: #89BCD9;
 
 }
-
 
 a {
   text-decoration: none;
