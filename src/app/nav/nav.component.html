@@ -19,10 +19,12 @@
     </div>
 
 
+
     <div id="change_language">
-        <button class="lang-btn" (click)="useLanguage('en')">EN</button>
-        <button class="lang-btn" (click)="useLanguage('de')">DE</button>
+        <button (click)="useLanguage('en')" [ngClass]="{ 'active-lang': selectedLang === 'en' }">EN</button>
+        <button (click)="useLanguage('de')" [ngClass]="{ 'active-lang': selectedLang === 'de' }">DE</button>
     </div>
+
 
 
 </section>

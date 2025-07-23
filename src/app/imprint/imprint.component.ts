@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import { TranslateModule } from "@ngx-translate/core";
-
+import{NavComponent} from "./../nav/nav.component";
 
 @Component({
   selector: 'app-imprint',
-  imports: [TranslateModule],
+  imports: [TranslateModule,NavComponent],
   templateUrl: './imprint.component.html',
   styleUrl: './imprint.component.scss'
 })

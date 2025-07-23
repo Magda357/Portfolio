@@ -1,19 +1,20 @@
 import { Component } from "@angular/core";
-import{NavComponent} from "./nav/nav.component";
-import {NgIf} from "@angular/common";
+import {CommonModule, NgIf} from "@angular/common";
 import { TranslateModule } from '@ngx-translate/core';
 import { TranslateService } from "@ngx-translate/core";
+import{NavComponent} from './../../nav/nav.component'
 
 
 @Component({
        selector: 'app-landinPage',
-       imports: [NavComponent,NgIf,TranslateModule],
+       imports: [NgIf,TranslateModule,CommonModule,NavComponent],
        templateUrl: './landingPage.component.html',
        styleUrl: './landingPage.component.scss'
 
 })
 
 export class LandingPageComponent {
+   selectedLang: string = 'en';
 
   constructor(private translate: TranslateService) {
      this.translate.addLangs(['de', 'en']);
@@ -21,6 +22,7 @@ export class LandingPageComponent {
      this.translate.use('en');
    }
     useLanguage(language: string): void {
+       this.selectedLang = language;
      this.translate.use(language);
    }
 
@@ -29,4 +31,5 @@ export class LandingPageComponent {
      toggleBurgerMenu(): void {
     this.burgerMenuVisible = !this.burgerMenuVisible;
   }
+  
 }

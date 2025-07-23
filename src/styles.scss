@@ -1,16 +1,16 @@
 $primary-color: #262E34;
 $primary-blue: #89BCD9;
 $creme-white: #F8F5EC;
-$light-grey: rgba(38, 46, 52, 0.12);
+$light-grey: #3F464A;
 $error: #E44C36;
 
-/* another combination2
+/* combination 2
 $primary-color2:#042639;
  $orange: #F28A62;
  $cremig:#F8F5EC; 
  */
 
-/* another combination3
+/*  combination 3
 $primary-color3:#042639;
  $hellorang: #F9CB71;
  $white:#FFFFFF;  */
@@ -21,17 +21,18 @@ $primary-color3:#042639;
   scroll-behavior: smooth;
   box-sizing: border-box;
   height: auto;
+
 }
 
 html {
-  scroll-padding-top: 110px;
+  scroll-padding-top: 6.87rem;
   width: 100%;
+  margin: 0 auto;
 }
 
 body {
   background-color: $primary-color;
   box-sizing: border-box;
-  margin: 0 auto;
 }
 
 
@@ -57,29 +58,20 @@ body {
   src: url('/fonts/josefinSans/static/JosefinSans-Medium.ttf') format('truetype');
 }
 
-h1 {
-  color: #F8F5EC;
-  font-weight: 400;
-  font-size: 88px;
-  font-family: 'Anta';
-
-}
-
 h2 {
   font-family: 'Josefin Sans';
   font-style: Regular;
-  font-size: 40px;
+  font-size: 2.5rem;
   color: #F8F5EC;
   font-weight: 400;
 }
-
 
 
 h3 {
   font-family: 'Anta';
   display: flex;
   justify-content: center;
-  font-size: 60px;
+  font-size: 3.75rem;
   font-weight: 400;
   color: #89BCD9;
 

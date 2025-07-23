@@ -4,65 +4,89 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    max-width: 1920px;
-    width: 100%;
     margin: 0 auto;
     margin-top: 100px;
+    max-width: 1920px;
+    width: 100%;
+    padding: 0 4rem;
+    border: 1px solid red;
+
+    #opinion_container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 50px;
+        border: 1px solid blue;
 
 
-    h4 {
+    }
+
+    >h4 {
         font-size: 32px;
         color: $primary-blue;
         font-family: 'Josefin Sans';
         font-weight: 400;
-        justify-content: center;
-        margin-left: 300px;
+        margin-left: 30%;
     }
 
-    #opinion_container {
-        display: flex;
-        justify-content: start;
-        margin: 0 auto;
-        margin-top: 50px;
-        gap: 30px;
-
-    }
-
-    #text_container img {
-        width: 400px;
-        height: 400px;
-        background-repeat: no-repeat;
+    .img-container {
+        width: 33%;
+        height: auto;
+        border: 1px solid orange;
         transition: all 0.5s ease-in;
+        z-index: 999;
     }
 
-    #img:hover {
-        background-image: url('/img/Ellipse 02.png');
-        background-repeat: no-repeat;
-        object-fit: contain;
-        cursor: pointer;
-        rotate: (45deg);
-    }
+
+
 
     .text_container p {
         display: flex;
-        justify-content: center;
+        justify-content: start;
+        margin-left: -450px;
+        margin-top: 100px;
+        width: 314px;
+        height: 250px;
         text-align: center;
-        margin-top: -320px;
-        width: 300px;
-        margin-left: 50px;
-        font-size: 26px;
+        font-size: 18px;
         color: #F8F5EC;
-    }
+        border: 1px solid violet;
 
-    .text_container+p {
-        margin-bottom: 10px;
     }
 
     .text_container a {
         display: flex;
         justify-content: center;
-        margin-top: 10px;
+        margin-top: -70px;
+        margin-left: -650px;
         font-size: 16px;
         color: #89bcd9;
     }
+
+
+    .text_container+p {
+        font-size: 26px;
+    }
+
+    .img-container:hover {
+        background-image: url('/img/Ellipse 02.png');
+        background-repeat: no-repeat;
+        cursor: pointer;
+        rotate: (45deg);
+    }
+
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+@media (max-width:1260px) {}

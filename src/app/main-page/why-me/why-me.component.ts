@@ -41,9 +41,9 @@ export class WhyMeComponent implements OnInit, OnDestroy {
   loadIcons(): void {
     this.translate.get(['WHY_ME.TEXT1', 'WHY_ME.TEXT2', 'WHY_ME.TEXT3']).subscribe(translations => {
       this.icons = [
-        { icon: '/img/location.png', text: translations['WHY_ME.TEXT1'] },
+        { icon: 'img/location.png', text: translations['WHY_ME.TEXT1'] },
         { icon: 'img/Icon Remote (1).png', text: translations['WHY_ME.TEXT2'] },
-        { icon: '/img/Group 26.png', text: translations['WHY_ME.TEXT3'] }
+        { icon: 'img/Group 26.png', text: translations['WHY_ME.TEXT3'] }
       ];
 
       // Reset animation

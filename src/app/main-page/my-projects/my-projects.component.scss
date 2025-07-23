@@ -11,16 +11,17 @@
     border: 2px solid red;
 }
 
-
-
-
-
 #project_nav {
     display: flex;
     flex-direction: row;
     gap: 120px;
     margin-top: 50px;
     margin-left: 50px;
+    border: 1px solid blue;
+
+
+
+
 }
 
 #project_nav a {
@@ -35,6 +36,8 @@
     font-style: medium;
     width: 248px;
     height: 97px;
+
+
 }
 
 #project_nav a:hover {
@@ -49,3 +52,6 @@
     border-radius: 30px 30px 0 0;
     color: #F8F5EC;
 }
+
+
+@media (max-width:1260px) {}

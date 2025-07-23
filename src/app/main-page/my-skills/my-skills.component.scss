@@ -6,22 +6,24 @@
   margin: 0 auto;
   margin-top: 100px;
   border: 2px solid red;
+  padding: 0 1rem;
   padding-bottom: 60px;
+
 
 
   >#my_Skills_content {
     display: flex;
     justify-content: center;
-    gap: 80px;
+    gap: 60px;
     margin-top: 60px;
     border: 2px solid blue;
 
     >#left_mySkills {
       display: flex;
-      width: 30%;
+      max-width: 35%;
       flex-wrap: wrap;
       flex-direction: row;
-      gap: 55px;
+      gap: 75px;
       margin: 0 auto;
       justify-content: center;
       margin-top: 30px;
@@ -32,11 +34,12 @@
 
     >#left_mySkills img {
       margin-left: 20px;
+      border: 2px solid red;
       transition: box-shadow 0.3s ease, transform 0.3s ease;
+
     }
 
   }
-
 
   #left_mySkills img:hover {
     box-shadow: 0 8px 15px rgba(93, 190, 207, 0.2);
@@ -48,18 +51,18 @@
     width: 50%;
     margin-top: 30px;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     border: 2px solid lightsalmon;
 
   }
 
-  #right_mySkills img {
+  #ellipse {
     position: absolute;
     overflow: hidden;
     transition: all 0.5s ease-in;
   }
 
-  #right_mySkills img:hover {
+  #ellipse:hover {
     background-image: url('/img/Ellipse 02.png');
     background-repeat: no-repeat;
     rotate: (45deg);
@@ -72,30 +75,44 @@
     color: #FFFDFD;
     margin-top: 40px;
     text-align: center;
+    padding: 0 5px;
   }
 
   #text_skills {
     display: flex;
     flex-direction: column;
     text-align: justify;
-    margin-top: 40px;
-    margin-left: 5px;
+    margin-top: 10px;
+    margin-left: 35px;
     width: 310px;
     height: 400px;
-    border: 2px solid red;
+    border: 2px solid blue;
 
   }
+
+  #text_skills>p {
+    margin-bottom: 10px;
+    border: 2px solid lawngreen;
+  }
+
+
 
   #curr_learn {
-
-    position: relative;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
     flex-direction: row;
-    border: 2px solid red;
-
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 20px;
+    margin-bottom: -30px;
   }
+
+  #curr_learn img {
+    border: 2px solid yellow;
+    max-width: 40px;
+    height: auto;
+  }
+
+
 
 }
 
@@ -103,16 +120,26 @@
 
   #my_Skills_content {
     flex-direction: column;
+
   }
 
   #left_mySkills {
-    margin: 0 auto;
-
+    margin: 0 20%;
+    max-width: 50%;
+    border: 2px solid orange;
+    gap: 95px;
 
   }
 
+  #left_mySkills img {
+    width: 50px;
+    height: auto;
+  }
+
   #right_mySkills {
+    justify-content: center;
     margin: 0 auto;
+    max-width: 50%;
   }
 
 }
