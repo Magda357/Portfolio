@@ -4,10 +4,23 @@
 
         <div class="switch_nav">
             <nav id="project_nav">
-                <a class="activ" href="#" (click)="selectProject(0);$event.preventDefault()">1. Pokedex</a>
-                <a href="#" (click)="selectProject(1);$event.preventDefault()">2. El Pollo Loco</a>
-                <a href="#" (click)="selectProject(2); $event.preventDefault()">3. Da Bubble</a>
-                <a href="#" (click)="selectProject(3); $event.preventDefault()">4. Join</a>
+                <a href="#" [ngClass]="{ 'active': selectedProjectIndex === 0, 'hovered': hoveredIndex === 0 }"
+                    (click)="selectProject(0);$event.preventDefault()" (mouseenter)="onProjectHover(0)"
+                    (mouseleave)="onProjectLeave()">
+                    1. Pokedex</a>
+                <a href="#" [ngClass]="{ 'active': selectedProjectIndex === 1, 'hovered': hoveredIndex === 1 }"
+                    (click)="selectProject(1);$event.preventDefault()" (mouseenter)="onProjectHover(1)"
+                    (mouseleave)="onProjectLeave()">
+                    2. El Pollo Loco</a>
+                <a href="#" [ngClass]="{ 'active': selectedProjectIndex === 2, 'hovered': hoveredIndex === 2 }"
+                    (click)="selectProject(2);$event.preventDefault()" (mouseenter)="onProjectHover(2)"
+                    (mouseleave)="onProjectLeave()">
+                    3. Join</a>
+                <a href="#" [ngClass]="{ 'active': selectedProjectIndex === 3, 'hovered': hoveredIndex === 3 }"
+                    (click)="selectProject(3);$event.preventDefault()" (mouseenter)="onProjectHover(3)"
+                    (mouseleave)="onProjectLeave()">
+                    4. Da Bubble</a>
+
             </nav>
         </div>
         <app-single [project]="selectedProject" />
