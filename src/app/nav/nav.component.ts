@@ -10,7 +10,10 @@ import { TranslateService } from "@ngx-translate/core";
   styleUrl: './nav.component.scss'
 })
 export class NavComponent {
+  activeSection: string = '';
+
   selectedLang: string = 'en';
+
  constructor(private translate: TranslateService) {
   
     this.translate.addLangs(['de', 'en']);
@@ -21,4 +24,6 @@ export class NavComponent {
     this.selectedLang = language;
     this.translate.use(language);
   }
+
+  
 }

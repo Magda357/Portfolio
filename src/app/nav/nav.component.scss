@@ -12,7 +12,6 @@
     height: 104px;
     background-color: #89BCD9;
     z-index: 999;
-    border: 2px solid red;
 
 
     #logo_menu img {
@@ -26,6 +25,33 @@
         flex-direction: row;
         margin: 0 auto;
         gap: 152px;
+
+        a {
+            position: relative;
+            text-decoration: none;
+
+            &.active {
+
+                p {
+                    color: white !important;
+                }
+            }
+
+            &.active::after {
+                content: '';
+                position: absolute;
+                top: -20px;
+                left: 50%;
+                color: #F8F5EC;
+                transform: translateX(-50%);
+                width: 83px;
+                height: 56px;
+                background-image: url('/img/Ellipse.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+
+            }
+        }
     }
 
     #change_language {
@@ -36,40 +62,61 @@
 
     }
 
-    #change_language button {
-        margin-right: 10px;
-        font-size: 18px;
-        padding: 0 10px;
-        border: none;
-        background-color: $primary-blue;
-        cursor: pointer;
+    #change_language {
+        button {
+            margin-right: 10px;
+            font-size: 18px;
+            padding: 0 10px;
+            border: none;
+            background-color: $primary-blue;
+            cursor: pointer;
+            position: relative;
+            color: #262E34;
 
-        &:hover {
-            color: $creme-white;
-            background-repeat: no-repeat;
-            transform: scale(1.1);
+            &:hover {
+                color: $creme-white;
+                transform: scale(1.1);
+            }
+
+            &.active-lang {
+                color: $creme-white !important;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: -5px;
+                    left: 5%;
+                    width: 50px;
+                    height: 30px;
+                    background-image: url('/img/Ellipse 24 (3).png');
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    z-index: 800;
+                }
+            }
         }
     }
+}
 
-    p,
-    a {
-        font-weight: 500;
-        font-size: 26px;
-        color: #262E34;
-        font-family: 'Josefin Sans';
-        font-style: medium;
-
-
-    }
-
-    p:hover {
-        color: #F8F5EC;
-        cursor: pointer;
-        transition: 75ms ease-out;
-    }
+p,
+a {
+    font-weight: 500;
+    font-size: 26px;
+    color: #262E34;
+    font-family: 'Josefin Sans';
+    font-style: medium;
 
 
 }
+
+p:hover {
+    color: #F8F5EC;
+    cursor: pointer;
+    transition: 75ms ease-out;
+}
+
+
+
 
 
 @media (max-width:1435px) {

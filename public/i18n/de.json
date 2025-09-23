@@ -83,16 +83,16 @@
 
      "TEAMPLAYER":{
 "TITLE": "Brauchen Sie einen Teamplayer? Hier ist, was meine Kollegen über mich sagen.",
-  "PERSON1": "Sarah Müller",
+  "PERSON1": "Gaetano Leanza",
    "PROJECT1": "Join",
-   "OPINION_TEXT1":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur reprehenderit magni quis voluptatem, officia nemo consectetur ipsa exercitationem." ,
+   "OPINION_TEXT1":"Mit Magda habe ich an unserem Kanbanboard gearbeitet, und sie hat von Anfang an richtig Eindruck hinterlassen. Sie kombiniert technisches Know-how mit einem tollen Gespür für sauberes Design und Benutzerfreundlichkeit. Außerdem ist sie immer hilfsbereit, bringt positive Energie ins Team und sorgt dafür, dass die Zusammenarbeit Spaß macht und effektiv bleibt." ,
 
-   "PERSON2": "Hans Berg",
-    "PROJECT2": "Da Bubble",
-   "OPINION_TEXT2":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam sit cupiditate molestias, ex at quo iure eos commodi alias voluptates. Ex illo." ,
+   "PERSON2": "Stephan Wacker",
+    "PROJECT2": "Join",
+   "OPINION_TEXT2":"Magda trug entscheidend zur hohen Qualität unseres Projekts bei. Ihre präzise Arbeitsweise und ihr Verständnis für saubere Code-Architektur zeigten sich in den gut strukturierten, wiederverwendbaren Angular-Komponenten. Mit ihrem Blick für Design und Nutzererfahrung optimierte sie die Benutzeroberfläche und verbesserte die SCSS-Struktur. So verband sie technische Exzellenz mit kreativem Design auf beeindruckende Weise." ,
 
    "PERSON3": "Kevin Benz",
-    "PROJECT3": "",
+    "PROJECT3": "Kochwelt",
    "OPINION_TEXT3":"Lorem ipsum dolor sit amet consectetur adipisicing elit. At est asperiores, qui, sunt praesentium nulla mollitia provident excepturi fugit culpa." 
 
 
@@ -101,7 +101,8 @@
    
 
    "CONTACT_ME": {
-
+"TITLE":"Kontaktieren Sie mich",
+"TEXT": "Ich bin besonders daran interessiert, an innovativen, benutzerzentrierten Webanwendungen zu arbeiten – dort, wo sauberer Code, Responsivität und ein großartiges Nutzererlebnis zählen. Mit fundierten Kenntnissen in HTML, SCSS, Angular und responsivem Design bringe ich in jedes Projekt, dem ich mich anschließe, ein ausgeprägtes Auge fürs Detail, hohe Programmierstandards und eine proaktive Arbeitsweise ein. Lassen Sie uns gemeinsam etwas Außergewöhnliches schaffen – ich bin bereit, Ihr Team mit technischer Expertise, klarer Kommunikation und einer Leidenschaft für intuitive, skalierbare Benutzeroberflächen zu unterstützen."
    },
 
 

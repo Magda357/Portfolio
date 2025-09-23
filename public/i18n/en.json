@@ -82,13 +82,13 @@
 
    "TEAMPLAYER":{
 "TITLE": "Need a teamplayer? Here what my colleagues said about me",
-   "PERSON1": "Sarah Müller",
+   "PERSON1": "Gaetano Leanza",
    "PROJECT1": "Join",
-   "OPINION_TEXT1":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur reprehenderit magni quis voluptatem, officia nemo consectetur ipsa exercitationem." ,
+   "OPINION_TEXT1":"I worked with Magda on our Kanban board, and she made a strong impression right from the start. She combines technical expertise with a great sense for clean design and user-friendliness. On top of that, she’s always helpful, brings positive energy to the team, and makes sure that working together is both enjoyable and effective." ,
 
-   "PERSON2": "Hans Berg",
-    "PROJECT2": "Da Bubble",
-   "OPINION_TEXT2":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam sit cupiditate molestias, ex at quo iure eos commodi alias voluptates. Ex illo." ,
+   "PERSON2": "Stephan Wacker",
+    "PROJECT2": "Join",
+   "OPINION_TEXT2":"Magda was instrumental in ensuring the high quality of our project. Her precise approach and deep understanding of clean code architecture were evident in the well-structured, reusable Angular components. With her keen eye for design and user experience, she optimized the user interface and improved the SCSS structure, seamlessly combining technical excellence with creative design." ,
 
    "PERSON3": "Kevin Benz",
     "PROJECT3": "",
@@ -99,7 +99,9 @@
    },
 
    "CONTACT_ME": {
-
+      "TITLE":"Contact me",
+"TEXT": "I’m particularly interested in working on innovative and user-centered web applications — where clean code, responsiveness, and great user experience matter. With a strong background in HTML, SCSS, Angular, and responsive design, I bring attention to detail, high coding standards, and a proactive mindset to every project I join. Let’s create something exceptional together — I’m ready to contribute to your team with technical expertise, clear communication, and a passion for building intuitive, scalable interfaces."
+   
    },
 
 
