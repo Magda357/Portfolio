@@ -5,7 +5,7 @@
   max-width: 1920px;
   margin: 0 auto;
   margin-top: 100px;
-  border: 2px solid red;
+  outline: 2px solid red;
   padding: 0 1rem;
   padding-bottom: 60px;
 
@@ -16,7 +16,7 @@
     justify-content: center;
     gap: 60px;
     margin-top: 60px;
-    border: 2px solid blue;
+    outline: 2px solid blue;
 
     >#left_mySkills {
       display: flex;
@@ -27,14 +27,13 @@
       margin: 0 auto;
       justify-content: center;
       margin-top: 30px;
-      border: 2px solid orange;
+      outline: 1px solid orange;
 
     }
 
 
     >#left_mySkills img {
       margin-left: 20px;
-      border: 2px solid red;
       transition: box-shadow 0.3s ease, transform 0.3s ease;
 
     }
@@ -52,7 +51,7 @@
     margin-top: 30px;
     display: flex;
     justify-content: start;
-    border: 2px solid lightsalmon;
+    outline: 1px solid lightsalmon;
 
   }
 
@@ -117,29 +116,41 @@
 }
 
 @media (max-width:1260px) {
+  #my_skills {
+    margin: 0;
 
-  #my_Skills_content {
-    flex-direction: column;
+
+
+    #my_Skills_content {
+      flex-direction: column;
+
+      #left_mySkills {
+        width: 100%;
+        max-width: 1200px;
+        padding: 0 10%;
+        flex-wrap: wrap;
+        gap: 100px;
+
+
+
+        img {
+          width: 60px;
+          height: auto;
+        }
+      }
+
+      #right_mySkills {
+        justify-content: center;
+        flex-direction: row;
+        width: 100%;
+      }
+
+    }
 
   }
 
-  #left_mySkills {
-    margin: 0 20%;
-    max-width: 50%;
-    border: 2px solid orange;
-    gap: 95px;
 
-  }
 
-  #left_mySkills img {
-    width: 50px;
-    height: auto;
-  }
 
-  #right_mySkills {
-    justify-content: center;
-    margin: 0 auto;
-    max-width: 50%;
-  }
 
 }

@@ -1,36 +1,37 @@
 <section id="menu_bar">
-    <div id="logo_menu">
-        <a href="/"> <img src="img/logoMD.png" alt=""> </a>
+    <div id="nav-content">
+        <div id="logo_menu">
+            <a href="/"> <img src="img/logoMD.png" alt=""> </a>
+        </div>
+
+        <nav class="menu_system" id="menu_hide">
+            <a href="/#why-me" [class.active]="activeSection === 'why-me'" (click)="activeSection = 'why-me'">
+                <p>{{'NAV.NAV_WHY_ME' | translate}}</p>
+            </a>
+
+            <a href="/#my-skills" [class.active]="activeSection === 'my-skills'" (click)="activeSection = 'my-skills'">
+                <p>{{'NAV.NAV_SKILLS' | translate}}</p>
+            </a>
+
+            <a href="/#my-projects" [class.active]="activeSection === 'my-projects'"
+                (click)="activeSection = 'my-projects'">
+                <p>{{'NAV.NAV_PROJECTS' | translate}}</p>
+            </a>
+
+            <a href="/#contact" [class.active]="activeSection === 'contact'" (click)="activeSection = 'contact'">
+                <p>{{'NAV.NAV_CONTACT' | translate}}</p>
+            </a>
+        </nav>
+
+
+
+        <div id="change_language">
+            <button (click)="useLanguage('en')" [class.active-lang]="selectedLang === 'en'"
+                (click)="selectedLang = 'en'">EN</button>
+            <button (click)="useLanguage('de')" [class.active-lang]="selectedLang === 'de'"
+                (click)="selectedLang = 'de'">DE</button>
+        </div>
+
+
     </div>
-
-    <nav class="menu_system" id="menu_hide">
-        <a href="/#why-me" [class.active]="activeSection === 'why-me'" (click)="activeSection = 'why-me'">
-            <p>{{'NAV.NAV_WHY_ME' | translate}}</p>
-        </a>
-
-        <a href="/#my-skills" [class.active]="activeSection === 'my-skills'" (click)="activeSection = 'my-skills'">
-            <p>{{'NAV.NAV_SKILLS' | translate}}</p>
-        </a>
-
-        <a href="/#my-projects" [class.active]="activeSection === 'my-projects'"
-            (click)="activeSection = 'my-projects'">
-            <p>{{'NAV.NAV_PROJECTS' | translate}}</p>
-        </a>
-
-        <a href="/#contact" [class.active]="activeSection === 'contact'" (click)="activeSection = 'contact'">
-            <p>{{'NAV.NAV_CONTACT' | translate}}</p>
-        </a>
-    </nav>
-
-
-
-    <div id="change_language">
-        <button (click)="useLanguage('en')" [class.active-lang]="selectedLang === 'en'"
-            (click)="selectedLang = 'en'">EN</button>
-        <button (click)="useLanguage('de')" [class.active-lang]="selectedLang === 'de'"
-            (click)="selectedLang = 'de'">DE</button>
-    </div>
-
-
-
 </section>

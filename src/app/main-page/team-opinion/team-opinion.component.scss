@@ -7,88 +7,68 @@
     margin: 0 auto;
     margin-top: 100px;
     max-width: 1920px;
-    width: 100%;
-    overflow-x: scroll;
-    scrollbar-width: none;
     padding: 0 4rem;
+    height: 550px;
 
-    border: 1px solid red;
+    >h4 {
+        font-size: 42px;
+        color: $primary-blue;
+        font-family: 'Josefin Sans';
+        font-weight: 400;
+        margin-left: 20%;
+    }
 
     #opinion_container {
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-around;
         margin-top: 50px;
         border: 1px solid blue;
-
-
-    }
-
-    >h4 {
-        font-size: 32px;
-        color: $primary-blue;
-        font-family: 'Josefin Sans';
-        font-weight: 400;
-        margin-left: 30%;
-    }
-
-    .img-container {
-        width: 33%;
+        overflow-x: auto;
+        width: 100%;
         height: auto;
-        border: 1px solid orange;
-        transition: all 0.5s ease-in;
-        z-index: 999;
+        scrollbar-width: none;
+
+        .opinion-card {
+
+
+
+            .img-container {
+
+                border: 1px solid orange;
+                height: 70%;
+                z-index: 999;
+
+                img {
+                    display: block;
+                    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+                }
+
+                img:hover {
+                    background-image: url('/img/Ellipse 02.png');
+                    background-repeat: no-repeat;
+                    transform: rotate(-45deg);
+                    cursor: pointer;
+                }
+            }
+
+            .opinion-text {
+                display: flex;
+                transform: translate(10%, -140%);
+                justify-content: center;
+                align-items: start;
+                width: 314px;
+                height: 250px;
+                text-align: center;
+                font-size: 18px;
+                color: #F8F5EC;
+                border: 1px solid violet;
+
+            }
+        }
     }
-
-
-
-
-    .text_container p {
-        display: flex;
-        justify-content: start;
-        margin-left: -450px;
-        margin-top: 100px;
-        width: 314px;
-        height: 250px;
-        text-align: center;
-        font-size: 18px;
-        color: #F8F5EC;
-        border: 1px solid violet;
-
-    }
-
-    .text_container a {
-        display: flex;
-        justify-content: center;
-        margin-top: -70px;
-        margin-left: -650px;
-        font-size: 16px;
-        color: #89bcd9;
-    }
-
-
-    .text_container+p {
-        font-size: 26px;
-    }
-
-    .img-container:hover {
-        background-image: url('/img/Ellipse 02.png');
-        background-repeat: no-repeat;
-        cursor: pointer;
-        rotate: (45deg);
-    }
-
-
-
-
-
-
 
 }
-
-
-
-
 
 
 

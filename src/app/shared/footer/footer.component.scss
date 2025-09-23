@@ -1,8 +1,8 @@
-#footer {
+@use './../../../styles.scss' as *;
 
+#footer {
     width: 100%;
-    max-width: 1920px;
-    height: 150px;
+    height: 170px;
     margin: 0 auto;
     background-color: #89BCD9;
     z-index: 999;
@@ -12,7 +12,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 0 50px;
+    margin: 0 10%;
+    max-width: 1920px;
+
 }
 
 #logo img {
@@ -25,6 +27,13 @@
     flex-direction: column;
     gap: 10px;
     margin-top: 40px;
+
+
+    a p:hover {
+        color: white;
+    }
+
+
 }
 
 #logo {
@@ -39,6 +48,10 @@
     margin-top: 60px;
     gap: 20px;
 
+    a:hover {
+        background-color: white;
+
+    }
 }
 
 p {

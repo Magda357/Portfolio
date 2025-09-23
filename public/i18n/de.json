@@ -40,7 +40,9 @@
               "PARAG2": "",
               "TEXT2": "", 
               "PARAG3": "",
-              "TEXT3": ""
+              "TEXT3": "",
+              "LIVETEST": "https://magda-danielyan.developerakademie.net/pokedex/",
+              "GITHUB": ""
 
     },
      "EL_POLLO_LOCO": {
@@ -50,7 +52,10 @@
               "PARAG2": "",
               "TEXT2": "", 
               "PARAG3": "",
-              "TEXT3": ""
+              "TEXT3": "",
+               "LIVETEST": " ",
+              "GITHUB": ""
+              
 
     },
 
