@@ -28,12 +28,15 @@ html {
   scroll-padding-top: 6.87rem;
   width: 100%;
   margin: 0 auto;
+  scroll-behavior: smooth;
+
 }
 
 body {
   background-color: $primary-color;
   box-sizing: border-box;
 }
+
 
 
 

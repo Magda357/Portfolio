@@ -1,0 +1,50 @@
+@use './../../styles.scss' as *;
+
+#datenschutz {
+    width: 100%;
+    height: calc(100vh - 104px - 170px);
+    overflow: scroll;
+    scrollbar-width: none;
+    padding-bottom: 50px;
+}
+
+h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: $primary-blue;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: $primary-blue;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+p,
+a {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: $creme-white;
+    padding: 0 10%;
+    line-height: 1.6;
+    text-align: center;
+}
+
+a:hover {
+    color: $primary-blue;
+    cursor: pointer;
+}
+
+a:visited {
+    color: $light-grey;
+    cursor: pointer;
+}

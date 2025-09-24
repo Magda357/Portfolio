@@ -1,5 +1,9 @@
 @use './../../../styles.scss' as *;
 
+* {
+    scroll-behavior: smooth;
+}
+
 #contakt_me {
     width: 100%;
     display: flex;
@@ -53,7 +57,9 @@
 }
 
 
-#email a:hover {
+
+#email p:hover,
+#phone p:hover {
     cursor: pointer;
     color: #89BCD9;
 }
