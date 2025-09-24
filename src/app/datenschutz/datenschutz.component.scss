@@ -6,6 +6,8 @@
     overflow: scroll;
     scrollbar-width: none;
     padding-bottom: 50px;
+    margin: 0 auto;
+    text-transform: capitalize;
 }
 
 h1 {
@@ -39,12 +41,12 @@ a {
     text-align: center;
 }
 
-a:hover {
-    color: $primary-blue;
-    cursor: pointer;
+a {
+
+    color: rgb(211, 202, 186);
 }
 
-a:visited {
-    color: $light-grey;
+a:hover {
+    color: $primary-blue;
     cursor: pointer;
 }

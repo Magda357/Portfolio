@@ -25,50 +25,56 @@
 
 
     <div id="input-felds">
-        <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+        <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)">
             <div id="name_email">
                 <div id="your_name">
                     <label for="fname">Your Name</label><br>
                     <input #name="ngModel" [(ngModel)]="contactData.name" type="text" id="fname" name="fname"
-                        maxlength="30" required pattern="^[A-Za-zÄÖÜäöüß]{2,}$">
+                        maxlength="30" minlength="4" required pattern="^[A-Za-zÄÖÜäöüß]{2,}$">
+
+                    <div class="alert" *ngIf="name.invalid && (name.dirty || name.touched)">
+                        <span *ngIf="name.errors?.['required']">Name is required.</span>
+                        <span *ngIf="name.errors?.['minlength']">Name must be at least 4 characters long.</span>
+                        <span *ngIf="name.errors?.['pattern']">Only letters allowed.</span>
+                    </div>
                 </div>
 
                 <div id="your_email">
                     <label for="email">Your Email</label><br>
                     <input #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email" name="email"
                         required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
+
+                    <div class="alert" *ngIf="email.invalid && (email.dirty || email.touched)">
+                        <span *ngIf="email.errors?.['required']">Email is required.</span>
+                        <span *ngIf="email.errors?.['pattern']">Invalid email format.</span>
+                    </div>
                 </div>
             </div>
 
             <div id="message">
                 <label for="message">Your Message</label><br>
-                <textarea #message="ngModel" minlength="4" [(ngModel)]="contactData.message" name="message" id="message"
-                    placeholder="write something..." required></textarea>
-
+                <textarea #message="ngModel" minlength="10" [(ngModel)]="contactData.message" name="message"
+                    id="message" placeholder="write something..." required></textarea>
+                <div class="alert" *ngIf="message.invalid && (message.dirty || message.touched)">
+                    <span *ngIf="message.errors?.['required']">Message is required.</span>
+                    <span *ngIf="message.errors?.['minlength']">Message must be at least 10 characters long.</span>
+                </div>
             </div>
 
-            <label>
-                <input type="checkbox" id="checkbox">
-                I've read the <a routerLink="/privacy-policy">privacy police</a> and agree to the processing of my data
-                as outlined.</label> <br>
+            <label for="checkbox" id="privacy_label">
+                <input type="checkbox" id="checkbox" [(ngModel)]="contactData.privacy" name="privacy" required>
+                I've read the <a routerLink="/privacy-policy">privacy policy</a> and agree to the processing of my data
+                as outlined.
+            </label>
+            <div class="alert" *ngIf="contactForm.submitted && !contactData.privacy">
+                <span>You must accept the privacy policy.</span>
+            </div>
+            <br>
+
             <div id="send_button">
-
-                @if(!message.valid && message.touched) {
-                <span>Please enter Your Name!</span>
-                }
-
-                @if(!email.valid && email.touched) {
-                <span>Please enter Your Email!</span>
-                }
-
-
-                @if(!email.valid && email.touched) {
-                <span>Please enter a message! </span>
-                }
-
-
-
-                <input type="image" src="img/Button Secondary Web (1).png" id="send_datas">
+                <button type="submit" [disabled]="contactForm.invalid">
+                    <img src="img/Button Secondary Web (1).png" id="send_datas" alt="Send">
+                </button>
             </div>
         </form>
     </div>

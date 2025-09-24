@@ -3,10 +3,11 @@ import { Component, inject } from '@angular/core';
 import{FormsModule, NgForm} from '@angular/forms';
 import { TranslateModule } from "@ngx-translate/core";
 import { RouterLink } from "@angular/router"  ;
+import { NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-contact',
-  imports: [FormsModule, TranslateModule, RouterLink],
+  imports: [FormsModule, TranslateModule, RouterLink,NgIf ],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })
@@ -19,6 +20,8 @@ contactData= {
   name: " ",
   email: " ",
   message:" ",
+      privacy: false
+
 }
 
 mailTest = true;

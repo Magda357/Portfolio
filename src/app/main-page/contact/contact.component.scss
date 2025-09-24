@@ -1,8 +1,5 @@
 @use './../../../styles.scss' as *;
 
-* {
-    scroll-behavior: smooth;
-}
 
 #contakt_me {
     width: 100%;
@@ -13,6 +10,7 @@
     margin: 0 auto;
     margin-bottom: 150px;
     margin-top: 130px;
+    outline: 1px solid red;
 }
 
 
@@ -23,6 +21,8 @@
     margin-top: 50px;
     margin-bottom: 50px;
     gap: 120px;
+    outline: 1px solid blue;
+
 
 }
 
@@ -30,6 +30,8 @@
     display: flex;
     width: 40%;
     margin-left: 20px;
+    outline: 1px solid green;
+
 
 }
 
@@ -46,6 +48,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    outline: 1px solid rgb(122, 0, 128);
+
 }
 
 #info p {
@@ -98,7 +102,9 @@
 #your_name,
 #your_email {
 
-    width: 100%;
+    width: 50%;
+    padding: 10px;
+    outline: 1px solid rgb(102, 5, 84);
 
 }
 
@@ -106,21 +112,30 @@
 #your_name input,
 #your_email input {
     height: 70px;
-    width: 85%;
+    width: 90%;
     border-radius: 50px;
     background-color: rgba(38, 46, 52, 0.12);
 }
 
+#message {
+    outline: 1px solid rgb(22, 121, 105);
 
-#message textarea {
-    width: 98%;
-    height: 300px;
+}
+
+textarea {
+    width: 95%;
+    height: 200px;
     border-radius: 50px;
     background-color: rgba(38, 46, 52, 0.12);
+    padding: 20px;
+    color: #F8F5EC;
+    font-size: 18px;
+    font-family: 'Josefin Sans';
+    font-weight: 200;
 }
 
 label {
-    font-size: 14px;
+    font-size: 16px;
     color: #89BCD9;
     font-family: 'Josefin Sans';
     margin-left: 50px;
@@ -161,7 +176,6 @@ textarea:focus {
 
 #send_datas {
     background-color: #262E34;
-
 }
 
 input {
@@ -176,6 +190,7 @@ input {
 #send_button {
     display: flex;
     justify-content: end;
+    border: none;
 
 }
 
@@ -184,4 +199,39 @@ input {
     margin-left: 80%;
     margin-top: -800px;
 
+}
+
+h4 {
+    font-family: 'Josefin Sans';
+    color: #F8F5EC;
+    font-weight: 400;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+a {
+    color: #89BCD9;
+}
+
+
+.alert {
+    position: absolute;
+    color: #e74c3c;
+    min-height: 15px;
+    margin-left: 20px;
+    outline: 1px solid yellow;
+}
+
+input.ng-invalid.ng-touched,
+textarea.ng-invalid.ng-touched {
+    border: 2px solid #e74c3c !important;
+    box-shadow: 0 0 4px #e74c3c33;
+}
+
+input:focus,
+textarea:focus {
+    border: 2px solid #89BCD9 !important;
+    background-color: #323F48;
+    border-radius: 50px;
+    outline: none;
 }
