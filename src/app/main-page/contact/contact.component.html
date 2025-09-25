@@ -5,32 +5,47 @@
             <p> {{'CONTACT_ME.TEXT' | translate}}</p>
         </div>
         <div id="info">
-            <div id="email">
-                <img src="img/icon _email_.png" alt="E-mail">
+            <div id="emailtext">
+                <div class="mail-icons">
+                    <svg id="mail-icon1" width="21" height="18" viewBox="0 0 21 18" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M2.75586 1H18.4277C18.8273 1 19.3867 1.43024 19.3867 2.25V15.75C19.3867 16.5698 18.8273 17 18.4277 17H2.75586C2.35642 17 1.79732 16.5701 1.79688 15.751L1.80664 2.25098V2.25C1.80664 1.42335 2.36225 1.00001 2.75586 1Z"
+                            stroke="currentColor" stroke-width="2" />
+                    </svg>
+                    <svg id="mail-icon2" width="19" height="8" viewBox="0 0 19 8" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1C1 1 8.84597 7 9.22581 7C9.60564 7 18 1 18 1" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                </div>
+
                 <a href="mailto:mdanielyan50@gmail.com">
-                    <p> E-mail: {{this.email}}</p>
+                    <span> E-mail: {{this.email}}</span>
                 </a>
             </div>
 
             <div id="phone">
-                <img src="img/icon _phone.png" alt="Phone">
+                <svg width="19" height="22" viewBox="0 0 19 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M4.48633 1.5C4.50748 1.527 4.53613 1.58353 4.53613 1.66699C4.53616 3.21244 4.74803 4.70026 5.14258 6.09277H5.14355C5.1772 6.2174 5.14086 6.32102 5.09961 6.36914L2.8916 8.93652L2.48047 9.41309L2.7334 9.98926C4.25559 13.4663 6.71863 16.3288 9.75293 18.1357L10.4746 18.5654L11.0225 17.9287L13.207 15.3877C14.4098 15.8404 15.7045 16.087 17.0322 16.0928C17.0535 16.1189 17.084 16.1761 17.084 16.2617V20.333C17.084 20.416 17.0543 20.4718 17.0332 20.499C8.31652 20.4696 1.01578 12.1972 1.01562 1.66699C1.01562 1.58366 1.04429 1.52706 1.06543 1.5H4.48633Z"
+                        stroke="currentColor" stroke-width="2" />
+                </svg>
                 <a href="tel:+4917282929286">
-                    <p> Tel: 0172 829 29 86</p>
+                    <span> Tel: 0172 829 29 86</span>
                 </a>
             </div>
         </div>
     </div>
 
 
-
-
     <div id="input-felds">
         <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)">
             <div id="name_email">
                 <div id="your_name">
-                    <label for="fname">Your Name</label><br>
+                    <label for="fname">Your Name</label>
                     <input #name="ngModel" [(ngModel)]="contactData.name" type="text" id="fname" name="fname"
-                        maxlength="30" minlength="4" required pattern="^[A-Za-zÄÖÜäöüß]{2,}$">
+                        maxlength="30" minlength="4" required pattern="^[A-Za-zÄÖÜäöüß\s]{2,}$" autocomplete="name">
 
                     <div class="alert" *ngIf="name.invalid && (name.dirty || name.touched)">
                         <span *ngIf="name.errors?.['required']">Name is required.</span>
@@ -40,9 +55,9 @@
                 </div>
 
                 <div id="your_email">
-                    <label for="email">Your Email</label><br>
+                    <label for="email">Your Email</label>
                     <input #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email" name="email"
-                        required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
+                        required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" autocomplete="email">
 
                     <div class="alert" *ngIf="email.invalid && (email.dirty || email.touched)">
                         <span *ngIf="email.errors?.['required']">Email is required.</span>
@@ -52,28 +67,58 @@
             </div>
 
             <div id="message">
-                <label for="message">Your Message</label><br>
+                <label for="message">Your Message</label>
                 <textarea #message="ngModel" minlength="10" [(ngModel)]="contactData.message" name="message"
-                    id="message" placeholder="write something..." required></textarea>
+                    id="message" placeholder="write something..." required autocomplete="off"></textarea>
                 <div class="alert" *ngIf="message.invalid && (message.dirty || message.touched)">
                     <span *ngIf="message.errors?.['required']">Message is required.</span>
                     <span *ngIf="message.errors?.['minlength']">Message must be at least 10 characters long.</span>
                 </div>
             </div>
 
-            <label for="checkbox" id="privacy_label">
-                <input type="checkbox" id="checkbox" [(ngModel)]="contactData.privacy" name="privacy" required>
-                I've read the <a routerLink="/privacy-policy">privacy policy</a> and agree to the processing of my data
-                as outlined.
+            <label for="checkbox" id="privacy_label" class="svg-checkbox">
+                <input type="checkbox" id="checkbox" [(ngModel)]="contactData.privacy" name="privacy" required
+                    #checkbox="ngModel">
+                <span class="custom-checkbox">
+                    <!-- Unchecked SVG -->
+                    <svg id="checkbox-unchecked" *ngIf="!contactData.privacy" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" xmlns="http://www.w3.org/2000/svg"
+                        [ngClass]="{'checkbox-alert': checkbox.invalid && (checkbox.dirty || checkbox.touched)}">
+
+                        <g mask="url(#mask0_51323_1155)">
+                            <path
+                                d="M9.16124 19.1082C6.81196 18.2947 4.65013 16.1995 3.29235 13.6186C1.93321 11.0352 1.47658 8.15287 2.27598 5.8437C2.91347 4.00254 5.03912 2.81352 7.98276 2.43102C10.8668 2.05628 14.1341 2.52727 16.4137 3.58252C18.6792 4.63136 20.0649 6.16103 20.7104 7.96871C21.3622 9.79446 21.3012 12.0235 20.4372 14.5191C19.616 16.8911 18.0172 18.43 16.0467 19.1925C14.0568 19.9623 11.625 19.9611 9.16124 19.1082Z"
+                                stroke="currentColor" stroke-width="2" />
+                        </g>
+                    </svg>
+
+                    <!-- Checked SVG -->
+                    <svg *ngIf="contactData.privacy" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+
+                        <g mask="url(#mask0_2442_4359)">
+                            <path
+                                d="M10.1612 20.1082C7.81196 19.2947 5.65013 17.1995 4.29235 14.6186C2.93321 12.0352 2.47658 9.15287 3.27598 6.8437C3.91347 5.00254 6.03912 3.81352 8.98276 3.43102C11.8668 3.05628 15.1341 3.52727 17.4137 4.58252C19.6792 5.63136 21.0649 7.16103 21.7104 8.96871C22.3622 10.7945 22.3012 13.0235 21.4372 15.5191C20.616 17.8911 19.0172 19.43 17.0467 20.1925C15.0568 20.9623 12.625 20.9611 10.1612 20.1082Z"
+                                fill="#89BCD9" stroke="#89BCD9" stroke-width="2" />
+                            <path
+                                d="M10.825 13.225L8.675 11.075C8.49167 10.8917 8.25833 10.8 7.975 10.8C7.69167 10.8 7.45833 10.8917 7.275 11.075C7.09167 11.2583 7 11.4917 7 11.775C7 12.0583 7.09167 12.2917 7.275 12.475L10.125 15.325C10.325 15.525 10.5583 15.625 10.825 15.625C11.0917 15.625 11.325 15.525 11.525 15.325L17.175 9.675C17.3583 9.49167 17.45 9.25833 17.45 8.975C17.45 8.69167 17.3583 8.45833 17.175 8.275C16.9917 8.09167 16.7583 8 16.475 8C16.1917 8 15.9583 8.09167 15.775 8.275L10.825 13.225Z"
+                                fill="#F8F5EC" />
+                        </g>
+                    </svg>
+                </span>
+                <span class="privacy-text">I've read the <a routerLink="/privacy-policy">privacy policy</a> and agree to
+                    the processing of my data
+                    as outlined. </span>
+                <div class="alert" *ngIf="checkbox.invalid && (checkbox.dirty || checkbox.touched)">
+                    <span>You must accept the privacy policy.</span>
+                </div>
             </label>
-            <div class="alert" *ngIf="contactForm.submitted && !contactData.privacy">
-                <span>You must accept the privacy policy.</span>
-            </div>
+
             <br>
 
             <div id="send_button">
-                <button type="submit" [disabled]="contactForm.invalid">
-                    <img src="img/Button Secondary Web (1).png" id="send_datas" alt="Send">
+                <button type="submit" [disabled]="contactForm.invalid" id="send_datas">
+                    Send
                 </button>
             </div>
         </form>

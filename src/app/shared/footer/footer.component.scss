@@ -31,9 +31,8 @@
 
     a p:hover {
         color: white;
+        transition: all 0.2s ease-in-out;
     }
-
-
 }
 
 #logo {
@@ -48,10 +47,37 @@
     margin-top: 60px;
     gap: 20px;
 
-    a:hover {
-        background-color: white;
+    a {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        padding: 8px; // если нужно внутреннее поле
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        transition: transform 0.2s ease;
+
 
     }
+}
+
+#right_container a img:hover {
+
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+}
+
+#right_container a:nth-child(1):hover img {
+    content: url("/img/Github button (1).png");
+}
+
+#right_container a:nth-child(2):hover img {
+    content: url("/img/Email button (1).png");
+}
+
+#right_container a:nth-child(3):hover img {
+    content: url("/img/Linkedin button (1).png");
 }
 
 p {

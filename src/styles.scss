@@ -15,6 +15,35 @@ $primary-color3:#042639;
  $hellorang: #F9CB71;
  $white:#FFFFFF;  */
 
+:root {
+  --input-bg: $primary-color;
+  --input-fg: $creme-white;
+}
+
+input,
+textarea {
+  background-color: var(--input-bg);
+  color: var(--input-fg);
+}
+
+/* Chrome / Safari / Edge (Blink/WebKit) */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill {
+  box-shadow: 0 0 0 1000px var(--input-bg) inset !important;
+  -webkit-text-fill-color: var(--input-fg) !important;
+  caret-color: var(--input-fg) !important;
+  transition: background-color 5000s ease-in-out 0s !important;
+}
+
+/* Firefox */
+input:-moz-autofill,
+textarea:-moz-autofill {
+  box-shadow: 0 0 0 1000px var(--input-bg) inset !important;
+  color: var(--input-fg) !important;
+}
+
 * {
   padding: 0;
   margin: 0;

@@ -4,10 +4,11 @@ import{FormsModule, NgForm} from '@angular/forms';
 import { TranslateModule } from "@ngx-translate/core";
 import { RouterLink } from "@angular/router"  ;
 import { NgIf } from '@angular/common';
+import { NgClass } from '@angular/common';
 
 @Component({
   selector: 'app-contact',
-  imports: [FormsModule, TranslateModule, RouterLink,NgIf ],
+  imports: [FormsModule, TranslateModule, RouterLink,NgIf, NgClass ],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })

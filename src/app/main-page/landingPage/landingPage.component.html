@@ -7,17 +7,45 @@
         <div id="me">
             <img src="/img/me4.png" alt="Me_desktop">
         </div>
-        <div id="me_respons"> <img src="img/mee.png" alt="Me_responsive"></div>
 
     </div>
 
     <div id="right-container">
+
+        <div id="socmedia">
+            <a href="mailto:mdanielyan50@gmail.com" target="_blank"> <img id="email" src="img/Email button.png"
+                    alt="Email"></a>
+            <a href="https://github.com/Magda357" target="_blank"><img id="github" src="img/Github button.png"
+                    alt="Github"></a>
+            <a href="https://www.linkedin.com/in/magda-danielyan-5173b9386/" target="_blank"><img id="linkedin"
+                    src="img/Linkedin button.png" alt="linkedin"></a>
+        </div>
+        <div id="name">
+            <img id="logo" src="img/logoMD.png" alt="Logo">
+            <h1>Magda Danielyan </h1>
+            <h2>{{'HERO.TITLE'| translate}}</h2>
+            <a href="#why-me"><img id="arrow" src="img/Arrow down.png" alt=""> </a>
+        </div>
+
+    </div>
+
+    <div id="mobile-content" style="display: none;">
+        <img id="logo-mobile" src="img/logoMD.png" alt="Logo">
+        <div id="me_respons"> <img src="img/mee.png" alt="Me_responsive"></div>
+
+        <div id="name-mobile">
+            <h2>Magda Danielyan </h2>
+            <h3>{{'HERO.TITLE'| translate}}</h3>
+            <a href="#why-me"><img id="arrow-mobile" src="img/Arrow down.png" alt="Arrow"> </a>
+        </div>
 
         <button class="hamburger" id="hamburger_button" (click)="toggleBurgerMenu()">
             <span></span>
             <span></span>
             <span></span>
         </button>
+
+
 
 
         <div *ngIf="burgerMenuVisible" class="burger_menu_system">
@@ -48,24 +76,6 @@
 
 
         </div>
-
-
-
-        <div id="socmedia">
-            <a href="mailto:mdanielyan50@gmail.com" target="_blank"> <img id="email" src="img/Email button.png"
-                    alt="Email"></a>
-            <a href="https://github.com/Magda357" target="_blank"><img id="github" src="img/Github button.png"
-                    alt="Github"></a>
-            <a href="https://www.linkedin.com/in/magda-danielyan-5173b9386/" target="_blank"><img id="linkedin"
-                    src="img/Linkedin button.png" alt="linkedin"></a>
-        </div>
-        <div id="name">
-            <img id="logo" src="img/logoMD.png" alt="Logo">
-            <h1>Magda Danielyan </h1>
-            <h2>{{'HERO.TITLE'| translate}}</h2>
-            <a href="#why-me"><img id="arrow" src="img/Arrow down.png" alt=""> </a>
-        </div>
-
     </div>
 
 </section>

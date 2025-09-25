@@ -23,19 +23,13 @@
         flex-direction: row;
         justify-content: space-around;
         margin-top: 50px;
-        border: 1px solid blue;
         overflow-x: auto;
         width: 100%;
         height: auto;
         scrollbar-width: none;
 
         .opinion-card {
-
-
-
             .img-container {
-
-                border: 1px solid orange;
                 height: 70%;
                 z-index: 999;
 
@@ -52,6 +46,18 @@
                 }
             }
 
+
+            a {
+                text-decoration: underline;
+                color: $primary-blue;
+                font-size: 16px;
+                font-family: Josefin Sans;
+                position: absolute;
+                margin-left: 100px;
+                padding-top: 40px;
+                font-weight: 400;
+            }
+
             .opinion-text {
                 display: flex;
                 transform: translate(10%, -140%);
@@ -62,7 +68,6 @@
                 text-align: center;
                 font-size: 18px;
                 color: #F8F5EC;
-                border: 1px solid violet;
 
             }
         }

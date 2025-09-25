@@ -1,38 +1,36 @@
 @use './../../../styles.scss' as *;
 
-
 #contakt_me {
     width: 100%;
+    max-width: 1920px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 1920px;
     margin: 0 auto;
     margin-bottom: 150px;
     margin-top: 130px;
-    outline: 1px solid red;
+    padding: 0 10px;
 }
-
 
 #above_cont {
     display: flex;
     flex-direction: row;
-    margin: 0 auto;
+    justify-content: flex-start;
     margin-top: 50px;
     margin-bottom: 50px;
-    gap: 120px;
-    outline: 1px solid blue;
+    gap: 60px;
+    line-height: 1.2;
+}
 
-
+#name_email {
+    padding-bottom: 15px;
 }
 
 #contact_info {
     display: flex;
-    width: 40%;
+    width: 50%;
+    padding-right: 50px;
     margin-left: 20px;
-    outline: 1px solid green;
-
-
 }
 
 #contact_info p {
@@ -41,45 +39,32 @@
     color: #F8F5EC;
     font-weight: 400;
     text-align: justify;
-
 }
 
 #info {
+    width: 45%;
+    padding-left: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    outline: 1px solid rgb(122, 0, 128);
-
 }
 
-#info p {
+
+#info span {
     font-family: 'Josefin Sans';
     font-size: 20px;
     font-weight: 400;
     color: #F8F5EC;
-    font-style: Regular;
+    margin-top: -5px;
 }
 
 
-
-#email p:hover,
-#phone p:hover {
+#info span:hover,
+#emailtext:hover {
     cursor: pointer;
     color: #89BCD9;
 }
 
-
-#email {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 10px;
-
-}
-
-#email img {
-    margin-top: -5px;
-    margin-right: 10px;
-}
 
 #phone {
     display: flex;
@@ -89,6 +74,85 @@
 #phone img {
     margin-top: -5px;
     margin-right: 10px;
+}
+
+#emailtext svg {
+    width: 21px;
+    height: 18px;
+    color: $creme-white;
+    transition: fill 0.3s, stroke 0.3s;
+}
+
+#emailtext {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    &:hover svg,
+    &:hover a,
+    &:hover span {
+        color: #89BCD9; // z.B. Primary Blue
+        stroke: #89BCD9; // für SVG mit stroke="currentColor"
+        transition: color 0.3s, stroke 0.3s;
+    }
+}
+
+#emailtext:hover svg {
+    transform: scale(1.1);
+}
+
+.mail-icons {
+    position: relative;
+    width: 19px; // Breite wie das größere Icon
+    height: 22px; // Höhe wie das größere Icon
+    display: inline-block;
+}
+
+
+#mail-icon1 {
+    position: absolute;
+    width: 21px;
+    height: 18px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#mail-icon2 {
+    position: absolute;
+    width: 19px;
+    height: 8px;
+    top: -4px;
+    left: 0;
+    z-index: 2;
+    pointer-events: none; // falls nicht klickbar
+    overflow: hidden;
+}
+
+
+#phone svg {
+    width: 19px;
+    height: 22px;
+    color: $creme-white;
+    transition: color 0.3s;
+}
+
+#phone {
+    display: flex;
+    align-items: center;
+    gap: 8px; // Abstand zwischen Icon und Nummer
+
+    &:hover svg,
+    &:hover a,
+    &:hover span {
+        color: #89BCD9;
+        stroke: #89BCD9;
+        transition: color 0.3s, stroke 0.3s;
+    }
+}
+
+#phone:hover svg {
+    transform: scale(1.1);
 }
 
 #name_email {
@@ -104,7 +168,6 @@
 
     width: 50%;
     padding: 10px;
-    outline: 1px solid rgb(102, 5, 84);
 
 }
 
@@ -115,11 +178,6 @@
     width: 90%;
     border-radius: 50px;
     background-color: rgba(38, 46, 52, 0.12);
-}
-
-#message {
-    outline: 1px solid rgb(22, 121, 105);
-
 }
 
 textarea {
@@ -146,7 +204,6 @@ label {
     margin-top: 30px;
     width: 25px;
     height: 25px;
-    background-image: url('/img/Check box.png');
     background-repeat: no-repeat;
     appearance: none;
     outline: none;
@@ -154,10 +211,6 @@ label {
 
 }
 
-#checkbox:checked {
-    background-image: url('/img/Check box (1).png');
-    outline: none;
-}
 
 #input-felds {
     margin: 0;
@@ -187,11 +240,9 @@ input {
 
 }
 
-#send_button {
-    display: flex;
-    justify-content: end;
-    border: none;
-
+input:not([type="checkbox"]),
+textarea {
+    border: 1px solid $creme-white;
 }
 
 #arrow_up {
@@ -219,19 +270,125 @@ a {
     color: #e74c3c;
     min-height: 15px;
     margin-left: 20px;
-    outline: 1px solid yellow;
 }
 
-input.ng-invalid.ng-touched,
+
+input:not([type="checkbox"]).ng-invalid.ng-touched,
 textarea.ng-invalid.ng-touched {
     border: 2px solid #e74c3c !important;
-    box-shadow: 0 0 4px #e74c3c33;
+    box-shadow: 3px 3px 3px #e74c3c33;
 }
 
-input:focus,
+input:not([type="checkbox"]):focus,
 textarea:focus {
     border: 2px solid #89BCD9 !important;
     background-color: #323F48;
     border-radius: 50px;
     outline: none;
+}
+
+input[type="checkbox"] {
+    width: 24px !important;
+    height: 24px !important;
+    background-color: transparent;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.custom-checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.svg-checkbox:focus-within .custom-checkbox {
+    box-shadow: 0 0 0 2px #89BCD9;
+}
+
+#checkbox-unchecked {
+    color: #89BCD9
+}
+
+.checkbox-alert {
+    color: #e74c3c !important; // Rot wie .alert
+    stroke: #e74c3c !important;
+}
+
+.svg-checkbox {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    margin-top: 25px;
+
+    .custom-checkbox {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 24px;
+        height: 24px;
+    }
+
+    .privacy-text {
+        font-size: 16px;
+        color: #F8F5EC;
+    }
+
+    .alert {
+        position: absolute;
+        left: 30px; // Abstand von der Checkbox
+        top: 25px !important; // Etwas oberhalb platzieren
+        color: #e74c3c;
+        min-height: 15px;
+        margin-left: 0;
+        font-size: 15px;
+        white-space: nowrap;
+    }
+}
+
+#send_button {
+    display: flex;
+    justify-content: end;
+    border: none !important;
+    width: 120px;
+    height: 50px;
+    margin-left: 90%;
+
+}
+
+#send_button button {
+
+    border: 2px solid $light-grey;
+    color: $creme-white;
+    font-size: 16px;
+    font-family: Josefin Sans;
+    border-radius: 30px;
+    width: 120px;
+    height: 50px;
+
+}
+
+
+#send_button button:hover {
+
+    cursor: pointer;
+    border: 2px solid $primary-blue;
+    color: $primary-blue;
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+    box-shadow: 2px 2px 5px #89BCD933;
+    translate: -2px -2px;
+
+
+}
+
+#send_button button:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
 }
