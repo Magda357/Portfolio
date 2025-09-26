@@ -18,7 +18,11 @@ export class MyProjectsComponent {
     test_button:"img/skills_img/Button Primary Web.svg" , 
     gitHub_button:"img/skills_img/Button Secondary Web (1).svg",
     live_test:"https://magda-danielyan.developerakademie.net/pokedex/",
-    gitHub:"https://github.com/Magda357/pokedex"
+    gitHub:"https://github.com/Magda357/pokedex",
+   techimg1:"img/skills_img/Skill Icon + Name (3).png",
+    techimg2:"img/skills_img/Skill Icon + Name (4).png",
+    techimg3:"img/skills_img/Skill Icon + Name (5).png"
+   
   },
     
 
@@ -28,7 +32,10 @@ export class MyProjectsComponent {
     test_button:"img/skills_img/Button Primary Web.svg" ,
     gitHub_button:"img/skills_img/Button Secondary Web (1).svg",
     live_test:"https://magda-danielyan.developerakademie.net/ELPolloLoco/",
-    gitHub:"https://github.com/Magda357/El-Pollo-Loco"
+    gitHub:"https://github.com/Magda357/El-Pollo-Loco",
+    techimg1:"img/skills_img/Skill Icon + Name (3).png",
+    techimg2:"img/skills_img/Skill Icon + Name (4).png",
+    techimg3:"img/skills_img/Skill Icon + Name (2).png"
 
  },
   {key:'JOIN',
@@ -37,8 +44,20 @@ right_project_pic:"img/join.png",
 test_button:"img/skills_img/Button Primary Web.svg" ,
 gitHub_button:"img/skills_img/Button Secondary Web (1).svg",
 live_test:"https://gaetano-leanza.developerakademie.net/",
-    gitHub:"https://github.com/Gaetano-Leanza/join"
+    gitHub:"https://github.com/Gaetano-Leanza/join",
+    techimg1:"img/skills_img/Skill Icon + Name (1).png",
+    techimg2:"img/skills_img/Skill Icon + Name.png",
+    techimg3:"img/skills_img/Skill Icon + Name (6).png"
   },
+
+   {key:'DABUBBLE',
+    img1: "img/Ellipse 8.png",
+right_project_pic:"img/daBubble.png",
+techimg1:"img/skills_img/Skill Icon + Name (1).png",
+    techimg2:"img/skills_img/Skill Icon + Name.png",
+    techimg3:"img/skills_img/Skill Icon + Name (6).png"
+  },
+  
   
 ];
 

@@ -32,6 +32,7 @@
    },
 
    "MY_PROJECTS":{
+"TITLE": "Meine Projekte",
    "POKEDEX": {
               "PARAG1": "Über das Projekt",
               "DURATION": "Dauer: 1 Wochen",
@@ -60,6 +61,13 @@
               "TEXT2": "Um meinen Code übersichtlich und gut wartbar zu gestalten, habe ich auf bewährte Vorgehensweisen wie aussagekräftige Namen für Dateien, Variablen und Klassen gesetzt. Durch die Aufteilung in modular aufgebaute, wiederverwendbare Komponenten konnte ich eine klare Struktur schaffen und die Anwendung problemlos skalierbar machen.", 
               "PARAG3": "Meine Erfahrung in der Gruppenarbeit",
               "TEXT3": "Gemeinsam entwickelten wir den Login-Bereich sowie die Funktion zur Aufgabenerstellung. Diese Gruppenarbeit ermöglichte es mir, moderne Webtechnologien praktisch anzuwenden und gleichzeitig wertvolle Erfahrungen in koordinierter Teamarbeit zu sammeln."
+
+    },
+
+    "DABUBBLE":{
+               "PARAG1": "Demnächst verfügbar...",
+              "DURATION": "Dauer: 8 Wochen",
+               "TEXT1": "DaBubble ist eine innovative Social-Media-Plattform, die es Nutzern ermöglicht, sich in einer sicheren und ansprechenden Umgebung zu vernetzen. Mit Funktionen wie dem Erstellen von Profilen, dem Teilen von Beiträgen und dem Interagieren mit anderen Mitgliedern fördert DaBubble den Austausch von Ideen und die Bildung von Gemeinschaften."
 
     }
 

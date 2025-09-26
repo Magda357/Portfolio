@@ -8,18 +8,31 @@
    font-family: 'Josefin Sans regular';
    margin-bottom: 50px;
    width: 100%;
+   padding-bottom: 15px;
 
  }
 
+ p {
+   font-family: 'Josefin Sans';
+   padding-left: 5px;
+   padding-top: 5px;
+ }
 
  #left_container {
    margin-top: 30px;
    width: 40%;
  }
 
+ #left_container img {
+   width: 29px;
+   height: 26px;
+   margin-top: 7px;
+   margin-right: 5px;
+ }
+
  #left_container>p {
 
-   margin-top: 30px;
+   margin-top: 10px;
  }
 
  #left_cont_caption {
@@ -113,5 +126,7 @@
      margin-top: 30px;
      width: 90%;
    }
+
+
 
  }

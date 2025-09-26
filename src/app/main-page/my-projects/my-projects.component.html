@@ -1,6 +1,6 @@
 <section id="my_projects">
     <div id="my_projects_container">
-        <h3>My Projects</h3>
+        <h3>{{'MY_PROJECTS.TITLE' | translate}} </h3>
 
         <div class="switch_nav">
             <nav id="project_nav">
@@ -17,6 +17,10 @@
                     (mouseleave)="onProjectLeave()">
                     3. Join</a>
 
+                <a href="#" [ngClass]="{ 'active': selectedProjectIndex === 3, 'hovered': hoveredIndex === 3 }"
+                    (click)="selectProject(3);$event.preventDefault()" (mouseenter)="onProjectHover(3)"
+                    (mouseleave)="onProjectLeave()">
+                    4. DaBubble</a>
 
             </nav>
         </div>

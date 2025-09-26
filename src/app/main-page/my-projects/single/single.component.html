@@ -4,42 +4,46 @@
 
         <div id="left_cont_caption">
             <img src="{{project.img1}}" alt="">
-            <p>{{ 'MY_PROJECTS.' + project.key + '.PARAG1' | translate }}<span id="duration">{{'MY_PROJECTS.' +
+            <p>{{ 'MY_PROJECTS.' + project.key + '.PARAG1' | translate }}<span id="duration"> {{'MY_PROJECTS.' +
                     project.key + '.DURATION' | translate}} </span></p>
         </div>
         <p>{{ 'MY_PROJECTS.' + project.key + '.TEXT1' | translate }}</p>
+        <div *ngIf="project.key !== 'DABUBBLE'">
 
-        <div id="left_cont_caption2">
-            <img src="{{project.img1}}" alt="">
-            <p>{{ 'MY_PROJECTS.' + project.key + '.PARAG2' | translate }}</p>
-        </div>
-        <p> {{ 'MY_PROJECTS.' + project.key + '.TEXT2' | translate }}</p>
-
-        <div *ngIf="project.key === 'JOIN'">
-            <div id="left_cont_caption3">
+            <div id="left_cont_caption2">
                 <img src="{{project.img1}}" alt="">
-                <p>{{ 'MY_PROJECTS.' + project.key + '.PARAG3' | translate }}</p>
+                <p>{{ 'MY_PROJECTS.' + project.key + '.PARAG2' | translate }}</p>
             </div>
-            <p> {{ 'MY_PROJECTS.' + project.key + '.TEXT3' | translate }}</p>
+            <p> {{ 'MY_PROJECTS.' + project.key + '.TEXT2' | translate }}</p>
+
+            <div *ngIf="project.key === 'JOIN'">
+                <div id="left_cont_caption3">
+                    <img src="{{project.img1}}" alt="">
+                    <p>{{ 'MY_PROJECTS.' + project.key + '.PARAG3' | translate }}</p>
+                </div>
+                <p> {{ 'MY_PROJECTS.' + project.key + '.TEXT3' | translate }}</p>
+            </div>
         </div>
+
     </div>
 
 
     <div id="right_container">
         <p>{{project.right_paar}} </p>
         <div id="technologie_img">
-            <img src="img/skills_img/Skill Icon + Name (2).png" alt="Javascript">
-            <img src="img/skills_img/Skill Icon + Name (3).png" alt="HTML">
-            <img src="img/skills_img/Skill Icon + Name (4).png" alt="CSS">
+            <img src="{{project.techimg1}}" alt="HTML">
+            <img src="{{project.techimg2}}" alt="CSS">
+            <img src="{{project.techimg3}}" alt="API">
 
         </div>
         <img src="{{project.right_project_pic}}" alt="" id="pokedex_img">
 
-        <div id="project_buttons">
-            <a href="{{project.live_test}}" target="_blank"> <img src="{{project.test_button}}" alt="LiveTest"> </a>
-            <a href="{{project.gitHub}} " target="_blank"><img src=" {{project.gitHub_button}}" alt="gitHub"> </a>
+        <div *ngIf="project.key !== 'DABUBBLE'">
+            <div id="project_buttons">
+                <a href="{{project.live_test}}" target="_blank"> <img src="{{project.test_button}}" alt="LiveTest"> </a>
+                <a href="{{project.gitHub}} " target="_blank"><img src=" {{project.gitHub_button}}" alt="gitHub"> </a>
+            </div>
         </div>
-
     </div>
 
 
