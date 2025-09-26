@@ -4,22 +4,24 @@
 
         <div id="left_cont_caption">
             <img src="{{project.img1}}" alt="">
-            <p>{{project.par1}} <span id="duration">{{ project.description1 }}</span></p>
+            <p>{{ 'MY_PROJECTS.' + project.key + '.PARAG1' | translate }}<span id="duration">{{'MY_PROJECTS.' +
+                    project.key + '.DURATION' | translate}} </span></p>
         </div>
-        <p>{{ project.text1}}</p>
+        <p>{{ 'MY_PROJECTS.' + project.key + '.TEXT1' | translate }}</p>
 
         <div id="left_cont_caption2">
             <img src="{{project.img1}}" alt="">
-            <p>{{project.par2}}</p>
+            <p>{{ 'MY_PROJECTS.' + project.key + '.PARAG2' | translate }}</p>
         </div>
-        <p> {{project.description2}}</p>
+        <p> {{ 'MY_PROJECTS.' + project.key + '.TEXT2' | translate }}</p>
 
-
-        <div id="left_cont_caption3">
-            <img src="{{project.img1}}" alt="">
-            <p>{{project.par3}}</p>
+        <div *ngIf="project.key === 'JOIN'">
+            <div id="left_cont_caption3">
+                <img src="{{project.img1}}" alt="">
+                <p>{{ 'MY_PROJECTS.' + project.key + '.PARAG3' | translate }}</p>
+            </div>
+            <p> {{ 'MY_PROJECTS.' + project.key + '.TEXT3' | translate }}</p>
         </div>
-        <p> {{project.description3}}</p>
     </div>
 
 
@@ -34,8 +36,8 @@
         <img src="{{project.right_project_pic}}" alt="" id="pokedex_img">
 
         <div id="project_buttons">
-            <a href="#LiveTest "> <img src="{{project.live_test}}" alt=""> </a>
-            <a href="#GitHub"><img src=" {{project.gitHub}}" alt=""> </a>
+            <a href="{{project.live_test}}" target="_blank"> <img src="{{project.test_button}}" alt="LiveTest"> </a>
+            <a href="{{project.gitHub}} " target="_blank"><img src=" {{project.gitHub_button}}" alt="gitHub"> </a>
         </div>
 
     </div>

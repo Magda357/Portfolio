@@ -7,6 +7,7 @@
    color: #F8F5EC;
    font-family: 'Josefin Sans regular';
    margin-bottom: 50px;
+   width: 100%;
 
  }
 
@@ -101,19 +102,16 @@
    #project_container {
      flex-direction: column-reverse;
      align-items: center;
-     border: 1px solid lightcoral;
    }
 
    #left_container {
      margin-top: 30px;
      width: 90%;
-     border: 1px solid lightcoral;
    }
 
    #right_container {
      margin-top: 30px;
      width: 90%;
-     border: 1px solid yellowgreen;
    }
 
  }

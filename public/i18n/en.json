@@ -33,46 +33,34 @@
    "TITLE": "My Projects",
 
     "POKEDEX": {
-              "PARAG1": "",
-              "DURATION": "",
-              "TEXT1": "", 
-              "PARAG2": "",
-              "TEXT2": "", 
-              "PARAG3": "",
-              "TEXT3": ""
+              "PARAG1": "About the project",
+              "DURATION": "Duration: 1 Weeks",
+              "TEXT1": "Diese Anwendung ist ein digitaler Pokédex, der detaillierte Informationen zu verschiedenen Pokémon präsentiert, darunter Name, Typ, Fähigkeiten und Entwicklungsstufen. Die Daten werden mithilfe der PokéAPI in Echtzeit abgerufen und direkt in der App angezeigt, sodass stets aktuelle und umfassende Informationen bereitstehen.", 
+              "PARAG2": "How I have organised my work process",
+              "TEXT2": "I divided my workflow into clearly structured steps: first, I planned the basic architecture and design; then I developed the logic in JavaScript and used HTML for the framework as well as CSS for the layout. This organization helped me stay on top of things and carry out each phase efficiently.",
+              "LIVETEST": "https://magda-danielyan.developerakademie.net/pokedex/",
+              "GITHUB": "https://github.com/Magda357/pokedex"
+              
 
     },
-     "EL_POLLO_LOCO": {
-              "PARAG1": "",
-              "DURATION": "",
-              "TEXT1": "", 
-              "PARAG2": "",
-              "TEXT2": "", 
-              "PARAG3": "",
-              "TEXT3": ""
-
-    },
-
-
-  "DA_BUBBLE": {
-              "PARAG1": "",
-              "DURATION": "",
-              "TEXT1": "", 
-              "PARAG2": "",
-              "TEXT2": "", 
-              "PARAG3": "",
-              "TEXT3": ""
+     "ELPOLLOLOCO": {
+              "PARAG1": "About the project",
+              "DURATION": "Duration: 3 Weeks",
+              "TEXT1": "This game is a two-dimensional jump-and-run adventure. Playing as the character Pepe, you collect salsa bottles, hurl them at crazy chickens, and ultimately face a powerful final boss.", 
+              "PARAG2": "How I have organised my work process",
+              "TEXT2": "In this project, I applied an object-oriented methodology and organized the code into well-structured modules. By using JavaScript classes and methods, I built reusable components and kept the logic clean and maintainable. HTML provided the structural backbone of the content, while CSS handled the visual design and layout. This clear division streamlined development, simplified updates, and ensured I could maintain a solid overview of the entire process."
+              
 
     },
 
       "JOIN": {
-              "PARAG1": "",
-              "DURATION": "",
-              "TEXT1": "", 
-              "PARAG2": "",
-              "TEXT2": "", 
-              "PARAG3": "",
-              "TEXT3": ""
+              "PARAG1": "About the project",
+              "DURATION": "Duration: 5 Weeks",
+              "TEXT1": "This Kanban board was developed as part of a team project. We used Angular together with TypeScript and SCSS for the frontend, while the backend was built on Firebase. In addition, we gained valuable experience with professional teamwork following the Scrum framework and worked with tools such as Git and Figma.", 
+              "PARAG2": "How I have organised my work process",
+              "TEXT2": "To keep my code clean and easy to maintain, I followed best practices such as using descriptive names for files, variables, and classes. By breaking the project into modular, reusable components, I established a clear structure and ensured the application remains easily scalable.", 
+              "PARAG3": "My group work experience",
+              "TEXT3": "Together we built the login section and the task-creation feature. This group collaboration allowed me to put modern web technologies into practice while gaining valuable experience in coordinated team development."
 
     }
 
@@ -100,8 +88,23 @@
 
    "CONTACT_ME": {
       "TITLE":"Contact me",
-"TEXT": "I’m particularly interested in working on innovative and user-centered web applications — where clean code, responsiveness, and great user experience matter. With a strong background in HTML, SCSS, Angular, and responsive design, I bring attention to detail, high coding standards, and a proactive mindset to every project I join. Let’s create something exceptional together — I’m ready to contribute to your team with technical expertise, clear communication, and a passion for building intuitive, scalable interfaces."
-   
+"TEXT": "I’m particularly interested in working on innovative and user-centered web applications — where clean code, responsiveness, and great user experience matter. With a strong background in HTML, SCSS, Angular, and responsive design, I bring attention to detail, high coding standards, and a proactive mindset to every project I join. Let’s create something exceptional together — I’m ready to contribute to your team with technical expertise, clear communication, and a passion for building intuitive, scalable interfaces.",
+"NAME":"Your Name",
+"NAME-ERROR1":"Name is required.",
+"NAME-ERROR2":"Name must be at least 4 characters long.",
+"NAME-ERROR3":"Only letters allowed.",
+"EMAIL":"Your Email",
+"EMAIL-ERROR1":"Email is required.",
+"EMAIL-ERROR2":"Invalid email format.",
+"MESSAGE":"Your Message",
+"MESSAGE-PLACEHOLDER":"Write something...",
+"MESSAGE-ERROR1":"Message is required.",
+"MESSAGE-ERROR2":"Message must be at least 10 characters long.",
+"DATENSCHUTZ1":"   I've read the ",
+"DATENSCHUTZ2":"privacy policy",
+"DATENSCHUTZ3":"and agree to the processing of my data as outlined.",
+"DATENSCHUTZ-ERROR":"You must accept the privacy policy.",
+"BUTTON-TEXT": "Send"
    },
 
 

@@ -32,57 +32,36 @@
    },
 
    "MY_PROJECTS":{
-   "TITLE": "Meine Projekte",
    "POKEDEX": {
-              "PARAG1": "",
-              "DURATION": "",
-              "TEXT1": "", 
-              "PARAG2": "",
-              "TEXT2": "", 
-              "PARAG3": "",
-              "TEXT3": "",
-              "LIVETEST": "https://magda-danielyan.developerakademie.net/pokedex/",
-              "GITHUB": ""
-
+              "PARAG1": "Über das Projekt",
+              "DURATION": "Dauer: 1 Wochen",
+              "TEXT1": "Dieses Projekt ist eine interaktive Pokédex-Webanwendung, die umfassende Informationen zu unterschiedlichen Pokémon bereitstellt – darunter Name, Typ, Fähigkeiten und Evolutionsreihen. Über die PokéAPI werden die Daten in Echtzeit abgerufen und automatisch in der App dargestellt, sodass stets die aktuellsten Informationen verfügbar sind.", 
+              "PARAG2": "Wie ich meinen Arbeitsprozess organisiert habe",
+              "TEXT2": "Der Schwerpunkt meines Projekts lag auf der Einbindung einer API. Die Anwendungslogik habe ich mit JavaScript entwickelt, während HTML das Grundgerüst bildete und CSS für das Design zuständig war. Durch diese klare Trennung der Bereiche konnte ich den Arbeitsablauf übersichtlich gestalten und die API-Funktionen gezielt einbinden."
+              
     },
-     "EL_POLLO_LOCO": {
-              "PARAG1": "",
-              "DURATION": "",
-              "TEXT1": "", 
-              "PARAG2": "",
-              "TEXT2": "", 
-              "PARAG3": "",
-              "TEXT3": "",
+     "ELPOLLOLOCO": {
+              "PARAG1": "Über das Projekt",
+              "DURATION": "Dauer: 3 Wochen",
+              "TEXT1": "Dieses Spiel ist ein 2D Jump-and-Run-Abenteuer. Mit der Spielfigur Pepe sammelst du Salsa-Flaschen, setzt sie als Wurfgeschosse gegen wilde Hühner ein und triffst am Ende auf einen mächtigen Endgegner.", 
+              "PARAG2": "Wie ich meinen Arbeitsprozess organisiert habe",
+              "TEXT2": "Für dieses Projekt nutzte ich einen objektorientierten Ansatz und gliederte den Code in übersichtliche Module. Mithilfe von JavaScript-Klassen und -Methoden erstellte ich wiederverwendbare Bausteine und hielt die Logik klar und gut wartbar. HTML diente als strukturelles Fundament, während CSS für Gestaltung und Layout verantwortlich war. Diese klare Trennung erleichterte die Entwicklung, machte Anpassungen einfacher und sorgte dafür, dass ich den gesamten Prozess jederzeit im Blick behalten konnte.", 
                "LIVETEST": " ",
               "GITHUB": ""
               
 
     },
 
-
-  "DA_BUBBLE": {
-              "PARAG1": "",
-              "DURATION": "",
-              "TEXT1": "", 
-              "PARAG2": "",
-              "TEXT2": "", 
-              "PARAG3": "",
-              "TEXT3": ""
-
-    },
-
-      "JOIN": {
-              "PARAG1": "",
-              "DURATION": "",
-              "TEXT1": "", 
-              "PARAG2": "",
-              "TEXT2": "", 
-              "PARAG3": "",
-              "TEXT3": ""
+     "JOIN": {
+              "PARAG1": "Über das Projekt",
+              "DURATION": "Dauer: 5 Wochen",
+              "TEXT1": "Dieses Kanban-Board wurde im Rahmen eines Teamprojekts entwickelt. Für das Frontend nutzten wir Angular in Kombination mit TypeScript und SCSS, während das Backend auf Firebase basierte. Darüber hinaus sammelten wir wertvolle Erfahrungen in professioneller Zusammenarbeit nach Scrum und arbeiteten mit Tools wie Git und Figma.", 
+              "PARAG2": "Wie ich meinen Arbeitsprozess organisiert habe",
+              "TEXT2": "Um meinen Code übersichtlich und gut wartbar zu gestalten, habe ich auf bewährte Vorgehensweisen wie aussagekräftige Namen für Dateien, Variablen und Klassen gesetzt. Durch die Aufteilung in modular aufgebaute, wiederverwendbare Komponenten konnte ich eine klare Struktur schaffen und die Anwendung problemlos skalierbar machen.", 
+              "PARAG3": "Meine Erfahrung in der Gruppenarbeit",
+              "TEXT3": "Gemeinsam entwickelten wir den Login-Bereich sowie die Funktion zur Aufgabenerstellung. Diese Gruppenarbeit ermöglichte es mir, moderne Webtechnologien praktisch anzuwenden und gleichzeitig wertvolle Erfahrungen in koordinierter Teamarbeit zu sammeln."
 
     }
-
-
 
    },
 
@@ -107,7 +86,23 @@
 
    "CONTACT_ME": {
 "TITLE":"Kontaktieren Sie mich",
-"TEXT": "Ich bin besonders daran interessiert, an innovativen, benutzerzentrierten Webanwendungen zu arbeiten – dort, wo sauberer Code, Responsivität und ein großartiges Nutzererlebnis zählen. Mit fundierten Kenntnissen in HTML, SCSS, Angular und responsivem Design bringe ich in jedes Projekt, dem ich mich anschließe, ein ausgeprägtes Auge fürs Detail, hohe Programmierstandards und eine proaktive Arbeitsweise ein. Lassen Sie uns gemeinsam etwas Außergewöhnliches schaffen – ich bin bereit, Ihr Team mit technischer Expertise, klarer Kommunikation und einer Leidenschaft für intuitive, skalierbare Benutzeroberflächen zu unterstützen."
+"TEXT": "Ich bin besonders daran interessiert, an innovativen, benutzerzentrierten Webanwendungen zu arbeiten – dort, wo sauberer Code, Responsivität und ein großartiges Nutzererlebnis zählen. Mit fundierten Kenntnissen in HTML, SCSS, Angular und responsivem Design bringe ich in jedes Projekt, dem ich mich anschließe, ein ausgeprägtes Auge fürs Detail, hohe Programmierstandards und eine proaktive Arbeitsweise ein. Lassen Sie uns gemeinsam etwas Außergewöhnliches schaffen – ich bin bereit, Ihr Team mit technischer Expertise, klarer Kommunikation und einer Leidenschaft für intuitive, skalierbare Benutzeroberflächen zu unterstützen.",
+"NAME":"Ihr Name",
+"NAME-ERROR1":"Name ist erforderlich.",
+"NAME-ERROR2":"Der Name muss mindestens 4 Zeichen lang sein.",
+"NAME-ERROR3":"Nur Buchstaben erlaubt.",
+"EMAIL":"Ihre E-Mail",
+"v":"E-Mail ist erforderlich.",
+"EMAIL-ERROR2":"Bitte eine gültige Email-Adresse eingeben",
+"MESSAGE":"Ihre Nachricht",
+"MESSAGE-PLACEHOLDER":"Bitte etwas schreiben...",
+"MESSAGE-ERROR1":"Bitte eine gültige Textnachricht eingeben",
+"MESSAGE-ERROR2":"Die Nachricht muss mindestens 10 Zeichen lang sein.",
+"DATENSCHUTZ1":"Ich habe die ",
+"DATENSCHUTZ2":"Datenschutzerklärung",
+"DATENSCHUTZ3":" gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu.",
+"DATENSCHUTZ-ERROR":"Sie müssen die Datenschutzerklärung akzeptieren.",
+"BUTTON-TEXT": "Senden"
    },
 
 

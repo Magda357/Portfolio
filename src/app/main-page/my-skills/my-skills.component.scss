@@ -95,7 +95,7 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    padding: 0 20px;
+    padding: 0 40px;
     margin-bottom: -30px;
   }
 
@@ -143,7 +143,55 @@
   }
 
 
+  @media (max-width:1145px) {
+
+    #my_skills {
 
 
 
+      #my_Skills_content {
+
+        #right_mySkills {
+          display: none;
+        }
+
+        #right-mySkills-mobile {
+          display: flex !important;
+          flex-direction: row !important;
+          width: 100%;
+          justify-content: start;
+          margin-top: 40px;
+          margin: 0 auto;
+          border: 1px solid red;
+
+
+          #right-mySkills-mobile p {
+            text-align: center !important;
+            width: 100%;
+            height: 10%;
+            margin: 0 auto;
+          }
+
+          #text-left {
+            display: flex;
+            width: 45%;
+            height: 50%;
+            border: 1px solid blue;
+            margin-top: 40px;
+
+          }
+
+          #img-left {
+            width: 45%;
+            display: flex;
+            height: 50%;
+            margin-top: 40px;
+
+            border: 2px solid rgb(93, 24, 58);
+
+          }
+        }
+      }
+    }
+  }
 }

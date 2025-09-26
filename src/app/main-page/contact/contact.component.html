@@ -43,36 +43,37 @@
         <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)">
             <div id="name_email">
                 <div id="your_name">
-                    <label for="fname">Your Name</label>
+                    <label for="fname">{{'CONTACT_ME.NAME' | translate}}</label>
                     <input #name="ngModel" [(ngModel)]="contactData.name" type="text" id="fname" name="fname"
                         maxlength="30" minlength="4" required pattern="^[A-Za-zÄÖÜäöüß\s]{2,}$" autocomplete="name">
 
                     <div class="alert" *ngIf="name.invalid && (name.dirty || name.touched)">
-                        <span *ngIf="name.errors?.['required']">Name is required.</span>
-                        <span *ngIf="name.errors?.['minlength']">Name must be at least 4 characters long.</span>
-                        <span *ngIf="name.errors?.['pattern']">Only letters allowed.</span>
+                        <span *ngIf="name.errors?.['required']">{{'CONTACT_ME.NAME-ERROR1' | translate}}</span>
+                        <span *ngIf="name.errors?.['minlength']">{{'CONTACT_ME.NAME-ERROR2' | translate}}</span>
+                        <span *ngIf="name.errors?.['pattern']">{{'CONTACT_ME.NAME-ERROR3' | translate}}</span>
                     </div>
                 </div>
 
                 <div id="your_email">
-                    <label for="email">Your Email</label>
+                    <label for="email">{{'CONTACT_ME.EMAIL' | translate}}</label>
                     <input #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email" name="email"
                         required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" autocomplete="email">
 
                     <div class="alert" *ngIf="email.invalid && (email.dirty || email.touched)">
-                        <span *ngIf="email.errors?.['required']">Email is required.</span>
-                        <span *ngIf="email.errors?.['pattern']">Invalid email format.</span>
+                        <span *ngIf="email.errors?.['required']">{{'CONTACT_ME.EMAIL-ERROR1' | translate}}</span>
+                        <span *ngIf="email.errors?.['pattern']">{{'CONTACT_ME.EMAIL-ERROR2' | translate}}</span>
                     </div>
                 </div>
             </div>
 
             <div id="message">
-                <label for="message">Your Message</label>
+                <label for="message">{{'CONTACT_ME.MESSAGE' | translate}}</label>
                 <textarea #message="ngModel" minlength="10" [(ngModel)]="contactData.message" name="message"
-                    id="message" placeholder="write something..." required autocomplete="off"></textarea>
+                    id="message" placeholder="{{'CONTACT_ME.MESSAGE-PLACEHOLDER' | translate}}" required
+                    autocomplete="off"></textarea>
                 <div class="alert" *ngIf="message.invalid && (message.dirty || message.touched)">
-                    <span *ngIf="message.errors?.['required']">Message is required.</span>
-                    <span *ngIf="message.errors?.['minlength']">Message must be at least 10 characters long.</span>
+                    <span *ngIf="message.errors?.['required']">{{'CONTACT_ME.MESSAGE-ERROR1' | translate}}</span>
+                    <span *ngIf="message.errors?.['minlength']">{{'CONTACT_ME.MESSAGE-ERROR2' | translate}}</span>
                 </div>
             </div>
 
@@ -106,11 +107,11 @@
                         </g>
                     </svg>
                 </span>
-                <span class="privacy-text">I've read the <a routerLink="/privacy-policy">privacy policy</a> and agree to
-                    the processing of my data
-                    as outlined. </span>
+                <span class="privacy-text">{{'CONTACT_ME.DATENSCHUTZ1' | translate}} <a
+                        routerLink="/privacy-policy">{{'CONTACT_ME.DATENSCHUTZ2' | translate}}</a>
+                    {{'CONTACT_ME.DATENSCHUTZ3' | translate}} </span>
                 <div class="alert" *ngIf="checkbox.invalid && (checkbox.dirty || checkbox.touched)">
-                    <span>You must accept the privacy policy.</span>
+                    <span>{{'CONTACT_ME.DATENSCHUTZ-ERROR' | translate}}</span>
                 </div>
             </label>
 
@@ -118,7 +119,7 @@
 
             <div id="send_button">
                 <button type="submit" [disabled]="contactForm.invalid" id="send_datas">
-                    Send
+                    {{'CONTACT_ME.BUTTON-TEXT' | translate}}
                 </button>
             </div>
         </form>
