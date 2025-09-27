@@ -71,8 +71,6 @@
 
     }
 
-
-
    },
 
    "TEAMPLAYER":{
@@ -86,8 +84,8 @@
    "OPINION_TEXT2":"Magda was instrumental in ensuring the high quality of our project. Her precise approach and deep understanding of clean code architecture were evident in the well-structured, reusable Angular components. With her keen eye for design and user experience, she optimized the user interface and improved the SCSS structure, seamlessly combining technical excellence with creative design." ,
 
    "PERSON3": "Kevin Benz",
-    "PROJECT3": "",
-   "OPINION_TEXT3":"Lorem ipsum dolor sit amet consectetur adipisicing elit. At est asperiores, qui, sunt praesentium nulla mollitia provident excepturi fugit culpa." 
+    "PROJECT3": "Kochwelt",
+   "OPINION_TEXT3":"Lorem ipsum dolor sit amet consectetur adipisicing elit. At est asperiores, qui, sunt praesentium nulla mollitia provident excepturi fugit culpa.Lorem ipsum dolor sit amet consectetur adipisicing elit. At est asperiores, qui, sunt praesentium nulla mollitia provident excepturi fugit culpa. provident excepturi fugit culpa. sum dolor sit amet consectetur a" 
 
 
 
@@ -111,6 +109,8 @@
 "DATENSCHUTZ2":"privacy policy",
 "DATENSCHUTZ3":"and agree to the processing of my data as outlined.",
 "DATENSCHUTZ-ERROR":"You must accept the privacy policy.",
+"LET_US":"Let us work together!",
+
 "BUTTON-TEXT": "Send"
    },
 

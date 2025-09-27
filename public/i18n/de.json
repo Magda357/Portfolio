@@ -13,10 +13,10 @@
 
 
    "WHY_ME": {
-    "TITLE":"Warum ich",
+    "TITLE":"Warum mich",
 "ABOUT_ME1":" Engagiert. Lernbereit. Zielorientiert.",
 "ABOUT_ME2":"Als Junior-Entwickler bringe ich frische Perspektiven, Eigeninitiative und eine starke Arbeitsmoral in jedes Projekt ein. Ich programmiere nicht nur – ich denke mit und arbeite lösungsorientiert.",
-"TEXT1": "Ich befinde mich in Steinheim...| ",
+"TEXT1": "Ich wohne mich in Steinheim...| ",
 "TEXT2": "Ich bin offen für Remote-Arbeit...| ",
 "TEXT3" :"Ich bin offen für einen Umzug...|",
 "BUTTON-TEXT": "Kontakt aufnehmen"
@@ -65,7 +65,7 @@
     },
 
     "DABUBBLE":{
-               "PARAG1": "Demnächst verfügbar...",
+               "PARAG1": "Demnächst...",
               "DURATION": "Dauer: 8 Wochen",
                "TEXT1": "DaBubble ist eine innovative Social-Media-Plattform, die es Nutzern ermöglicht, sich in einer sicheren und ansprechenden Umgebung zu vernetzen. Mit Funktionen wie dem Erstellen von Profilen, dem Teilen von Beiträgen und dem Interagieren mit anderen Mitgliedern fördert DaBubble den Austausch von Ideen und die Bildung von Gemeinschaften."
 
@@ -85,7 +85,7 @@
 
    "PERSON3": "Kevin Benz",
     "PROJECT3": "Kochwelt",
-   "OPINION_TEXT3":"Lorem ipsum dolor sit amet consectetur adipisicing elit. At est asperiores, qui, sunt praesentium nulla mollitia provident excepturi fugit culpa." 
+   "OPINION_TEXT3":"Lorem ipsum dolor sit amet consectetur adipisicing elit. At est asperiores, qui, sunt praesentium nulla mollitia provident excepturi fugit culpa.qui, sunt praesentium nulla mollitia provident excepturi fugit culpa.qui, sunt praesentium nulla mollitia provident excepturi fugit culpa." 
 
 
 
@@ -110,6 +110,7 @@
 "DATENSCHUTZ2":"Datenschutzerklärung",
 "DATENSCHUTZ3":" gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu.",
 "DATENSCHUTZ-ERROR":"Sie müssen die Datenschutzerklärung akzeptieren.",
+"LET_US":"Lass  uns zusammen arbeiten!",
 "BUTTON-TEXT": "Senden"
    },
 

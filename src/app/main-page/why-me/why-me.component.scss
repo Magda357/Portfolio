@@ -63,6 +63,8 @@
             width: 40%;
             font-family: 'Josefin Sans Regular';
             font-weight: 400;
+            text-align: justify;
+
 
             p {
                 color: #F8F5EC;
@@ -111,9 +113,9 @@
 @media (max-width:1145px) {
 
     #why_me {
-        margin-top: -100px;
         justify-content: center;
         width: 100%;
+        margin-top: 450px;
 
 
 
@@ -149,15 +151,21 @@
             #right {
                 width: 80%;
                 margin-left: 100px;
+                inline-size: 1.2;
+
 
                 >p {
                     padding: 15px 15px;
                     margin-top: 10px;
+                    inline-size: 1.6;
                 }
             }
 
         }
 
+        #button_wrapper {
+            display: none !important;
+        }
 
     }
 }

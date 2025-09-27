@@ -48,4 +48,36 @@
 }
 
 
-@media (max-width:1260px) {}
+@media (max-width:1450px) {
+    #project_nav {
+
+        gap: 80px;
+
+
+    }
+
+}
+
+@media (max-width:1320px) {
+    #project_nav {
+
+        gap: 50px;
+    }
+}
+
+
+@media (max-width:1220px) {
+    #project_nav {
+
+        gap: 30px;
+    }
+
+
+
+    #project_nav a {
+
+        width: 200px;
+        font-size: 24px;
+
+    }
+}

@@ -42,6 +42,7 @@
     <div id="input-felds">
         <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)">
             <div id="name_email">
+                <div id="let-us-work" style="display: none;"> {{'CONTACT_ME.LET_US' | translate}} </div>
                 <div id="your_name">
                     <label for="fname">{{'CONTACT_ME.NAME' | translate}}</label>
                     <input #name="ngModel" [(ngModel)]="contactData.name" type="text" id="fname" name="fname"
