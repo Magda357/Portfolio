@@ -87,3 +87,50 @@ p {
     font-size: 18px;
     color: #262E34;
 }
+
+@media (max-width:750px) {
+
+    #footer_content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 170px;
+        width: 100%;
+        padding: 0;
+    }
+
+    #logo {
+        order: 1;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        height: 30%;
+        margin-top: -10px;
+
+    }
+
+    #right_container {
+        display: flex;
+        flex-direction: row;
+        order: 2;
+        height: 30%;
+        width: 100%;
+        margin-top: 0;
+        justify-content: center;
+    }
+
+    #left_container {
+        order: 3;
+        height: 30%;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 6px;
+        align-items: center;
+        justify-content: space-around;
+        display: flex;
+        flex-direction: row;
+
+
+
+    }
+}

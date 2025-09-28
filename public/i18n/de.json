@@ -50,7 +50,6 @@
                "LIVETEST": " ",
               "GITHUB": ""
               
-
     },
 
      "JOIN": {
@@ -87,8 +86,6 @@
     "PROJECT3": "Kochwelt",
    "OPINION_TEXT3":"Lorem ipsum dolor sit amet consectetur adipisicing elit. At est asperiores, qui, sunt praesentium nulla mollitia provident excepturi fugit culpa.qui, sunt praesentium nulla mollitia provident excepturi fugit culpa.qui, sunt praesentium nulla mollitia provident excepturi fugit culpa." 
 
-
-
    },
    
 
@@ -116,12 +113,45 @@
 
 
    "FOOTER":{
-
+"TEXT": "Impressum"
    },
 
-   "IMPRINT":{
+     "IMPRINT":{
+   "TITLE":"Impressum",
+   "TEXT1":"Name des Verantwortlichen:",
+   "TEXT2":"Anschrift:",
+   "TEXT3":"Deutschland",
+   "TEXT4":"Kontakt:",
+   "TEXT5":"Alle Rechte vorbehalten"
+   },
 
-   }
+   "PRIVACY_POLICY":{
+   "TITLE":"Datenschutzerklärung",
+"TITLE1":"Verantwortliche Person:",
+"TITLE1.1":"Kontakt",
+"TEXT":"Telefon:",
+"TITLE2":"Allgemeine Informationen zur Datenverarbeitung:",
+"TEXT2":"Der Schutz Ihrer personenbezogenen Daten ist mir sehr wichtig. Personenbezogene Daten werden nur in dem Umfang verarbeitet, der für die Bereitstellung einer funktionsfähigen Website und die Bearbeitung Ihrer Anfragen erforderlich ist. Rechtsgrundlage der Verarbeitung ist Artikel 6 Absatz 1 Buchstabe f DSGVO (berechtigtes Interesse), sofern nicht eine speziellere Rechtsgrundlage (z. B. Einwilligung) Anwendung findet.",
+"TITLE3":"Zugriffsdaten / Server-Logfiles:",
+"TEXT3":"Wenn Sie diese Website besuchen, werden bestimmte Informationen, die Ihr Browser übermittelt, automatisch erfasst. Dazu gehören Ihre IP-Adresse, Datum und Uhrzeit der Anfrage, der Typ und die Version Ihres Browsers, Ihr Betriebssystem sowie die verweisende URL. Diese Daten werden ausschließlich zur technischen Überwachung und Sicherheit der Website verwendet und nicht mit anderen Daten zusammengeführt.",
+"TITLE4":"Kontaktformular:",
+"TEXT4":"Wenn Sie mich über das Kontaktformular kontaktieren, werden die von Ihnen angegebenen Informationen (Name, E-Mail-Adresse, Nachricht) zum Zweck der Bearbeitung Ihrer Anfrage gespeichert.",
+"TITLE4.1":"Rechtsgrundlage:",
+"TEXT4.1":"Artikel 6 Absatz 1 Buchstabe a DSGVO (Einwilligung). Sie können Ihre Einwilligung jederzeit mit Wirkung für die Zukunft widerrufen.",
+"TITLE5":"Social-Media-Plugins:",
+"TEXT5":"Diese Website kann sogenannte Social-Plugins verwenden, etwa von Instagram, LinkedIn oder Facebook. Wenn Sie eine Seite aufrufen, die ein solches Plugin enthält, kann Ihr Browser eine direkte Verbindung zu den Servern des jeweiligen Anbieters herstellen. Dabei können personenbezogene Daten – wie Ihre IP-Adresse – an diese Dienste übermittelt werden; dies kann auch Übermittlungen in Drittländer wie die USA umfassen. Weitere Einzelheiten entnehmen Sie bitte den Datenschutzhinweisen der jeweiligen Anbieter: Facebook: https://www.facebook.com/privacy/policy/ Instagram: https://privacycenter.instagram.com/ LinkedIn: https://www.linkedin.com/legal/privacy-policy",
+"TITLE6": "Cookies:",
+"TEXT6":"Diese Website verwendet technisch notwendige Cookies, um bestimmte Funktionen (z. B. Navigation, Formularschutz) zu ermöglichen. Cookies werden auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der Bereitstellung einer funktionsfähigen Website) gespeichert. Sie können Cookies jederzeit in den Einstellungen Ihres Browsers deaktivieren.",
+"TITLE7":"Ihre Rechte:",
+"TEXT7":"Nach der DSGVO haben Sie folgende Rechte: das Recht auf Auskunft über die zu Ihrer Person gespeicherten Daten (Art. 15 DSGVO), das Recht auf Berichtigung unrichtiger Daten (Art. 16 DSGVO), das Recht auf Löschung (Art. 17 DSGVO), das Recht auf Einschränkung der Verarbeitung (Art. 18 DSGVO), das Recht auf Widerspruch gegen die Verarbeitung (Art. 21 DSGVO), das Recht auf Datenübertragbarkeit (Art. 20 DSGVO) sowie das Recht, eine Beschwerde bei einer Aufsichtsbehörde einzureichen (z. B. der Datenschutzaufsichtsbehörde in Nordrhein-Westfalen).",
+"TITLE8":" Änderungen dieser Datenschutzerklärung:",
+"TEXT8":"Ich behalte mir vor, diese Datenschutzerklärung anzupassen, um sie an geänderte rechtliche Vorgaben oder Änderungen der Website anzupassen. Letzte Aktualisierung: Juli 2025.",
+"TITLE9":"Haftungsausschluss:",
+"TEXT9":"Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.",
+"TITLE10":"EU-Streitschlichtung",
+"TEXT10":"Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung bereit:"
+
+}
 
 
 

@@ -34,7 +34,7 @@
 
     "POKEDEX": {
               "PARAG1": "About the project",
-              "DURATION": "Duration: 1 Weeks",
+              "DURATION": "Duration: 1 Week",
               "TEXT1": "Diese Anwendung ist ein digitaler Pokédex, der detaillierte Informationen zu verschiedenen Pokémon präsentiert, darunter Name, Typ, Fähigkeiten und Entwicklungsstufen. Die Daten werden mithilfe der PokéAPI in Echtzeit abgerufen und direkt in der App angezeigt, sodass stets aktuelle und umfassende Informationen bereitstehen.", 
               "PARAG2": "How I have organised my work process",
               "TEXT2": "I divided my workflow into clearly structured steps: first, I planned the basic architecture and design; then I developed the logic in JavaScript and used HTML for the framework as well as CSS for the layout. This organization helped me stay on top of things and carry out each phase efficiently.",
@@ -116,13 +116,45 @@
 
 
    "FOOTER":{
+"TEXT": "Legal Notice"
 
    },
 
    "IMPRINT":{
 
-   }
+
+   "TITLE":"Imprint",
+   "TEXT1":"Name of the Controller:",
+   "TEXT2":"Address:",
+   "TEXT3":"Germany",
+   "TEXT4":"Contact:",
+   "TEXT5":"All rights reserved"
+   },
 
 
-
+   "PRIVACY_POLICY":{
+   "TITLE":"Privacy Policy",
+"TITLE1":"Person responsible:",
+"TITLE1.1":"Contact",
+"TEXT":"Telefonnummer:",
+"TITLE2":"General information on data processing:",
+"TEXT2":"The protection of your personal data is very important to me. Personal data is processed only to the extent necessary for providing a functional website and for handling your inquiries. The legal basis for the processing is Article 6(1)(f) of the GDPR (legitimate interest), unless a more specific legal basis (e.g., consent) applies.",
+"TITLE3":"Access Data / Server Log Files:",
+"TEXT3":"When you visit this website, certain information transmitted by your browser is automatically collected. This includes your IP address, the date and time of your request, the type and version of your browser, your operating system, and the referring URL. This data is used solely for the technical monitoring and security of the website and is not combined with other data.",
+"TITLE4":"Contact Form:",
+"TEXT4":"If you contact me via the contact form, the information you provide (name, email address, message) will be stored for the purpose of processing your Request.",
+"TITLE4.1":"Legal basis:",
+"TEXT4.1":"Article 6(1)(a) GDPR (consent). You may withdraw your consent at any time with effect for the future.",
+"TITLE5":"Social-Media-Plugins:",
+"TEXT5":"This website may use so-called social plugins, such as those from Instagram, LinkedIn, or Facebook. When you visit a page that includes such a plugin, your browser may establish a direct connection to the servers of the respective provider. In doing so, personal data—such as your IP address—may be transmitted to these services, potentially including transfers to third countries like the United States. For more details, please refer to the privacy policies of the respective providers: Facebook: https://www.facebook.com/privacy/policy/ Instagram: https://privacycenter.instagram.com/ LinkedIn: https://www.linkedin.com/legal/privacy-policy",
+"TITLE6": "Cookies:",
+"TEXT6":"This website uses technically necessary cookies to enable certain functions (e.g., navigation, form protection).Cookiesare stored on the basis of Article 6(1)(f) of the GDPR (legitimate interest in providing a functional website).You can disable cookies at any time in your browser settings. ",
+"TITLE7":"Your Rights:",
+"TEXT7":"Under the GDPR, you have the following rights: The right to access the data stored about you (Art. 15 GDPR), therightto rectification of inaccurate data (Art. 16 GDPR), the right to erasure (Art. 17 GDPR), the right torestriction ofprocessing (Art. 18 GDPR), the right to object to processing (Art. 21 GDPR), the right to data portability (Art.20 GDPR), and the right to lodge a complaint with a supervisory authority (e.g., the data protection authority of North Rhine-Westphalia).",
+"TITLE8":"Changes to This Privacy Policy:",
+"TEXT8":"I reserve the right to update this privacy policy to comply with legal requirements or to reflect changes to the website. Last updated: July 2025. ",
+"TITLE9":"Disclaimer: ",
+"TEXT9":"Despite careful content control, we assume no liability for the content of external links. The responsibility for the content of linked pages lies solely with their respective operators.",
+"TITLE10":"EU Dispute Resolution",
+"TEXT10":"The European Commission provides a platform for online dispute resolution:"}
 }

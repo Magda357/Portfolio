@@ -33,5 +33,52 @@
         </div>
 
 
+
+
+
+
     </div>
+
+    <div id="mobile-content" style="display: none;">
+
+
+        <button class="hamburger" id="hamburger_button" (click)="toggleBurgerMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+
+
+
+        <div *ngIf="burgerMenuVisible" class="burger_menu_system">
+            <div id="burger_nav">
+                <a href="/#why-me">
+                    <p>{{'NAV.NAV_WHY_ME' | translate}}</p>
+                </a>
+                <a href="/#my-skills">
+                    <p>{{'NAV.NAV_SKILLS' | translate}} </p>
+                </a>
+                <a href="/#my-projects">
+                    <p> {{'NAV.NAV_PROJECTS' | translate}} </p>
+                </a>
+                <a href="/#contact">
+                    <p>{{'NAV.NAV_CONTACT' | translate}}</p>
+                </a>
+                <div id="change_language">
+                    <button (click)="useLanguage('en')" [ngClass]="{ 'active-lang': selectedLang === 'en' }">EN
+
+                    </button>
+                    <button (click)="useLanguage('de')" [ngClass]="{ 'active-lang': selectedLang === 'de' }">DE
+
+
+                    </button>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
 </section>

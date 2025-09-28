@@ -6,6 +6,7 @@ import { RouterLink } from "@angular/router"  ;
 import { NgIf } from '@angular/common';
 import { NgClass } from '@angular/common';
 
+
 @Component({
   selector: 'app-contact',
   imports: [FormsModule, TranslateModule, RouterLink,NgIf, NgClass ],
@@ -14,6 +15,7 @@ import { NgClass } from '@angular/common';
 })
 export class ContactComponent {
 email = 'mdanielyan50@gmail.com';
+
 
 http = inject(HttpClient);
 

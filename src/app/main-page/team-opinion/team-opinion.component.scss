@@ -9,6 +9,7 @@
     max-width: 1920px;
     padding: 0 4rem;
     height: 550px;
+    overflow-y: hidden !important;
 
     p,
     h6 {
@@ -62,8 +63,7 @@
                 img {
                     display: block;
                     transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-                    max-width: 400px;
-                    width: 100%;
+                    width: 400px;
                     height: auto;
 
                     &:hover {
@@ -92,11 +92,11 @@
 
             .opinion-text {
                 display: flex;
-                transform: translate(10%, -130%);
+                transform: translate(10%, -120%);
                 justify-content: center;
                 align-items: start;
                 flex-direction: column;
-                width: 314px;
+                max-width: 314px;
                 height: 250px;
                 text-align: center;
                 font-size: 16px;
@@ -128,28 +128,13 @@
             .opinion-card {
                 .img-container {
                     height: 70%;
-                    z-index: 999;
 
                 }
 
 
 
 
-                .opinion-text {
-                    display: flex;
-                    transform: translate(10%, -130%);
-                    justify-content: center;
-                    align-items: start;
-                    width: 314px;
-                    height: 250px;
-                    text-align: center;
-                    font-size: 16px;
-                    color: #F8F5EC;
-                    line-height: 1.3;
 
-
-
-                }
             }
         }
 

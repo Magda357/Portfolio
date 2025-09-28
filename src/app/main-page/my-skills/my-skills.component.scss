@@ -190,24 +190,31 @@
           justify-content: start;
           margin-top: 40px;
           margin: 0 auto;
-          border: 1px solid rgb(20, 88, 26);
 
 
           p {
-            text-align: center !important;
             margin: 0 auto;
+            font-size: 24px !important;
+            color: $creme-white;
+            text-align: justify;
           }
 
+          #my_skills_mobile {
+            color: $primary-blue;
+            text-align: center;
+          }
+
+
           #right-mySkills-mobile-content {
-            border: 2px solid rgb(93, 24, 58);
             display: flex;
+            justify-content: center;
+            align-items: center;
 
 
             #text-left {
               display: flex;
               width: 45%;
               height: 90%;
-              border: 1px solid blue;
               margin-top: 40px;
 
             }
@@ -216,12 +223,12 @@
               width: 45%;
               display: flex;
               height: 50%;
+              justify-content: center;
               margin-top: 40px;
-              border: 2px solid rgb(93, 24, 58);
 
               #ellipse-mobile {
-                width: 40%;
-                height: 40%;
+                width: 200px;
+                height: 210px;
                 margin: 0 auto;
                 overflow: hidden;
                 transition: all 0.5s ease-in;
@@ -233,10 +240,11 @@
                 flex-direction: row;
                 align-items: center;
                 top: 0;
+                gap: 20px;
                 right: 50%;
 
                 img {
-                  max-width: 30px;
+                  max-width: 40px;
                   height: auto;
                 }
 

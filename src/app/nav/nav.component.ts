@@ -25,5 +25,8 @@ export class NavComponent {
     this.translate.use(language);
   }
 
-  
+   burgerMenuVisible: boolean = false;
+     toggleBurgerMenu(): void {
+    this.burgerMenuVisible = !this.burgerMenuVisible;
+  }
 }

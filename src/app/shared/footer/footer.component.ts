@@ -3,6 +3,7 @@ import { TranslateModule } from "@ngx-translate/core";
 import { RouterLink } from "@angular/router"  ;
 
 
+
 @Component({
   selector: 'app-footer',
   imports: [TranslateModule, RouterLink],
@@ -10,5 +11,4 @@ import { RouterLink } from "@angular/router"  ;
   styleUrl: './footer.component.scss'
 })
 export class FooterComponent {
-
 }
