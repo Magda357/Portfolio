@@ -9,7 +9,7 @@ import{NavComponent} from './../../nav/nav.component';
        selector: 'app-landinPage',
        imports: [NgIf,TranslateModule,CommonModule,NavComponent],
        templateUrl: './landingPage.component.html',
-       styleUrl: './landingPage.component.scss'
+       styleUrls: ['./landingPage.component.scss','./landingPage.responsive.scss']
 
 })
 

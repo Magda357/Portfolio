@@ -14,7 +14,7 @@
 
     #why_me_container {
         display: flex;
-        gap: 20px;
+        gap: 10px;
         flex-direction: row;
 
 
@@ -78,17 +78,15 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-top: 20px;
+            margin-top: 30px;
             margin-left: 80%;
-
-            width: 170px;
+            width: 190px;
             height: 50px;
             border: 2px solid $primary-blue;
             border-radius: 30px;
 
             p {
-                padding: 5px 15px;
-                margin-top: 10px;
+                padding: 5px 10px;
             }
 
             &:hover {
@@ -102,13 +100,12 @@
     }
 }
 
-@media (max-width:1400px) {
+@media (max-width:1260px) {
     #why_me {
-        padding: 0 8rem;
-
+        padding-bottom: 8rem;
     }
-
 }
+
 
 @media (max-width:1145px) {
 
@@ -117,12 +114,9 @@
         width: 100%;
         margin-top: 450px;
 
-
-
         #why_me_container {
             padding-top: 20px;
             flex-direction: column;
-            margin-left: 30px;
             width: 100%;
             gap: 20px;
 
@@ -133,14 +127,9 @@
 
 
                 #location {
-
-
                     #move_text {
-
-
                         p {
-                            padding: 15px 15px;
-                            margin-top: 10px;
+                            margin: 10px;
                         }
                     }
                 }
@@ -149,15 +138,16 @@
 
 
             #right {
-                width: 80%;
-                margin-left: 100px;
+                width: 90%;
                 inline-size: 1.2;
+                margin: 0 auto;
 
 
                 >p {
                     padding: 15px 15px;
                     margin-top: 10px;
                     inline-size: 1.6;
+
                 }
             }
 
@@ -167,5 +157,20 @@
             display: none !important;
         }
 
+    }
+}
+
+@media (max-width:940px) {
+    #why_me {
+        #why_me_container {
+
+
+            #left {
+                margin-left: 50px;
+                width: 95%;
+
+
+            }
+        }
     }
 }
