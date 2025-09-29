@@ -76,7 +76,7 @@
     font-family: 'Josefin Sans';
     font-size: 18px;
     color: #FFFDFD;
-    margin-top: 40px;
+    margin-top: 80px;
     text-align: center;
     padding: 0 5px;
   }
@@ -295,6 +295,7 @@
 @media (max-width:803px) {
 
   #my_skills {
+
     #my_Skills_content {
 
       p {
@@ -313,14 +314,13 @@
           align-items: center;
 
           #img-left {
-            width: 80%;
             padding-left: 0;
             margin-top: 20px;
             outline: none;
           }
 
           #text-left {
-            width: 80%;
+            width: 100%;
             height: auto;
             margin-top: 20px;
             outline: none;

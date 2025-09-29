@@ -33,7 +33,7 @@
 
    "MY_PROJECTS":{
 "TITLE": "Meine Projekte",
-   "POKEDEX": {
+   "POKEDEX": { "TITLE": "Pokedex",
               "PARAG1": "Über das Projekt",
               "DURATION": "Dauer: 1 Wochen",
               "TEXT1": "Dieses Projekt ist eine interaktive Pokédex-Webanwendung, die umfassende Informationen zu unterschiedlichen Pokémon bereitstellt – darunter Name, Typ, Fähigkeiten und Evolutionsreihen. Über die PokéAPI werden die Daten in Echtzeit abgerufen und automatisch in der App dargestellt, sodass stets die aktuellsten Informationen verfügbar sind.", 
@@ -41,7 +41,7 @@
               "TEXT2": "Der Schwerpunkt meines Projekts lag auf der Einbindung einer API. Die Anwendungslogik habe ich mit JavaScript entwickelt, während HTML das Grundgerüst bildete und CSS für das Design zuständig war. Durch diese klare Trennung der Bereiche konnte ich den Arbeitsablauf übersichtlich gestalten und die API-Funktionen gezielt einbinden."
               
     },
-     "ELPOLLOLOCO": {
+     "ELPOLLOLOCO": {"TITLE": "El Pollo Loco",
               "PARAG1": "Über das Projekt",
               "DURATION": "Dauer: 3 Wochen",
               "TEXT1": "Dieses Spiel ist ein 2D Jump-and-Run-Abenteuer. Mit der Spielfigur Pepe sammelst du Salsa-Flaschen, setzt sie als Wurfgeschosse gegen wilde Hühner ein und triffst am Ende auf einen mächtigen Endgegner.", 
@@ -52,7 +52,7 @@
               
     },
 
-     "JOIN": {
+     "JOIN": {"TITLE": "Join",
               "PARAG1": "Über das Projekt",
               "DURATION": "Dauer: 5 Wochen",
               "TEXT1": "Dieses Kanban-Board wurde im Rahmen eines Teamprojekts entwickelt. Für das Frontend nutzten wir Angular in Kombination mit TypeScript und SCSS, während das Backend auf Firebase basierte. Darüber hinaus sammelten wir wertvolle Erfahrungen in professioneller Zusammenarbeit nach Scrum und arbeiteten mit Tools wie Git und Figma.", 
@@ -63,7 +63,7 @@
 
     },
 
-    "DABUBBLE":{
+    "DABUBBLE":{"TITLE": "DaBubble",
                "PARAG1": "Demnächst...",
               "DURATION": "Dauer: 8 Wochen",
                "TEXT1": "DaBubble ist eine innovative Social-Media-Plattform, die es Nutzern ermöglicht, sich in einer sicheren und ansprechenden Umgebung zu vernetzen. Mit Funktionen wie dem Erstellen von Profilen, dem Teilen von Beiträgen und dem Interagieren mit anderen Mitgliedern fördert DaBubble den Austausch von Ideen und die Bildung von Gemeinschaften."

@@ -30,18 +30,23 @@
 
     <div id="right_container">
         <p>{{project.right_paar}} </p>
+        <h5 class="project_name" style="display: none;">{{ 'MY_PROJECTS.' + project.key + '.TITLE' | translate }} </h5>
         <div id="technologie_img">
             <img src="{{project.techimg1}}" alt="HTML">
             <img src="{{project.techimg2}}" alt="CSS">
             <img src="{{project.techimg3}}" alt="API">
 
         </div>
-        <img src="{{project.right_project_pic}}" alt="" id="pokedex_img">
+        <div class="project_img_container">
+            <img src="{{project.right_project_pic}}" alt="" id="project_img">
+        </div>
 
         <div *ngIf="project.key !== 'DABUBBLE'">
             <div id="project_buttons">
-                <a href="{{project.live_test}}" target="_blank"> <img src="{{project.test_button}}" alt="LiveTest"> </a>
-                <a href="{{project.gitHub}} " target="_blank"><img src=" {{project.gitHub_button}}" alt="gitHub"> </a>
+                <a href="{{project.live_test}}" target="_blank"> <img src="{{project.test_button}}" alt="LiveTest">
+                </a>
+                <a href="{{project.gitHub}} " target="_blank"><img src=" {{project.gitHub_button}}" alt="gitHub">
+                </a>
             </div>
         </div>
     </div>

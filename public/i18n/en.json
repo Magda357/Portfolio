@@ -32,7 +32,7 @@
    "MY_PROJECTS":{
    "TITLE": "My Projects",
 
-    "POKEDEX": {
+    "POKEDEX": { "TITLE": "Pokedex",
               "PARAG1": "About the project",
               "DURATION": "Duration: 1 Week",
               "TEXT1": "Diese Anwendung ist ein digitaler Pokédex, der detaillierte Informationen zu verschiedenen Pokémon präsentiert, darunter Name, Typ, Fähigkeiten und Entwicklungsstufen. Die Daten werden mithilfe der PokéAPI in Echtzeit abgerufen und direkt in der App angezeigt, sodass stets aktuelle und umfassende Informationen bereitstehen.", 
@@ -43,7 +43,7 @@
               
 
     },
-     "ELPOLLOLOCO": {
+     "ELPOLLOLOCO": {   "TITLE": "El Pollo Loco",
               "PARAG1": "About the project",
               "DURATION": "Duration: 3 Weeks",
               "TEXT1": "This game is a two-dimensional jump-and-run adventure. Playing as the character Pepe, you collect salsa bottles, hurl them at crazy chickens, and ultimately face a powerful final boss.", 
@@ -53,7 +53,7 @@
 
     },
 
-      "JOIN": {
+      "JOIN": {   "TITLE": "Join",
               "PARAG1": "About the project",
               "DURATION": "Duration: 5 Weeks",
               "TEXT1": "This Kanban board was developed as part of a team project. We used Angular together with TypeScript and SCSS for the frontend, while the backend was built on Firebase. In addition, we gained valuable experience with professional teamwork following the Scrum framework and worked with tools such as Git and Figma.", 
@@ -64,7 +64,7 @@
 
     },
 
-     "DABUBBLE":{
+     "DABUBBLE":{  "TITLE": "DaBubble",
                "PARAG1": "Comming soon...",
                "DURATION":  "Duration: 8 Weeks",
                "TEXT1": "DaBubble is an innovative social media platform that enables users to connect in a safe and engaging environment. With features such as creating profiles, sharing posts, and interacting with other members, DaBubble fosters the exchange of ideas and the formation of communities."

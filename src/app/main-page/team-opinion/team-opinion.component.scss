@@ -52,27 +52,28 @@
         flex-direction: row;
         justify-content: space-around;
         margin-top: 50px;
-        overflow-x: auto;
+        overflow-y: hidden;
         width: 100%;
         height: auto;
         scrollbar-width: none;
+        height: 540px;
+        padding: 10px;
 
         .opinion-card {
             .img-container {
 
-                img {
+                .ellipse-opinion {
                     display: block;
                     transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-                    width: 400px;
-                    height: auto;
 
                     &:hover {
                         background-image: url('/img/Ellipse 02.png');
                         background-repeat: no-repeat;
-                        transform: rotate(-45deg);
+                        transform: rotate(45deg);
                         cursor: pointer;
                     }
                 }
+
 
 
             }
@@ -96,7 +97,7 @@
                 justify-content: center;
                 align-items: start;
                 flex-direction: column;
-                max-width: 314px;
+                width: 314px;
                 height: 250px;
                 text-align: center;
                 font-size: 16px;
@@ -127,7 +128,7 @@
 
             .opinion-card {
                 .img-container {
-                    height: 70%;
+                    height: 60%;
 
                 }
 
@@ -140,4 +141,152 @@
 
     }
 
+}
+
+@media (max-width:760px) {
+
+    #team_opinion {
+        padding: 0 3rem;
+
+
+        >h4 {
+            font-size: 36px;
+
+        }
+
+        #opinion_container {
+
+            .opinion-card {
+                width: 80%;
+
+                .img-container {
+                    height: auto;
+
+                    .opinion-text {
+                        a {
+
+                            padding-top: 40px;
+                        }
+                    }
+                }
+
+            }
+        }
+
+    }
+}
+
+@media (max-width:690px) {
+
+    #team_opinion {
+
+
+
+
+        #opinion_container {
+
+            .opinion-card {
+                .img-container {
+                    width: 70%;
+                    height: auto;
+
+                    .opinion-text {
+                        font-size: 16px;
+                        padding-left: 40px;
+
+                        a {
+                            font-size: 16px;
+                            padding-top: 20px;
+                            margin-left: 50px;
+                        }
+                    }
+
+                }
+
+
+
+
+
+            }
+        }
+
+    }
+}
+
+@media (max-width:660px) {
+
+    #team_opinion {
+
+        >h4 {
+            font-size: 32px;
+
+        }
+
+        #opinion_container {
+
+            .opinion-card {
+
+                .img-container {
+                    height: auto;
+
+
+
+                    .opinion-text {
+                        font-size: 16px;
+                        padding-left: 40px;
+
+                        a {
+                            font-size: 16px;
+                            padding-top: 5px;
+                            margin-left: 50px;
+                        }
+                    }
+                }
+
+
+
+
+
+            }
+        }
+
+    }
+}
+
+@media (max-width:600px) {
+
+    #team_opinion {
+
+        >h4 {
+            font-size: 32px;
+
+        }
+
+        #opinion_container {
+
+            .opinion-card {
+
+                .img-container {
+                    height: auto;
+
+                    .ellipse-opinion {
+                        margin-top: -5px;
+                    }
+
+                    .opinion-text {
+                        font-size: 16px;
+                        padding-left: 40px;
+
+                        a {
+                            font-size: 16px;
+                            padding-top: 5px;
+                            margin-left: 50px;
+                        }
+                    }
+                }
+
+            }
+        }
+
+    }
 }

@@ -7,20 +7,20 @@
                 <a href="#" [ngClass]="{ 'active': selectedProjectIndex === 0, 'hovered': hoveredIndex === 0 }"
                     (click)="selectProject(0);$event.preventDefault()" (mouseenter)="onProjectHover(0)"
                     (mouseleave)="onProjectLeave()">
-                    1. Pokedex</a>
+                    1. <span class="project_title"> Pokedex </span></a>
                 <a href="#" [ngClass]="{ 'active': selectedProjectIndex === 1, 'hovered': hoveredIndex === 1 }"
                     (click)="selectProject(1);$event.preventDefault()" (mouseenter)="onProjectHover(1)"
                     (mouseleave)="onProjectLeave()">
-                    2. El Pollo Loco</a>
+                    2.<span class="project_title"> El Pollo Loco </span></a>
                 <a href="#" [ngClass]="{ 'active': selectedProjectIndex === 2, 'hovered': hoveredIndex === 2 }"
                     (click)="selectProject(2);$event.preventDefault()" (mouseenter)="onProjectHover(2)"
                     (mouseleave)="onProjectLeave()">
-                    3. Join</a>
+                    3. <span class="project_title">Join</span></a>
 
                 <a href="#" [ngClass]="{ 'active': selectedProjectIndex === 3, 'hovered': hoveredIndex === 3 }"
                     (click)="selectProject(3);$event.preventDefault()" (mouseenter)="onProjectHover(3)"
                     (mouseleave)="onProjectLeave()">
-                    4. DaBubble</a>
+                    4.<span class="project_title">DaBubble</span> </a>
 
             </nav>
         </div>

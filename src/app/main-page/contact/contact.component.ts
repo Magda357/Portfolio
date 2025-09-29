@@ -11,7 +11,7 @@ import { NgClass } from '@angular/common';
   selector: 'app-contact',
   imports: [FormsModule, TranslateModule, RouterLink,NgIf, NgClass ],
   templateUrl: './contact.component.html',
-  styleUrl: './contact.component.scss'
+  styleUrls: ['./contact.component.scss','./contact.responsive.scss']
 })
 export class ContactComponent {
 email = 'mdanielyan50@gmail.com';
