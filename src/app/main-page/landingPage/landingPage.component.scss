@@ -198,6 +198,18 @@ span {
     margin-bottom: 7px;
 }
 
+.hamburger.open span:nth-child(1) {
+    transform: translateY(9px) rotate(50deg);
+}
+
+.hamburger.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+    transform: translateY(-9px) rotate(-50deg);
+
+}
 
 #burger_nav a {
     color: $primary-color;
@@ -207,6 +219,7 @@ span {
 
 #burger_nav a:hover {
     color: $creme-white;
+
 
 }
 

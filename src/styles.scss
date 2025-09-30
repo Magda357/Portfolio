@@ -109,6 +109,15 @@ h3 {
 
 }
 
+
+
 a {
   text-decoration: none;
+}
+
+
+@media (max-width:620px) {
+  h3 {
+    font-size: 3.2rem;
+  }
 }

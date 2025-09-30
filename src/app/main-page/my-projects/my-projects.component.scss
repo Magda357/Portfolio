@@ -50,9 +50,7 @@
 
 @media (max-width:1450px) {
     #project_nav {
-
         gap: 80px;
-
 
     }
 
@@ -176,23 +174,6 @@
         width: 90px;
         height: 50px;
         font-size: 26px;
-
-    }
-}
-
-@media (max-width:490px) {
-    #project_nav {
-
-        gap: 5px;
-        margin-left: 10px;
-
-    }
-
-    #project_nav a {
-
-        width: 70px;
-        height: 50px;
-        font-size: 22px;
 
     }
 }

@@ -65,6 +65,8 @@
                 .ellipse-opinion {
                     display: block;
                     transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+                    z-index: 10100;
+
 
                     &:hover {
                         background-image: url('/img/Ellipse 02.png');
@@ -117,10 +119,11 @@
 
     #team_opinion {
 
+        padding: 0 3rem;
 
         >h4 {
             font-size: 40px;
-            margin-left: 8%;
+            margin-left: 5%;
         }
 
         #opinion_container {
@@ -131,11 +134,6 @@
                     height: 60%;
 
                 }
-
-
-
-
-
             }
         }
 
@@ -146,7 +144,7 @@
 @media (max-width:760px) {
 
     #team_opinion {
-        padding: 0 3rem;
+        padding: 0 2rem;
 
 
         >h4 {
@@ -179,10 +177,6 @@
 @media (max-width:690px) {
 
     #team_opinion {
-
-
-
-
         #opinion_container {
 
             .opinion-card {
@@ -203,26 +197,22 @@
 
                 }
 
-
-
-
-
             }
         }
-
     }
 }
 
 @media (max-width:660px) {
 
     #team_opinion {
-
         >h4 {
             font-size: 32px;
+            margin-left: 2%;
 
         }
 
         #opinion_container {
+            gap: 120px;
 
             .opinion-card {
 
@@ -242,10 +232,6 @@
                         }
                     }
                 }
-
-
-
-
 
             }
         }
@@ -271,6 +257,95 @@
 
                     .ellipse-opinion {
                         margin-top: -5px;
+
+                    }
+
+                    .opinion-text {
+                        font-size: 16px;
+                        padding-left: 40px;
+
+                        a {
+                            font-size: 16px;
+                            padding-top: 5px;
+                            margin-left: 50px;
+                        }
+                    }
+                }
+
+            }
+        }
+
+    }
+}
+
+@media (max-width:440px) {
+
+    #team_opinion {
+
+        >h4 {
+            font-size: 28px;
+
+        }
+
+        #opinion_container {
+            gap: 150px;
+
+            .opinion-card {
+                gap: 200px;
+
+                .img-container {
+                    height: auto;
+                    width: 70%;
+
+                    .ellipse-opinion {
+                        margin-top: -5px;
+
+
+                    }
+
+                    .opinion-text {
+                        font-size: 16px;
+                        padding-left: 40px;
+
+                        a {
+                            font-size: 16px;
+                            padding-top: 5px;
+                            margin-left: 50px;
+                        }
+                    }
+                }
+
+            }
+        }
+
+    }
+}
+
+
+@media (max-width:440px) {
+
+    #team_opinion {
+        padding: 0 1rem;
+
+        >h4 {
+            font-size: 24px;
+
+        }
+
+        #opinion_container {
+            gap: 200px;
+
+            .opinion-card {
+                gap: 200px;
+
+                .img-container {
+                    height: auto;
+                    width: 70%;
+
+                    .ellipse-opinion {
+                        margin-top: -5px;
+
+
                     }
 
                     .opinion-text {

@@ -39,7 +39,7 @@
             <a href="#why-me"><img id="arrow-mobile" src="img/Arrow down.png" alt="Arrow"> </a>
         </div>
 
-        <button class="hamburger" id="hamburger_button" (click)="toggleBurgerMenu()">
+        <button class="hamburger" id="hamburger_button" (click)="toggleBurgerMenu()" [class.open]="burgerMenuVisible">
             <span></span>
             <span></span>
             <span></span>
