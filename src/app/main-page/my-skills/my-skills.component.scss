@@ -200,12 +200,10 @@
             text-align: center;
           }
 
-
           #right-mySkills-mobile-content {
             display: flex;
             justify-content: center;
             align-items: center;
-
 
             #text-left {
               display: flex;
@@ -214,7 +212,6 @@
               height: 210px;
               margin-top: 40px;
               padding: 0 10px;
-
 
             }
 
@@ -280,7 +277,7 @@
             transition: background-color 0.3s ease;
 
             &:hover {
-              background-color: darken($primary-blue, 10%);
+              background-color: $primary-blue;
               transform: scale(1.05);
             }
           }
@@ -344,7 +341,6 @@
   #my_skills {
 
     #my_Skills_content {
-
       p {
         font-size: 12px !important;
         line-height: 1 !important;
@@ -383,7 +379,6 @@
 
 
 @media (max-width:390px) {
-
   #my_skills {
 
     #my_Skills_content {

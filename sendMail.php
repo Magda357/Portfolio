@@ -1,37 +1,55 @@
 <?php
 
 switch ($_SERVER['REQUEST_METHOD']) {
-    case ("OPTIONS"): //Allow preflighting to take place.
-        header("Access-Control-Allow-Origin: *");
-        header("Access-Control-Allow-Methods: POST");
-        header("Access-Control-Allow-Headers: content-type");
+    case 'OPTIONS': // preflight
+        header('Access-Control-Allow-Origin: *');
+        header('Access-Control-Allow-Methods: POST, OPTIONS');
+        header('Access-Control-Allow-Headers: Content-Type');
         exit;
-        case("POST"): //Send the email;
-            header("Access-Control-Allow-Origin: *");
-            // Payload is not send to $_POST Variable,
-            // is send to php:input as a text
-            $json = file_get_contents('php://input');
-            //parse the Payload from text format to Object
-            $params = json_decode($json);
-    
-            $email = $params->email;
-            $name = $params->name;
-            $message = $params->message;
-    
-            $recipient = 'mdanielyan50@gmail.com';  
-            $subject = "Contact From <$email>";
-            $message = "From:" . $name . "<br>" . $message ;
-    
-            $headers   = array();
-            $headers[] = 'MIME-Version: 1.0';
-            $headers[] = 'Content-type: text/html; charset=utf-8';
 
-            // Additional headers
-            $headers[] = "From: noreply@mywebsite.com";
+    case 'POST':
+        header('Access-Control-Allow-Origin: *');
+        header('Content-Type: application/json; charset=utf-8');
 
-            mail($recipient, $subject, $message, implode("\r\n", $headers));
-            break;
-        default: //Reject any non POST or OPTIONS requests.
-            header("Allow: POST", true, 405);
+        $json = file_get_contents('php://input');
+        $params = json_decode($json); 
+
+
+        $name    = isset($params->name)    ? trim($params->name)    : '';
+        $email   = isset($params->email)   ? trim($params->email)   : '';
+        $message = isset($params->message) ? trim($params->message) : '';
+        $privacy = isset($params->privacy) ? (bool)$params->privacy : false;
+
+        if (!$privacy) {
+            http_response_code(400);
+            echo json_encode(['ok' => false, 'error' => 'Privacy not accepted']);
             exit;
-    } 
+        }
+
+        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            http_response_code(400);
+            echo json_encode(['ok' => false, 'error' => 'Invalid email']);
+            exit;
+        }
+
+        $recipient = 'magdadan91@magda-danielyan.de';
+        $subject   = "Contact From <{$email}>";
+
+        $body = "From: " . htmlspecialchars($name) . " &lt;{$email}&gt;<br><br>"
+              . nl2br(htmlspecialchars($message));
+
+        $headers   = [];
+        $headers[] = 'MIME-Version: 1.0';
+        $headers[] = 'Content-type: text/html; charset=utf-8';
+        $headers[] = 'From: noreply@mywebsite.com';
+
+        $sent = mail($recipient, $subject, $body, implode("\r\n", $headers));
+
+        echo json_encode(['ok' => $sent]);
+        break;
+
+    default:
+        header('Allow: POST, OPTIONS', true, 405);
+        exit;
+}
+    

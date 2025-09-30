@@ -1,62 +1,55 @@
 import { HttpClient } from '@angular/common/http';
-import { Component, inject } from '@angular/core';
-import{FormsModule, NgForm} from '@angular/forms';
-import { TranslateModule } from "@ngx-translate/core";
-import { RouterLink } from "@angular/router"  ;
-import { NgIf } from '@angular/common';
-import { NgClass } from '@angular/common';
-
+import { Component } from '@angular/core';
+import { FormsModule, NgForm } from '@angular/forms';
+import { TranslateModule } from '@ngx-translate/core';
+import { RouterLink } from '@angular/router';
+import { NgIf, NgClass } from '@angular/common';
 
 @Component({
   selector: 'app-contact',
-  imports: [FormsModule, TranslateModule, RouterLink,NgIf, NgClass ],
+  standalone: true,
+  imports: [FormsModule, TranslateModule, RouterLink, NgIf, NgClass],
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss','./contact.responsive.scss']
 })
 export class ContactComponent {
-email = 'mdanielyan50@gmail.com';
+  email = 'mdanielyan50@gmail.com';
 
+  constructor(private http: HttpClient) {}
 
-http = inject(HttpClient);
-
-contactData= {
-  name: " ",
-  email: " ",
-  message:" ",
-      privacy: false
-
-}
-
-mailTest = true;
-
-
-  post = { 
-    endPoint: 'https://deineDomain.de/sendMail.php',
-    body: (payload: any) => JSON.stringify(payload),
-    options: {
-      headers: {
-        'Content-Type': 'text/plain',
-        responseType: 'text',
-      },
-    },
+  contactData = {
+    name: '',
+    email: '',
+    message: '',
+    privacy: false,
   };
 
+ 
+  mailTest = false;
+
+  private endpoint = 'https://magda-danielyan.de/sendMail.php';
+
   onSubmit(ngForm: NgForm) {
-    if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
-      this.http.post(this.post.endPoint, this.post.body(this.contactData))
-        .subscribe({
-          next: (response) => {
+    if (!ngForm.submitted || !ngForm.form.valid) return;
 
-            ngForm.resetForm();
-          },
-          error: (error) => {
-            console.error(error);
-          },
-          complete: () => console.info('send post complete'),
-        });
-    } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-
-      ngForm.resetForm();
-    }
+    this.http.post(
+      this.endpoint,
+      this.contactData, 
+      {
+        headers: { 'Content-Type': 'application/json' },
+        responseType: 'json',
+        withCredentials: false, 
+      }
+    ).subscribe({
+      next: (resp: any) => {
+        
+        console.log('server response:', resp);
+        ngForm.resetForm();
+      },
+      error: (err) => {
+        console.error('POST failed:', err);
+      },
+      complete: () => console.info('send post complete'),
+    });
   }
 }
