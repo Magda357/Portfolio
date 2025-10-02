@@ -18,6 +18,8 @@ $primary-color3:#042639;
 :root {
   --input-bg: $primary-color;
   --input-fg: $creme-white;
+  overflow-x: hidden !important;
+
 }
 
 input,
@@ -49,15 +51,19 @@ textarea:-moz-autofill {
   margin: 0;
   scroll-behavior: smooth;
   box-sizing: border-box;
-  height: auto;
+}
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 html {
   scroll-padding-top: 6.87rem;
-  width: 100%;
-  margin: 0 auto;
+  max-width: 100%;
   scroll-behavior: smooth;
+
 
 }
 

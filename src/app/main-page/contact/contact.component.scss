@@ -254,6 +254,14 @@ textarea {
 
 }
 
+#arrow_up:hover {
+    cursor: pointer;
+    background-color: $light-grey;
+    transition: transform 0.3s ease-in-out;
+    transform: translateY(-5px);
+    border-radius: 20px;
+}
+
 h4 {
     font-family: 'Josefin Sans';
     color: #F8F5EC;

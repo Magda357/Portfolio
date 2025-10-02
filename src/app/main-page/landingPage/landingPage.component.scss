@@ -1,32 +1,34 @@
 @use './../../../styles.scss' as *;
 
+
+
+
 #hero {
     display: flex;
     flex-direction: row;
-    height: auto;
-    max-width: 120rem;
+    max-width: 1920px;
     width: 100%;
+    height: calc(100vh - 104px);
+    position: relative;
     margin: 0 auto;
-    margin-top: 4rem;
     box-sizing: border-box;
-    padding: 0 1rem;
-    gap: 5rem;
-
-
+    padding: 0 3rem;
+    gap: 30px;
 
     #left-container {
-        width: 45%;
-        height: 700px;
+        width: 48%;
+        height: calc(100vh - 104px);
         position: relative;
+        display: flex;
+        justify-content: center;
 
         #bg-shape {
             position: absolute;
-            width: 580px;
-            height: 616px;
-            left: 120px;
-            max-width: 580px;
+            height: 550px;
+            left: 50px;
+            max-width: 600px;
             width: 100%;
-            margin-top: 120px;
+            bottom: -40px;
             background-image: url("./../../../../public/img/shape.svg");
             background-size: contain;
             background-repeat: no-repeat;
@@ -37,8 +39,7 @@
 
             &:hover {
                 background-image: url("./../../../../public/img/Property\ 1=hover.svg");
-                transition: all 0.5s ease-in;
-                cursor: pointer;
+                transition: all 0.5s ease-in-out;
             }
 
         }
@@ -47,11 +48,8 @@
             position: absolute;
             margin: 0 auto;
             pointer-events: none;
-            left: 150px;
-            max-width: 95%;
-            bottom: 60px;
-            width: 500px;
-            height: 500px;
+            left: 120px;
+            bottom: 0;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -61,52 +59,120 @@
 
         #me img {
             object-fit: cover;
-            width: 90%;
-            height: auto;
+            width: 100%;
+            max-width: 600px;
+            min-width: 350px;
+            height: 550px;
         }
 
         #me_respons {
             display: none;
-
         }
-
     }
 
     #right-container {
+        width: 52%;
+        height: calc(100vh - 104px);
+        position: relative;
         display: flex;
-        flex-direction: column;
-        width: 50%;
-
+        justify-content: center;
 
 
         #socmedia {
             position: absolute;
             display: flex;
             flex-direction: column;
-            margin-left: 40rem;
-            margin-top: 3.75rem;
+            margin-left: 38rem;
+            bottom: 34rem;
             gap: 15px;
+            z-index: 999;
+            transition: background-image 0.3s;
 
+            #mail-link {
+                position: relative;
+                display: inline-block;
 
-            #linkedin {
-                width: 1.875rem;
-                height: 1.875rem;
+                .mail-img {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    transition: opacity 0.3s;
+                    width: 1.875rem;
+                    height: 1.875rem;
+                }
 
-                &:hover {
-                    background-image: url("../../../../public/img/Property\ 1=hover\ blue.png");
-                    cursor: pointer;
+                .mail-img.hover {
+                    opacity: 0;
+                    pointer-events: none;
+                }
+
+                &:hover .mail-img.default {
+                    opacity: 0;
+                }
+
+                &:hover .mail-img.hover {
+                    opacity: 1;
+                    pointer-events: auto;
                 }
             }
 
-            #github {
-                width: 1.875rem;
-                height: 1.875rem;
+            #github-link {
+                position: relative;
+                display: inline-block;
 
-                &:hover {
-                    background-image: url("../../../../public/img/Element\ 6\ 2\ \(1\).png");
-                    cursor: pointer;
-
+                .github-img {
+                    position: absolute;
+                    top: 30px;
+                    left: 0;
+                    transition: opacity 0.3s;
+                    width: 1.875rem;
+                    height: 1.875rem;
                 }
+
+                .github-img.hover {
+                    opacity: 0;
+                    pointer-events: none;
+                }
+
+                &:hover .github-img.default {
+                    opacity: 0;
+                }
+
+                &:hover .github-img.hover {
+                    opacity: 1;
+                    pointer-events: auto;
+                }
+
+            }
+
+
+            #linkedin-link {
+                position: relative;
+                display: inline-block;
+
+                .linkedin-img {
+                    position: absolute;
+                    top: 60px;
+                    left: 0;
+                    transition: opacity 0.3s;
+                    width: 1.875rem;
+                    height: 1.875rem;
+                }
+
+                .linkedin-img.hover {
+                    opacity: 0;
+                    pointer-events: none;
+                }
+
+                &:hover .linkedin-img.default {
+                    opacity: 0;
+                }
+
+                &:hover .linkedin-img.hover {
+                    opacity: 1;
+                    pointer-events: auto;
+                }
+
             }
 
             #email {
@@ -115,20 +181,22 @@
 
 
                 &:hover {
-                    background-image: url("../../../../public/img/mail\ blue\ \(1\).svg");
+                    background-image: url("../../../../public/img/Property 1=hover blue (1).png");
                     cursor: pointer;
 
                 }
             }
 
-
         }
 
         #name {
+            position: absolute;
             display: flex;
             flex-direction: column;
-            margin-top: 9.375rem;
-
+            bottom: 0;
+            height: 550px;
+            gap: 1rem;
+            text-align: center;
 
             h1 {
                 color: $creme-white;
@@ -136,79 +204,86 @@
                 font-size: 5.5rem;
                 font-family: 'Anta';
             }
+
+            h2 {
+                text-align: center;
+
+            }
+
+
+            #logo {
+                width: 7.5rem;
+                top: 0;
+                height: auto;
+                margin: 0 auto;
+                transition: all 0.3s ease-in;
+            }
+
+            #logo:hover {
+                transform: scaleX(1.2);
+            }
+
+            #arrow {
+                width: 2.37rem;
+                height: 5.56rem;
+                margin: 0 auto;
+                display: flex;
+                justify-content: center;
+                margin-top: 5rem;
+
+                &:hover {
+                    background-image: url("../../../../public/img/Property\ 1=Hover\ \(2\).png");
+                    transition: transform 0.3s ease-in-out;
+                    transform: translateY(5px);
+                    cursor: pointer;
+                }
+            }
         }
-
-
     }
-
-}
-
-#logo {
-    width: 7.5rem;
-    height: auto;
-    margin-left: 13.75rem;
-    transition: all 0.3s ease-in;
-    margin-top: -3.125rem;
-
-
-}
-
-#logo:hover {
-    transform: scaleX(1.2);
-    cursor: pointer;
-
-}
-
-#arrow {
-    display: flex;
-    margin-left: 16.25rem;
-    margin-top: 9.375rem;
-    width: 2.37rem;
-    height: 5.56rem;
-}
-
-
-#arrow:hover {
-    background-image: url("../../../../public/img/Property\ 1=Hover\ \(2\).png");
-
 }
 
 .hamburger {
     position: absolute;
-    flex-direction: column;
     top: 1.5rem;
-    right: 0.5rem;
+    right: 1rem;
     display: none;
-    justify-content: space-between;
-    border: none;
     width: 30px;
     height: 20px;
+    border: 0;
     background: none;
     cursor: pointer;
-    margin-left: auto;
-    margin-right: 40px;
-}
 
-span {
-    display: block;
-    height: 2px;
-    width: 100%;
-    background-color: #ffffff;
-    border-radius: 2px;
-    margin-bottom: 7px;
-}
+    .icon-burger,
+    .icon-close {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        transition: opacity .3s;
+    }
 
-.hamburger.open span:nth-child(1) {
-    transform: translateY(9px) rotate(50deg);
-}
+    /* Startzustand */
+    .icon-burger.default {
+        opacity: 1;
+    }
 
-.hamburger.open span:nth-child(2) {
-    opacity: 0;
-}
+    .icon-close {
+        opacity: 0;
+    }
 
-.hamburger.open span:nth-child(3) {
-    transform: translateY(-9px) rotate(-50deg);
+    &:not(.open):hover .icon-burger.hover {
+        opacity: 1;
+    }
 
+    /* Geöffnet: nur Close zeigen */
+    &.open .icon-burger.default,
+    &.open .icon-burger.hover {
+        opacity: 0;
+    }
+
+    &.open .icon-close {
+        opacity: 1;
+    }
 }
 
 #burger_nav a {
@@ -219,8 +294,6 @@ span {
 
 #burger_nav a:hover {
     color: $creme-white;
-
-
 }
 
 #change_language {

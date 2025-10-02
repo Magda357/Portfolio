@@ -52,4 +52,12 @@ export class ContactComponent {
       complete: () => console.info('send post complete'),
     });
   }
+
+  scrollToSection(event: Event, id: string) {
+  event.preventDefault();
+  const el = document.getElementById(id);
+  if (el) {
+    el.scrollIntoView({ behavior: 'smooth' });
+  }
+}
 }

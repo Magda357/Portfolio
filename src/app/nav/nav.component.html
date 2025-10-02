@@ -36,13 +36,12 @@
     </div>
 
     <div id="mobile-content" style="display: none;">
-        <button class="hamburger" id="hamburger_button" (click)="toggleBurgerMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
+        <button class="hamburger" id="hamburger_button" (click)="toggleBurgerMenu()" [class.open]="burgerMenuVisible">
+            <img class="icon-burger default" src="img/Property 1=default (4).png" alt="menu">
+            <img class="icon-close" src="img/Property 1=close (1).png" alt="close">
         </button>
 
-        <div *ngIf="burgerMenuVisible" class="burger_menu_system">
+        <div *ngIf="burgerMenuVisible" class="burger_menu_system" [class.open]="burgerMenuVisible">
             <div id="burger_nav">
                 <a href="/#why-me">
                     <p>{{'NAV.NAV_WHY_ME' | translate}}</p>

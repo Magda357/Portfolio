@@ -10,6 +10,7 @@
     max-width: 1920px;
     height: auto;
     padding: 0 10rem;
+    overflow: hidden;
 
 
     #why_me_container {
@@ -61,7 +62,7 @@
             flex-direction: column;
             font-size: 18px;
             width: 40%;
-            font-family: 'Josefin Sans Regular';
+            font-family: 'Josefin Sans';
             font-weight: 400;
             text-align: justify;
 
@@ -185,12 +186,13 @@
 
 @media (max-width:780px) {
     #why_me {
-        padding: 0 5rem;
+        padding: 0 3rem;
         padding-bottom: 100px;
 
         #why_me_container {
 
             #left {
+                margin-left: 10px;
 
                 .icon-img {
                     width: 40px;
@@ -203,38 +205,32 @@
                     padding: 0 20px;
                 }
             }
+
+            #right {
+                p {
+                    padding: 5px;
+                }
+            }
         }
-
-    }
-}
-
-@media (max-width:700px) {
-    #why_me {
-        padding: 0 3rem;
-        padding-bottom: 100px;
-
     }
 }
 
 
 @media (max-width:600px) {
     #why_me {
-        padding: 0 2rem;
+        padding: 0 auto;
         padding-bottom: 100px;
 
         #why_me_container {
 
             #left {
+
                 .icon-img {
-
-
                     transform: translateX(15px);
                 }
 
-
             }
         }
-
     }
 }
 
@@ -245,20 +241,15 @@
         #why_me_container {
 
             #left {
+                margin-left: 30px;
+
                 p {
-                    font-size: 24px;
-                }
-
-                .icon-img {
-
-
-                    transform: translateX(25px);
+                    font-size: 22px;
                 }
 
 
             }
         }
-
     }
 }
 
@@ -274,17 +265,13 @@
 
                     transform: translateX(40px);
                 }
-
-
             }
         }
-
     }
 }
 
 @media (max-width:490px) {
     #why_me {
-        padding: 0 1rem;
         padding-bottom: 100px;
 
 
@@ -297,10 +284,8 @@
                     transform: translateX(50px);
                 }
 
-
             }
         }
-
     }
 }
 
@@ -317,7 +302,6 @@
 
                 .icon-img {
 
-
                     transform: translateX(70px);
                 }
 
@@ -330,7 +314,6 @@
 
 @media (max-width:410px) {
     #why_me {
-        padding: 0 0.5rem;
         padding-bottom: 140px;
 
 
@@ -340,21 +323,15 @@
                 margin-left: 5px;
 
                 .icon-img {
-
-
                     transform: translateX(90px);
                 }
-
-
             }
         }
-
     }
 }
 
 @media (max-width:390px) {
     #why_me {
-        padding: 0 0.5rem;
         padding-bottom: 150px;
 
 
@@ -368,24 +345,20 @@
 
                     transform: translateX(100px);
                 }
-
-
             }
         }
-
     }
 }
 
 @media (max-width:350px) {
     #why_me {
-        padding: 0 0.5rem;
         padding-bottom: 150px;
 
 
         #why_me_container {
 
             #left {
-                margin-left: 5px;
+                margin-left: 35px;
 
                 .icon-img {
 
@@ -393,6 +366,11 @@
                     transform: translateX(120px);
                 }
 
+
+            }
+
+            #right {
+                margin-left: 0 auto;
 
             }
         }

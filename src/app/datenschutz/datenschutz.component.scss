@@ -4,6 +4,7 @@
     width: 100%;
     height: calc(100vh - 104px - 170px);
     overflow: scroll;
+    overflow-x: hidden;
     scrollbar-width: none;
     padding-bottom: 50px;
     margin: 0 auto;

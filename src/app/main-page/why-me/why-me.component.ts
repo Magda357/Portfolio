@@ -96,4 +96,12 @@ export class WhyMeComponent implements OnInit, OnDestroy {
   useLanguage(language: string): void {
     this.translate.use(language); 
   }
+
+    scrollToSection(event: Event, id: string) {
+  event.preventDefault();
+  const el = document.getElementById(id);
+  if (el) {
+    el.scrollIntoView({ behavior: 'smooth' });
+  }
+}
 }

@@ -28,5 +28,14 @@ export class NavComponent {
    burgerMenuVisible: boolean = false;
      toggleBurgerMenu(): void {
     this.burgerMenuVisible = !this.burgerMenuVisible;
+    if (this.burgerMenuVisible) {
+    document.body.style.overflow = 'hidden';
+    document.documentElement.style.overflow = 'hidden';
+  } else {
+    document.body.style.overflow = '';
+    document.documentElement.style.overflow = '';
   }
+  }
+
+  
 }

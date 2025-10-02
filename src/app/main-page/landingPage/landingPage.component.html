@@ -1,5 +1,3 @@
-<a id="top"></a>
-
 <section id="hero">
     <div id="left-container">
         <div id="bg-shape">
@@ -13,18 +11,28 @@
     <div id="right-container">
 
         <div id="socmedia">
-            <a href="mailto:mdanielyan50@gmail.com" target="_blank"> <img id="email" src="img/Email button.png"
-                    alt="Email"></a>
-            <a href="https://github.com/Magda357" target="_blank"><img id="github" src="img/Github button.png"
-                    alt="Github"></a>
-            <a href="https://www.linkedin.com/in/magda-danielyan-5173b9386/" target="_blank"><img id="linkedin"
-                    src="img/Linkedin button.png" alt="linkedin"></a>
+            <a href="mailto:mdanielyan50@gmail.com" target="_blank" id="mail-link">
+                <img class="mail-img default" src="img/Email button.png" alt="Email">
+                <img class="mail-img hover" src="img/Property 1=hover blue (1).png" alt="Email">
+
+            </a>
+
+            <a href="https://github.com/Magda357" target="_blank" id="github-link">
+                <img class="github-img default" src="img/Github button.png" alt="Github">
+                <img class="github-img hover" src="img/Element 6 2 (2).png" alt="Github-hover">
+
+            </a>
+
+            <a href="https://www.linkedin.com/in/magda-danielyan-5173b9386/" target="_blank" id="linkedin-link">
+                <img class="linkedin-img default" src="img/Linkedin button.png" alt="linkedin">
+                <img class="linkedin-img hover" src="img/Property 1=hover blue.png" alt="linkedin-hover">
+            </a>
         </div>
         <div id="name">
             <img id="logo" src="img/logoMD.png" alt="Logo">
             <h1>Magda Danielyan </h1>
             <h2>{{'HERO.TITLE'| translate}}</h2>
-            <a href="#why-me"><img id="arrow" src="img/Arrow down.png" alt=""> </a>
+            <a (click)="scrollToSection($event, 'why-me')"><img id="arrow" src="img/Arrow down.png" alt="Arrow"> </a>
         </div>
 
     </div>
@@ -36,30 +44,28 @@
         <div id="name-mobile">
             <h2>Magda Danielyan </h2>
             <h3>{{'HERO.TITLE'| translate}}</h3>
-            <a href="#why-me"><img id="arrow-mobile" src="img/Arrow down.png" alt="Arrow"> </a>
+            <a (click)="scrollToSection($event, 'why-me')">
+                <img id="arrow-mobile" src="img/Arrow down.png" alt="Arrow"> </a>
         </div>
 
         <button class="hamburger" id="hamburger_button" (click)="toggleBurgerMenu()" [class.open]="burgerMenuVisible">
-            <span></span>
-            <span></span>
-            <span></span>
+            <img class="icon-burger default" src="img/Property 1=default (4).png" alt="menu">
+            <img class="icon-close" src="img/Property 1=close (1).png" alt="close">
         </button>
 
 
-
-
-        <div *ngIf="burgerMenuVisible" class="burger_menu_system">
+        <div *ngIf="burgerMenuVisible" class="burger_menu_system" [class.show]="burgerMenuVisible">
             <div id="burger_nav">
-                <a href="#why-me">
+                <a (click)="scrollToSection($event, 'why-me')">
                     <p>{{'NAV.NAV_WHY_ME' | translate}}</p>
                 </a>
-                <a href="#my-skills">
+                <a (click)="scrollToSection($event, 'my-skills')">
                     <p>{{'NAV.NAV_SKILLS' | translate}} </p>
                 </a>
-                <a href="#my-projects">
+                <a (click)="scrollToSection($event, 'my-projects')">
                     <p> {{'NAV.NAV_PROJECTS' | translate}} </p>
                 </a>
-                <a href="#contact">
+                <a (click)="scrollToSection($event, 'contact')">
                     <p>{{'NAV.NAV_CONTACT' | translate}}</p>
                 </a>
                 <div id="change_language">
@@ -67,7 +73,6 @@
 
                     </button>
                     <button (click)="useLanguage('de')" [ngClass]="{ 'active-lang': selectedLang === 'de' }">DE
-
 
                     </button>
                 </div>

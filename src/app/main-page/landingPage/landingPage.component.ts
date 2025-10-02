@@ -1,13 +1,12 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component} from '@angular/core';
 import {CommonModule, NgIf} from "@angular/common";
 import { TranslateModule } from '@ngx-translate/core';
 import { TranslateService } from "@ngx-translate/core";
 import{NavComponent} from './../../nav/nav.component';
 
-
 @Component({
        selector: 'app-landinPage',
-       imports: [NgIf,TranslateModule,CommonModule,NavComponent],
+       imports: [NgIf,TranslateModule,CommonModule,NavComponent,],
        templateUrl: './landingPage.component.html',
        styleUrls: ['./landingPage.component.scss','./landingPage.responsive.scss']
 
@@ -15,7 +14,6 @@ import{NavComponent} from './../../nav/nav.component';
 
 export class LandingPageComponent   {
    selectedLang: string = 'en';
-
 
   constructor(private translate: TranslateService
   ) {
@@ -34,8 +32,13 @@ export class LandingPageComponent   {
   }
 
 
-
- 
+scrollToSection(event: Event, id: string) {
+  event.preventDefault();
+  const el = document.getElementById(id);
+  if (el) {
+    el.scrollIntoView({ behavior: 'smooth' });
+  }
+}
   
   
 }

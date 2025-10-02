@@ -17,6 +17,13 @@
 
     }
 
+    #input-felds {
+        width: 100%;
+        padding: 0;
+        padding-left: 30px;
+        margin: 0 auto;
+    }
+
     #info {
         display: flex;
         flex-direction: column-reverse;
@@ -52,7 +59,7 @@
     #your_name,
     #your_email {
         width: 100%;
-        padding: 0 10px;
+        padding: 0;
     }
 
     #send_button {
@@ -110,4 +117,39 @@
     }
 
 
+}
+
+@media (max-width:480px) {
+
+    h3 {
+        font-size: 2.8rem;
+        margin-bottom: 30px;
+    }
+
+    p,
+    span {
+        font-size: 16px;
+    }
+
+    #send_button {
+        margin-left: 60%;
+    }
+}
+
+@media (max-width:380px) {
+
+
+    #above_cont {
+        margin: 0;
+    }
+
+    #input-felds {
+        padding-left: 15px;
+    }
+
+    #send_button {
+        margin-left: 50%;
+        margin-bottom: 10px;
+
+    }
 }
