@@ -173,12 +173,30 @@
 
     #project_nav a {
 
-        width: 90px;
+        width: 80px;
         height: 50px;
         font-size: 26px;
 
     }
 }
+
+@media (max-width:390px) {
+    #project_nav {
+
+        gap: 5px;
+        margin-left: 10px;
+
+    }
+
+    #project_nav a {
+
+        width: 60px;
+        height: 45px;
+        font-size: 26px;
+
+    }
+}
+
 
 @media (max-width:350px) {
 

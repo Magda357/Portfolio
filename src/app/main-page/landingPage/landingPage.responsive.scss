@@ -19,7 +19,6 @@
             }
         }
     }
-
 }
 
 @media (max-width:1360px) {
@@ -52,7 +51,6 @@
 
     #hero {
         #right-container {
-
             #name {
                 h1 {
                     font-size: 60px;
@@ -77,21 +75,20 @@
 
 @media (max-width:1145px) {
 
-
     #hero {
-        width: 95%;
+        width: 98%;
         height: 100vh;
         display: flex;
-        margin: 0 auto;
         flex-direction: column;
         justify-content: center;
-        padding: 0 2rem;
+        margin: 0 auto;
+        padding: 0 auto;
         gap: 0;
 
         #logo-mobile {
             position: absolute;
-            top: -10px;
-            left: 10px;
+            top: 0;
+            left: 0;
             width: 120px;
             height: auto;
         }
@@ -107,16 +104,13 @@
 
         #mobile-content {
             display: block !important;
-            position: absolute;
-            width: 95%;
-            height: 600px;
-            top: 10px;
+            width: 100%;
             box-sizing: border-box;
             justify-content: center;
             align-items: center;
             display: flex;
+            margin-top: 0;
             margin: 0 auto;
-
 
             .burger_menu_system {
                 position: absolute;
@@ -125,8 +119,8 @@
                 transform: translateX(-45%);
                 width: 80%;
                 max-width: 500px;
-                min-width: 300px;
-                height: 500px;
+                min-width: 280px;
+                height: 550px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -134,7 +128,6 @@
                 background-image: url("../../../../public/img/Property 1=Default.png");
                 background-size: contain;
                 z-index: 10;
-
             }
 
             #burger_nav {
@@ -162,31 +155,30 @@
             #me_respons {
                 display: block;
                 position: absolute;
-                left: 60%;
+                left: 50%;
                 top: 360px;
-                width: 80%;
-                max-width: 500px;
-                min-width: 320px;
                 height: auto;
                 transform: translate(-50%, -50%);
 
                 img {
-                    width: 70%;
+                    width: 90%;
+                    max-width: 480px;
+                    min-width: 250px;
                     height: auto;
                 }
             }
 
             #name-mobile {
-                position: static;
                 display: flex;
                 flex-direction: column;
                 width: 95%;
-                height: 300px;
+                max-width: calc(100vw - 50px);
+                height: 350px;
                 margin: 0 auto;
                 gap: 20px;
                 justify-content: center;
                 align-items: center;
-                margin-top: 620px;
+                margin-top: 600px;
 
                 h2 {
                     font-size: 4.5rem;
@@ -202,7 +194,6 @@
                     font-family: 'Josefin Sans', sans-serif;
                     font-weight: 300;
                     text-align: center;
-
                 }
 
                 #arrow-mobile {
@@ -211,36 +202,29 @@
                     transform: translateY(30%);
                 }
             }
-
         }
     }
 
     #app-nav {
         display: none;
     }
-
 }
 
 @media (max-width:1000px) {
     #hero {
-        padding: 0 auto;
-    }
-}
-
-@media (max-width:750px) {
-    #hero {
-
-        padding: 0 auto;
+        padding: 0 1rem;
     }
 }
 
 @media (max-width:700px) {
     #hero {
-
+        #logo-mobile {
+            width: 80px;
+            height: auto;
+        }
 
         #mobile-content {
             #name-mobile {
-
                 h2 {
                     font-size: 4rem;
                 }
@@ -258,7 +242,6 @@
 
         #mobile-content {
             #name-mobile {
-
                 margin-top: 580px;
 
                 h2 {
@@ -304,7 +287,7 @@
 
         #mobile-content {
             .burger_menu_system {
-                top: 170px;
+                top: 160px;
 
                 #burger_nav {
                     gap: 30px;
@@ -343,55 +326,65 @@
 
 @media (max-width:475px) {
     #hero {
-        padding-left: 15px;
-        margin: 0;
 
         #mobile-content {
 
             .burger_menu_system {
-                top: 180px;
+                top: 160px;
                 transform: translateX(-50%);
 
                 #burger_nav {
-                    gap: 15px;
-                    transform: translateY(-35%);
+                    gap: 25px;
+                    font-size: 1.2rem;
+                    transform: translateY(-20%);
                 }
             }
         }
     }
 }
 
-@media (max-width:425px) {
+@media (max-width:450px) {
     #hero {
+
         #mobile-content {
+            top: 185px;
+            max-width: 400px;
 
-            .burger_menu_system {
-                top: 190px;
-                transform: translateX(-50%);
-
-                #burger_nav {
-                    gap: 15px;
-                    transform: translateY(-35%);
-                }
+            #burger_nav {
+                gap: 10px;
+                transform: translateY(-10%);
             }
         }
     }
 }
 
-@media (max-width:350px) {
+@media (max-width: 440px) {
+    #mobile-content.burger-open {
+        #me_respons {
+            display: none !important;
+        }
+    }
+}
+
+
+@media (max-width: 435px) {
     #hero {
 
         #mobile-content {
 
-            .burger_menu_system {
+            #me_respons {
+                top: 300px;
+            }
 
-                #burger_nav {
-                    gap: 15px;
-                    transform: translateY(-30%);
-                    max-width: 250px;
+            #burger_menu_system {
+                max-width: 400px;
+            }
 
-                }
+            #burger_nav {
+                gap: 15px !important;
+                transform: translateY(-45%) !important;
             }
         }
     }
+
 }

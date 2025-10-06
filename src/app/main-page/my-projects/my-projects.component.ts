@@ -31,7 +31,7 @@ export class MyProjectsComponent {
     right_project_pic:"img/ElPolloLoco.png",
     test_button:"img/skills_img/Button Primary Web.svg" ,
     gitHub_button:"img/skills_img/Button Secondary Web (1).svg",
-    live_test:"https://magda-danielyan.de/ELPolloLoco",
+    live_test:"https://magda-danielyan.de/elpolloloco",
     gitHub:"https://github.com/Magda357/El-Pollo-Loco",
     techimg1:"img/skills_img/Skill Icon + Name (3).png",
     techimg2:"img/skills_img/Skill Icon + Name (4).png",

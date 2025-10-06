@@ -8,7 +8,6 @@
     scrollbar-width: none;
     padding-bottom: 50px;
     margin: 0 auto;
-    text-transform: capitalize;
 }
 
 h1 {
@@ -50,4 +49,32 @@ a {
 a:hover {
     color: $primary-blue;
     cursor: pointer;
+}
+
+@media (max-width:700px) {
+
+    h1 {
+        font-size: 36px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+    h2 {
+        font-size: 28px;
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+
+    p,
+    a {
+        font-size: 1rem;
+        padding: 0 5%;
+        line-height: 1.4;
+    }
+}
+
+@media (max-width: 390px) and (min-width: 350px) {
+    #datenschutz {
+        height: calc(100vh - 104px - 170px) !important;
+    }
 }
